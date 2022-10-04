@@ -1,0 +1,77 @@
+{
+  "name": "@development-framework/create-dm-app",
+  "version": "0.0.2",
+  "bin": "./bin/cli.js",
+  "resolutions": {
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "styled-components": "5.2.3"
+  },
+  "dependencies": {
+    "@development-framework/dm-core": "1.0.4",
+    "@equinor/eds-core-react": "^0.20.0",
+    "@equinor/eds-icons": "^0.12.0",
+    "@equinor/eds-tokens": "^0.7.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.11.58",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
+    "antd": "^4.21.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-is": "^17.0.2",
+    "react-oauth2-code-pkce": "^1.6.1",
+    "react-router-dom": "5.3.3",
+    "react-scripts": "5.0.1",
+    "styled-components": "^5.2.3",
+    "typescript": "^4.8.3",
+    "web-vitals": "^2.1.4",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/styled-components": "^4.1.18"
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "process": "^0.11.10",
+    "react-app-rewired": "^2.2.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.0",
+    "yarn-upgrade-all": "^0.7.1",
+    "tty-browserify": "0.0.1",
+    "browserify-zlib": "0.2.0",
+    "path-browserify": "1.0.1"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

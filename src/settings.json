@@ -1,0 +1,5 @@
+{
+  "name": "portal",
+  "type": "System/SIMOS/portal",
+  "dmssUrl": "localhost:5000"
+}
