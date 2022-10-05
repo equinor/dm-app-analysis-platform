@@ -22,12 +22,12 @@ jobs:
       - name: Run prettier formatting
         run: pre-commit run prettier --all-files
 
-      - name: "Build Web"
+      - name: "Install web packages"
         run: |
           yarn install
 
-      - name: "Web Tests"
-        run: yarn test a 
+#      - name: "Web Tests"
+#        run: yarn test a
 
       - name: "Test for typescript errors"
         run: yarn tsc
