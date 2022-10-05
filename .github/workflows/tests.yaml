@@ -9,10 +9,7 @@ on:
       DMSS_DEPLOY_KEY:
         required: false
 
-env:
-  IMAGE_REGISTRY: datamodelingtool.azurecr.io
-  API_IMAGE: datamodelingtool.azurecr.io/dmt/api
-  WEB_IMAGE: datamodelingtool.azurecr.io/dm-app/analysis-platform
+
 
 jobs:
   test-web:
@@ -25,17 +22,15 @@ jobs:
       - name: Run prettier formatting
         run: pre-commit run prettier --all-files
 
-      - name: "Build Web Image"
+      - name: "Install web packages"
         run: |
-          docker login -u datamodelingtool -p ${{ secrets.ACR_SECRET }} $IMAGE_REGISTRY
-          docker pull $WEB_IMAGE
-          docker build --cache-from $WEB_IMAGE --target development --tag web-dev ./web
+          yarn install
 
-      - name: "Web Tests"
-        run: docker-compose -f docker-compose.yml  -f docker-compose.ci.yml run --rm web yarn test
+#      - name: "Web Tests"
+#        run: yarn test a
 
       - name: "Test for typescript errors"
-        run: docker-compose -f docker-compose.yml  -f docker-compose.ci.yml run --rm web yarn tsc
+        run: yarn tsc
 
       - name: "Run ESlint"
-        run: docker-compose -f docker-compose.yml  -f docker-compose.ci.yml run --rm web npm run lint:fix
+        run:  npm run lint:fix
