@@ -47,7 +47,8 @@ const HorizontalList = styled.div`
     padding: 20px;
   }
 `
-const AppSelector = (props) => {
+const AppSelector = (props: {applications: any}) => {
+
     const {applications} = props
     const history = useHistory()
     const links = Object.values(applications).map((setting) => (

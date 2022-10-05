@@ -1,0 +1,7 @@
+*.config.js
+*.config.base.js
+*.test.tsx
+dist
+bin
+node_modules
+config-overrides.js
