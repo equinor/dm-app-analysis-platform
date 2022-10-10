@@ -86,7 +86,7 @@ export function CreateReoccurringJob(props: {
     <div>
       <div>
         <div style={{ paddingBottom: '10px' }}>
-          {Object.keys(cronJob).length > 0
+          {cronJob && Object.keys(cronJob).length > 0
             ? 'A job is already scheduled. You can update it here.'
             : ''}
         </div>
@@ -98,7 +98,10 @@ export function CreateReoccurringJob(props: {
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <Label label="Interval" />
             <StyledSelect
-              onChange={(e: Event) => setInterval(e.target.value)}
+              onChange={(e) => {
+                //@ts-ignore
+                // TODO fix type
+                setInterval(e.target.value)}}
               value={interval}
             >
               {Object.entries(EInterval).map(([key, value]: any) => (
@@ -112,7 +115,7 @@ export function CreateReoccurringJob(props: {
             <div style={{ display: 'flex', flexDirection: 'column' }}>
               <Label label="Time" />
               <StyledSelect
-                onChange={(e: Event) => {
+                onChange={(e) => {
                   const hourAndMinute = e.target.value
                   const [newHour, newMinute] = hourAndMinute.split(':')
                   setMinute(newMinute)
@@ -131,10 +134,13 @@ export function CreateReoccurringJob(props: {
             <div style={{ display: 'flex', flexDirection: 'column' }}>
               <Label label="Hour step" />
               <StyledSelect
-                onChange={(e: Event) => {
+                onChange={(e) => {
                   setHourStep(e.target.value)
                 }}
               >
+
+                {/*TODO fix type error*/}
+                {/*@ts-ignore*/}
                 {[...Array(12).keys()].map((value: number, index) => (
                   <option key={index} value={value + 1}>
                     {value + 1}
@@ -148,7 +154,7 @@ export function CreateReoccurringJob(props: {
       <div style={{ paddingTop: '10px', height: '20px' }}>{getLabel()}</div>
       <ButtonWrapper>
         <Button
-          disabled={Object.keys(cronJob).length === 0}
+          disabled={cronJob && Object.keys(cronJob).length === 0}
           color="danger"
           variant="outlined"
           onClick={() => {
@@ -161,9 +167,13 @@ export function CreateReoccurringJob(props: {
         <Button
           onClick={() => {
             setCronJob({
+              //TODO fix type error
+              //@ts-ignore
               cron: schedule,
-              startDate: dateRange[0]?.toISOString(),
-              endDate: dateRange[1]?.toISOString(),
+              //@ts-ignore
+              startDate: dateRange[0],
+              //@ts-ignore
+              endDate: dateRange[1],
             })
             close()
           }}

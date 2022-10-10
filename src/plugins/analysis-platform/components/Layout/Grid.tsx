@@ -2,7 +2,7 @@ import React, {ReactNode} from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const StyledGrid = styled.div`
+const StyledGrid = styled.div<{ centerContent: any }>`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   row-gap: 1rem;
@@ -23,7 +23,7 @@ const StyledGrid = styled.div`
   `}
 `
 
-const Grid = ({ centerContent, children }) => {
+const Grid = ({ centerContent, children }: {centerContent: any, children: ReactNode}) => {
   return <StyledGrid centerContent={centerContent}>{children}</StyledGrid>
 }
 
@@ -33,6 +33,7 @@ Grid.propTypes = {
 }
 
 Grid.defaultProps = {
+  //@ts-ignore - Don't know what this is....
   centerContent: PropTypes.false,
 }
 
