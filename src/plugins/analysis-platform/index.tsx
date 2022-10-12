@@ -6,6 +6,9 @@ import { AssetView } from './modules/Asset/AssetView'
 import {EditTask} from "./plugins/task/src/EditTask";
 import {ViewTask} from "./plugins/task/src/ViewTask";
 import {EditInput} from "./plugins/task/src/InputOnly";
+import {EditSimaApplicationInput} from "./plugins/sima-application-input/src/EditSimaApplicationInput";
+import {UpdateInputOnly} from "./plugins/sima-application-input/src/UpdateInputOnly";
+import {ViewSimaApplicationInput} from "./plugins/sima-application-input/src/ViewSimaApplicationInput";
 
 export const plugins: any = [
   {
@@ -42,6 +45,21 @@ export const plugins: any = [
     pluginName: 'edit-task-operator',
     pluginType: EDmtPluginType.UI,
     component: EditInput,
+  },
+  {
+    pluginName: 'edit-sima-application-input',
+    pluginType: EDmtPluginType.UI,
+    component: EditSimaApplicationInput,
+  },
+  {
+    pluginName: 'edit-sima-application-input-input',
+    pluginType: EDmtPluginType.UI,
+    component: UpdateInputOnly,
+  },
+  {
+    pluginName: 'view-sima-application-input',
+    pluginType: EDmtPluginType.UI,
+    component: ViewSimaApplicationInput,
   },
 
     //TODO now, I have copied EditTask, ViewTask and EditInput from dmt/packages/plugins/task into src/plugins/analysis-platform/plugins.
