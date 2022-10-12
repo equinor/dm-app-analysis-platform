@@ -18,19 +18,19 @@ repos:
   rev: v2.2.1
   hooks:
     - id: prettier
-      files: ^web/.*\.(ts|tsx|js|css|html|json)$
-      args: ['--config=web/.prettierrc.js', '--ignore-path=web/.prettierignore']
+      files: ^src/.*\.(ts|tsx|js|css|html|json)$
+      args: ['--config=.prettierrc.js', '--ignore-path=.prettierignore']
 
 
 - repo: local
   hooks:
     - id: yarntest
       name: Yarn tests
-      entry: sh -c "cd web && CI=true yarn test -coverage=false"
+      entry: sh -c "cd src && CI=true yarn test -coverage=false"
       language: system
-      files: ^web/.*\.(test.ts|test.tsx|test.js)$
+      files: ^src/.*\.(test.ts|test.tsx|test.js)$
     - id: eslint
       name: ESlint
-      entry: sh -c "cd web; npm run lint:fix"
+      entry: sh -c "cd src; npm run lint:fix"
       language: system
       pass_filenames: false

@@ -11,7 +11,7 @@ import { AssetTable } from './components'
 import { Link, useLocation } from 'react-router-dom'
 import { TAsset } from '../../Types'
 import { EBlueprints } from '../../Enums'
-import {ANALYSIS_PLATFORM_URLPATH, DEFAULT_DATASOURCE_ID} from '../../const'
+import { ANALYSIS_PLATFORM_URLPATH, DEFAULT_DATASOURCE_ID } from '../../const'
 
 export const AssetOverview = (): ReactNode => {
   const { tokenData } = useContext(AuthContext)
@@ -41,7 +41,7 @@ export const AssetOverview = (): ReactNode => {
         }}
       >
         {hasDomainRole(tokenData) && (
-          <Link to={ `${ANALYSIS_PLATFORM_URLPATH}/asset/new`}>
+          <Link to={`${ANALYSIS_PLATFORM_URLPATH}/asset/new`}>
             <Button>Create new asset</Button>
           </Link>
         )}

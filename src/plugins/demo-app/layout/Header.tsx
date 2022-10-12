@@ -1,28 +1,27 @@
-import React, {useContext, useEffect, useState} from 'react'
-import {Button, Icon, Radio, TopBar} from '@equinor/eds-core-react'
-import {grid_on, info_circle, account_circle} from '@equinor/eds-icons'
+import React, { useContext, useEffect, useState } from 'react'
+import { Button, Icon, Radio, TopBar } from '@equinor/eds-core-react'
+import { grid_on, info_circle, account_circle } from '@equinor/eds-icons'
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
-
+import { Link } from 'react-router-dom'
 
 // @ts-ignore
-import {NotificationManager} from 'react-notifications'
-import axios, {AxiosResponse} from 'axios'
-import {AuthContext} from "react-oauth2-code-pkce";
+import { NotificationManager } from 'react-notifications'
+import axios, { AxiosResponse } from 'axios'
+import { AuthContext } from 'react-oauth2-code-pkce'
 import {
-    APP_ROLES,
-    DMSS_ADMIN_ROLE,
-    DmssAPI,
-    sortApplications,
-    TDmtSettings,
-    Dialog
-} from "@development-framework/dm-core";
-import useLocalStorage from "react-oauth2-code-pkce/dist/Hooks";
+  APP_ROLES,
+  DMSS_ADMIN_ROLE,
+  DmssAPI,
+  sortApplications,
+  TDmtSettings,
+  Dialog,
+} from '@development-framework/dm-core'
+import useLocalStorage from 'react-oauth2-code-pkce/dist/Hooks'
 
 Icon.add({
-    grid_on,
-    info_circle,
-    account_circle,
+  grid_on,
+  info_circle,
+  account_circle,
 })
 
 const Icons = styled.div`
@@ -99,143 +98,143 @@ const StyledLink = styled(Link)`
 `
 
 export const Header = (props: {
-    appName: string
-    urlPath: string
-    allApps: TDmtSettings[]
+  appName: string
+  urlPath: string
+  allApps: TDmtSettings[]
 }): JSX.Element => {
-    const {appName, urlPath, allApps} = props
-    const [version, setVersion] = useState<string>('Version not loaded')
-    const {tokenData, token, logOut} = useContext(AuthContext)
-    const [aboutOpen, setAboutOpen] = useState(false)
-    const [visibleUserInfo, setVisibleUserInfo] = useState<boolean>(false)
-    const [appSelectorOpen, setAppSelectorOpen] = useState<boolean>(false)
-    const [apiKey, setAPIKey] = useState<string | null>(null)
-    const dmssApi = new DmssAPI(token)
-    const [checked, updateChecked] = useLocalStorage<string | null>(
-        'impersonateRoles',
-        null
-    )
+  const { appName, urlPath, allApps } = props
+  const [version, setVersion] = useState<string>('Version not loaded')
+  const { tokenData, token, logOut } = useContext(AuthContext)
+  const [aboutOpen, setAboutOpen] = useState(false)
+  const [visibleUserInfo, setVisibleUserInfo] = useState<boolean>(false)
+  const [appSelectorOpen, setAppSelectorOpen] = useState<boolean>(false)
+  const [apiKey, setAPIKey] = useState<string | null>(null)
+  const dmssApi = new DmssAPI(token)
+  const [checked, updateChecked] = useLocalStorage<string | null>(
+    'impersonateRoles',
+    null
+  )
 
-    useEffect(() => {
-        axios
-            .get('/version.txt')
-            .then((response: AxiosResponse<string>) => setVersion(response.data))
-            .catch(() => null)
-    }, [])
+  useEffect(() => {
+    axios
+      .get('/version.txt')
+      .then((response: AxiosResponse<string>) => setVersion(response.data))
+      .catch(() => null)
+  }, [])
 
-    return (
-        <TopBar>
-            <TopBar.Header>
-                <ClickableIcon onClick={() => setAppSelectorOpen(!appSelectorOpen)}>
-                    <Icon name="grid_on" size={32}/>
-                </ClickableIcon>
-                <StyledLink
-                    style={{display: 'flex'}}
-                    to={{
-                        pathname: `/${urlPath}`,
-                    }}
-                >
-                    <h4 style={{paddingTop: 9, paddingLeft: 10}}>{appName}</h4>
-                </StyledLink>
-                {appSelectorOpen && (
-                    <AppSelectorWrapper>
-                        {sortApplications(allApps).map((app) => (
-                            <Link to={`/${app.urlPath}`} key={app.name}>
-                                <AppBox>{app?.label ? app.label : app.name}</AppBox>
-                            </Link>
-                        ))}
-                        <Link to={'/DMT/search'}>
-                            <AppBox>Search</AppBox>
-                        </Link>
-                    </AppSelectorWrapper>
-                )}
-            </TopBar.Header>
-            <TopBar.Actions>
-                <Icons>
-                    <ClickableIcon onClick={() => setAboutOpen(true)}>
-                        <Icon name="info_circle" size={24} title="About"/>
-                    </ClickableIcon>
-                    <ClickableIcon onClick={() => setVisibleUserInfo(true)}>
-                        <Icon name="account_circle" size={24} title="User"/>
-                    </ClickableIcon>
-                </Icons>
-            </TopBar.Actions>
-            <Dialog
-                isOpen={aboutOpen}
-                closeScrim={() => setAboutOpen(false)}
-                header={'About Data Modelling Tool'}
-                width={'40vw'}
-            >
-                <b>Last commit: {version}</b>
-            </Dialog>
-            <Dialog
-                isOpen={visibleUserInfo}
-                header={'User info'}
-                closeScrim={() => setVisibleUserInfo(false)}
-                width={'720px'}
-            >
-                <div style={{margin: '20px'}}>
-          <pre style={{whiteSpace: 'pre-wrap'}}>
+  return (
+    <TopBar>
+      <TopBar.Header>
+        <ClickableIcon onClick={() => setAppSelectorOpen(!appSelectorOpen)}>
+          <Icon name="grid_on" size={32} />
+        </ClickableIcon>
+        <StyledLink
+          style={{ display: 'flex' }}
+          to={{
+            pathname: `/${urlPath}`,
+          }}
+        >
+          <h4 style={{ paddingTop: 9, paddingLeft: 10 }}>{appName}</h4>
+        </StyledLink>
+        {appSelectorOpen && (
+          <AppSelectorWrapper>
+            {sortApplications(allApps).map((app) => (
+              <Link to={`/${app.urlPath}`} key={app.name}>
+                <AppBox>{app?.label ? app.label : app.name}</AppBox>
+              </Link>
+            ))}
+            <Link to={'/DMT/search'}>
+              <AppBox>Search</AppBox>
+            </Link>
+          </AppSelectorWrapper>
+        )}
+      </TopBar.Header>
+      <TopBar.Actions>
+        <Icons>
+          <ClickableIcon onClick={() => setAboutOpen(true)}>
+            <Icon name="info_circle" size={24} title="About" />
+          </ClickableIcon>
+          <ClickableIcon onClick={() => setVisibleUserInfo(true)}>
+            <Icon name="account_circle" size={24} title="User" />
+          </ClickableIcon>
+        </Icons>
+      </TopBar.Actions>
+      <Dialog
+        isOpen={aboutOpen}
+        closeScrim={() => setAboutOpen(false)}
+        header={'About Data Modelling Tool'}
+        width={'40vw'}
+      >
+        <b>Last commit: {version}</b>
+      </Dialog>
+      <Dialog
+        isOpen={visibleUserInfo}
+        header={'User info'}
+        closeScrim={() => setVisibleUserInfo(false)}
+        width={'720px'}
+      >
+        <div style={{ margin: '20px' }}>
+          <pre style={{ whiteSpace: 'pre-wrap' }}>
             {JSON.stringify(
-                {
-                    name: tokenData?.name,
-                    preferred_username: tokenData?.preferred_username,
-                    roles: tokenData?.roles,
-                    scope: tokenData?.scp,
-                    token_issuer: tokenData?.iss,
-                } || '',
-                null,
-                2
+              {
+                name: tokenData?.name,
+                preferred_username: tokenData?.preferred_username,
+                roles: tokenData?.roles,
+                scope: tokenData?.scp,
+                token_issuer: tokenData?.iss,
+              } || '',
+              null,
+              2
             )}
           </pre>
-                    <div style={{display: 'flex', justifyContent: 'space-around'}}>
-                        <Button
-                            onClick={() => {
-                                navigator.clipboard.writeText(token)
-                                NotificationManager.success('Copied token to clipboard')
-                            }}
-                        >
-                            Copy token to clipboard
-                        </Button>
-                        <Button
-                            onClick={() =>
-                                dmssApi
-                                    .tokenCreate()
-                                    .then((response: any) => setAPIKey(response.data))
-                                    .catch((error: any) => {
-                                        console.error(error)
-                                        NotificationManager.error(
-                                            'Failed to create personal access token'
-                                        )
-                                    })
-                            }
-                        >
-                            Create API-Key
-                        </Button>
-                        <Button onClick={() => logOut()}>Log out</Button>
-                    </div>
-                    {apiKey && <pre>{apiKey}</pre>}
+          <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+            <Button
+              onClick={() => {
+                navigator.clipboard.writeText(token)
+                NotificationManager.success('Copied token to clipboard')
+              }}
+            >
+              Copy token to clipboard
+            </Button>
+            <Button
+              onClick={() =>
+                dmssApi
+                  .tokenCreate()
+                  .then((response: any) => setAPIKey(response.data))
+                  .catch((error: any) => {
+                    console.error(error)
+                    NotificationManager.error(
+                      'Failed to create personal access token'
+                    )
+                  })
+              }
+            >
+              Create API-Key
+            </Button>
+            <Button onClick={() => logOut()}>Log out</Button>
+          </div>
+          {apiKey && <pre>{apiKey}</pre>}
 
-                    {tokenData?.roles.includes(DMSS_ADMIN_ROLE) && (
-                        <>
-                            <p>Impersonate a role (UI only)</p>
-                            <UnstyledList>
-                                {APP_ROLES.map((role: string) => (
-                                    <li key={role}>
-                                        <Radio
-                                            label={role}
-                                            name="impersonate-role"
-                                            value={role}
-                                            checked={checked === role}
-                                            onChange={(e: any) => updateChecked(e.target.value)}
-                                        />
-                                    </li>
-                                ))}
-                            </UnstyledList>
-                        </>
-                    )}
-                </div>
-            </Dialog>
-        </TopBar>
-    )
+          {tokenData?.roles.includes(DMSS_ADMIN_ROLE) && (
+            <>
+              <p>Impersonate a role (UI only)</p>
+              <UnstyledList>
+                {APP_ROLES.map((role: string) => (
+                  <li key={role}>
+                    <Radio
+                      label={role}
+                      name="impersonate-role"
+                      value={role}
+                      checked={checked === role}
+                      onChange={(e: any) => updateChecked(e.target.value)}
+                    />
+                  </li>
+                ))}
+              </UnstyledList>
+            </>
+          )}
+        </div>
+      </Dialog>
+    </TopBar>
+  )
 }

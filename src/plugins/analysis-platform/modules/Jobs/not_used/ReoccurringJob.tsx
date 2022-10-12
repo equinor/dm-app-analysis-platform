@@ -101,7 +101,8 @@ export function CreateReoccurringJob(props: {
               onChange={(e) => {
                 //@ts-ignore
                 // TODO fix type
-                setInterval(e.target.value)}}
+                setInterval(e.target.value)
+              }}
               value={interval}
             >
               {Object.entries(EInterval).map(([key, value]: any) => (
@@ -138,7 +139,6 @@ export function CreateReoccurringJob(props: {
                   setHourStep(e.target.value)
                 }}
               >
-
                 {/*TODO fix type error*/}
                 {/*@ts-ignore*/}
                 {[...Array(12).keys()].map((value: number, index) => (

@@ -1,4 +1,4 @@
-import React, {ReactNode} from 'react'
+import React, { ReactNode } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -23,7 +23,13 @@ const StyledGrid = styled.div<{ centerContent: any }>`
   `}
 `
 
-const Grid = ({ centerContent, children }: {centerContent: any, children: ReactNode}) => {
+const Grid = ({
+  centerContent,
+  children,
+}: {
+  centerContent: any
+  children: ReactNode
+}) => {
   return <StyledGrid centerContent={centerContent}>{children}</StyledGrid>
 }
 

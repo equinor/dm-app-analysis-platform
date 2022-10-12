@@ -7,5 +7,5 @@ export const plugins: any = [
     pluginName: 'demoApp',
     pluginType: EDmtPluginType.PAGE,
     component: App,
-  }
+  },
 ]
