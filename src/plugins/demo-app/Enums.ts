@@ -1,3 +1,1 @@
-export enum EBlueprints {
-
-}
+export enum EBlueprints {}
