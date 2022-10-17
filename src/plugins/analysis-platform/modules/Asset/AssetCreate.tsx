@@ -13,11 +13,13 @@ import { CreateAssetForm } from './components'
 // @ts-ignore
 import { NotificationManager } from 'react-notifications'
 import { TAsset } from '../../Types'
-import { AxiosError } from 'axios'
+import { AxiosError, AxiosResponse } from 'axios'
+import { useHistory } from 'react-router-dom'
 
 export const AssetCreate = (): JSX.Element => {
-  const settings = useContext(ApplicationContext)
+  const settings = useContext<any>(ApplicationContext)
   const { tokenData, token } = useContext(AuthContext)
+  const history = useHistory()
   const dmssAPI = new DmssAPI(token)
   const user = getUsername(tokenData)
   const [isLoading, setIsLoading] = useState<boolean>(false)
@@ -42,10 +44,10 @@ export const AssetCreate = (): JSX.Element => {
         document: JSON.stringify(data),
         directory: ASSET_PATH,
       })
-      .then((documentId: any) => {
-        // TODO: Should we use props.history.push instead?
-        //@ts-ignore
-        document.location = `/${settings.urlPath}/view/${DEFAULT_DATASOURCE_ID}/${documentId}`
+      .then((response: AxiosResponse<any>) => {
+        history.push(
+          `/${settings.urlPath}/view/${DEFAULT_DATASOURCE_ID}/${response.data.uid}`
+        )
       })
       .catch((error: AxiosError<ErrorResponse>) => {
         console.error(error)
