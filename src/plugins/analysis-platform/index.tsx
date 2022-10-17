@@ -3,12 +3,13 @@ import { EDmtPluginType } from '@development-framework/dm-core'
 import App from './App'
 import { InspectorView, OperatorView } from './modules/Analysis'
 import { AssetView } from './modules/Asset/AssetView'
-import {EditTask} from "./plugins/task/src/EditTask";
-import {ViewTask} from "./plugins/task/src/ViewTask";
-import {EditInput} from "./plugins/task/src/InputOnly";
-import {EditSimaApplicationInput} from "./plugins/sima-application-input/src/EditSimaApplicationInput";
-import {UpdateInputOnly} from "./plugins/sima-application-input/src/UpdateInputOnly";
-import {ViewSimaApplicationInput} from "./plugins/sima-application-input/src/ViewSimaApplicationInput";
+import { EditTask } from './plugins/task/src/EditTask'
+import { ViewTask } from './plugins/task/src/ViewTask'
+import { EditInput } from './plugins/task/src/InputOnly'
+import { EditSimaApplicationInput } from './plugins/sima-application-input/src/EditSimaApplicationInput'
+import { UpdateInputOnly } from './plugins/sima-application-input/src/UpdateInputOnly'
+import { ViewSimaApplicationInput } from './plugins/sima-application-input/src/ViewSimaApplicationInput'
+import { EditContainer } from './plugins/job-handlers/src/EditContainer'
 
 export const plugins: any = [
   {
@@ -61,10 +62,11 @@ export const plugins: any = [
     pluginType: EDmtPluginType.UI,
     component: ViewSimaApplicationInput,
   },
-
-    //TODO now, I have copied EditTask, ViewTask and EditInput from dmt/packages/plugins/task into src/plugins/analysis-platform/plugins.
-    //Question: is it okay to include plugins inside the analysis-portal plugin? the stuff inside dmt/packages/plugins/task is related to BPs from analysis portal, and I think task should not be a plugin in dm-core-pacakges.
-    // the stuff inside analysis-platform/plugins might requires separate packages (for example EditTask requires Lodash)
+  {
+    pluginName: 'edit-container-job',
+    pluginType: EDmtPluginType.UI,
+    component: EditContainer,
+  },
 ]
 
 export * from './utils/auth'
