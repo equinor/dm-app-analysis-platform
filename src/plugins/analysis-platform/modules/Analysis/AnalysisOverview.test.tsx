@@ -101,7 +101,7 @@ describe('AnalysisOverview', () => {
 
         expect(mock).toHaveBeenCalledWith({
           body: {
-            type: 'AnalysisPlatformDS/Blueprints/Analysis',
+            type: 'AnalysisPlatformDS/models/Analysis',
           },
           dataSources: ['AnalysisPlatformDS'],
           sortByAttribute: undefined,

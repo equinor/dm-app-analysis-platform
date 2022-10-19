@@ -34,7 +34,7 @@ export const EditContainer = (props: IDmtUIPlugin) => {
   )
   const [containerImages, loadingImages] = useSearch<TContainerImage>(
     {
-      type: 'AnalysisPlatformDS/Blueprints/ContainerImage',
+      type: 'AnalysisPlatformDS/models/ContainerImage',
     },
     dataSourceId,
     '_id'

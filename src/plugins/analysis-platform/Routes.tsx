@@ -12,7 +12,6 @@ const Routes: Array<TRoute> = [
   },
   {
     path: '/analyses',
-    //@ts-ignore
     content: AnalysisOverview,
   },
   {

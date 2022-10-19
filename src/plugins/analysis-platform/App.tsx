@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Route } from 'react-router-dom'
+import {Route, BrowserRouter as Router, Switch} from 'react-router-dom'
 import { Layout } from 'antd'
 
 import Routes from './Routes'
@@ -7,6 +7,7 @@ import {
   ApplicationContext,
   Header,
   TApp,
+  FSTreeProvider,
   TLayout,
 } from '@development-framework/dm-core'
 import { backgroundColorDefault } from './components/Design/Colors'
@@ -34,24 +35,31 @@ export default (props: TApp): JSX.Element => {
   const settings = useContext(ApplicationContext)
   const appConfig = useContext(ApplicationContext)
 
-  const urlPath = settings.urlPath ? `/${settings.urlPath}` : ''
-  console.log('appConfig', appConfig)
+
+    plan:
+    få til routing å fungere. Drit i andre datasources, siden dm-cli ikke funker med reset.
+    Av en eller annen grunn vil ikke komponenter definert i Routes rendre når man går til riktig url.
   return (
-    <>
+        // @ts-ignore
+    <FSTreeProvider visibleDataSources={settings.dataSources}>
+        <Router>
+            <Switch>
       {Routes.map((route) => (
         <Route
-          exact
-          path={`${urlPath}/${route.path}`}
+          path={`/ap/${route.path}`}
           key={route.path}
           render={() => (
             <MainLayout
               content={route.content}
+                // @ts-ignore
               settings={settings}
               allApps={[]}
             />
           )}
         />
       ))}
-    </>
+            </Switch>
+            </Router>
+    </FSTreeProvider>
   )
 }
