@@ -6,6 +6,6 @@
   "tabIndex": 3,
   "urlPath": "sima",
   "hidden": false,
-  "visibleDataSources": [ "sima"],
-  "packages": [ "sima/input", "sima/marmo"]
+  "visibleDataSources": ["sima"],
+  "packages": ["sima/input", "sima/marmo"]
 }
