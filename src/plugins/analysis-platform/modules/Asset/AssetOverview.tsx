@@ -41,7 +41,7 @@ export const AssetOverview = (): ReactNode => {
         }}
       >
         {hasDomainRole(tokenData) && (
-          <Link to={`${ANALYSIS_PLATFORM_URLPATH}/asset/new`}>
+          <Link to={`/${ANALYSIS_PLATFORM_URLPATH}/asset/new`}>
             <Button>Create new asset</Button>
           </Link>
         )}

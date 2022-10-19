@@ -62,16 +62,13 @@ const ReadOnlyTextField = (props: { text: string; label: string }) => {
   )
 }
 
-const STaskBlueprint = 'AnalysisPlatformDS/Blueprints/STask'
+const STaskBlueprint = 'AnalysisPlatformDS/models/STask'
 
 export const EditSimaApplicationInput = (props: IDmtUIPlugin) => {
   const { dataSourceId, onOpen, documentId, readOnly } = props
   const [formData, setFormData] = useState<TSIMAApplicationInput | null>(null)
-  const [
-    document,
-    loading,
-    updateDocument,
-  ] = useDocument<TSIMAApplicationInput>(dataSourceId, documentId)
+  const [document, loading, updateDocument] =
+    useDocument<TSIMAApplicationInput>(dataSourceId, documentId)
 
   useEffect(() => {
     if (!document) return
@@ -80,7 +77,7 @@ export const EditSimaApplicationInput = (props: IDmtUIPlugin) => {
 
   function getNewSTaskBody(filename: string): TSTaskBody {
     return {
-      type: 'AnalysisPlatformDS/Blueprints/STask',
+      type: 'AnalysisPlatformDS/models/STask',
       name: filename.replace('.', '_'),
       blob: {
         name: filename,

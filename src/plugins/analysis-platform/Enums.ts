@@ -1,6 +1,6 @@
 export enum EBlueprints {
-  ANALYSIS = 'AnalysisPlatformDS/Blueprints/Analysis',
-  ASSET = 'AnalysisPlatformDS/Blueprints/Asset',
-  TASK = 'WorkflowDS/Blueprints/Task',
-  LOCATION = 'AnalysisPlatformDS/Blueprints/Location',
+  ANALYSIS = 'AnalysisPlatformDS/models/Analysis',
+  ASSET = 'AnalysisPlatformDS/models/Asset',
+  TASK = 'WorkflowDS/models/Task',
+  LOCATION = 'AnalysisPlatformDS/models/Location',
 }
