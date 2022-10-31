@@ -17,7 +17,6 @@ const settings = {
   actions: '',
   file_loc: '',
   data_source_aliases: '',
-  urlPath: 'test-path',
 }
 
 describe('AnalysisOverview', () => {
@@ -62,7 +61,7 @@ describe('AnalysisOverview', () => {
         expect(createAnalysisButton).toBeTruthy()
         // @ts-ignore
         expect(createAnalysisButton.closest('a').getAttribute('href')).toEqual(
-          '/ap/analysis/new'
+          '/analysis/new'
         )
       })
     })

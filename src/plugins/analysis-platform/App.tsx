@@ -19,10 +19,10 @@ const MainLayout = (props: TLayout) => {
       <Header
         allApps={[]}
         appName={settings.label ?? settings.name}
-        urlPath={settings.urlPath}
+        urlPath={''}
       />
       <Layout>
-        <Menu appRootPath={settings.urlPath} />
+        <Menu />
         <Content settings={settings} content={content} />
       </Layout>
     </>
@@ -36,9 +36,8 @@ export default (): JSX.Element => {
     <FSTreeProvider visibleDataSources={settings.dataSources}>
       <Switch>
         {Routes.map((route) => {
-          console.log('r: ', route)
           return (
-            <Route path={`/ap${route.path}`} exact key={route.path}>
+            <Route path={`${route.path}`} exact key={route.path}>
               <MainLayout
                 content={route.content}
                 settings={settings}

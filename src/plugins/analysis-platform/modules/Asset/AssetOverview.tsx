@@ -11,13 +11,13 @@ import { AssetTable } from './components'
 import { Link, useLocation } from 'react-router-dom'
 import { TAsset } from '../../Types'
 import { EBlueprints } from '../../Enums'
-import { ANALYSIS_PLATFORM_URLPATH, DEFAULT_DATASOURCE_ID } from '../../const'
+import { DEFAULT_DATASOURCE_ID } from '../../const'
 
 export const AssetOverview = (): ReactNode => {
   const { tokenData } = useContext(AuthContext)
   const location = useLocation()
   const analysisOverviewPage = {
-    pathname: `/${ANALYSIS_PLATFORM_URLPATH}/analyses`,
+    pathname: `/analyses`,
     state: location.state,
   }
   const [assets, isLoading] = useSearch<TAsset>(
@@ -41,7 +41,7 @@ export const AssetOverview = (): ReactNode => {
         }}
       >
         {hasDomainRole(tokenData) && (
-          <Link to={`/${ANALYSIS_PLATFORM_URLPATH}/asset/new`}>
+          <Link to={`/asset/new`}>
             <Button>Create new asset</Button>
           </Link>
         )}

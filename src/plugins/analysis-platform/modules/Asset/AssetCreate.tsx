@@ -45,9 +45,7 @@ export const AssetCreate = (): JSX.Element => {
         directory: ASSET_PATH,
       })
       .then((response: AxiosResponse<any>) => {
-        history.push(
-          `/${settings.urlPath}/view/${DEFAULT_DATASOURCE_ID}/${response.data.uid}`
-        )
+        history.push(`/view/${DEFAULT_DATASOURCE_ID}/${response.data.uid}`)
       })
       .catch((error: AxiosError<ErrorResponse>) => {
         console.error(error)
