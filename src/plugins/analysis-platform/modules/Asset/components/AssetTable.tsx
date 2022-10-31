@@ -36,7 +36,7 @@ export const AssetTable = (props: TAssetTableProps) => {
   const settings: TDmtSettings = useContext(ApplicationContext)
 
   const getViewUrl = (rowDocumentId: string): string =>
-    `/${settings.urlPath}/view/${DEFAULT_DATASOURCE_ID}/${rowDocumentId}`
+    `/view/${DEFAULT_DATASOURCE_ID}/${rowDocumentId}`
 
   const rows: Array<TAssetRow> = []
   assets?.forEach((asset: TAsset, index: number) => {

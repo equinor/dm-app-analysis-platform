@@ -6,7 +6,7 @@ import { View } from './modules'
 
 const Routes: Array<TRoute> = [
   {
-    path: '',
+    path: '/',
     //@ts-ignore
     content: AssetOverview,
   },

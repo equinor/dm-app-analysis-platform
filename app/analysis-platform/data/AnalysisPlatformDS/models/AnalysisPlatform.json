@@ -11,7 +11,7 @@
       "optional": true
     },
     {
-      "name": "urlPath",
+      "name": "dataSources",
       "type": "system/SIMOS/BlueprintAttribute",
       "attributeType": "string",
       "optional": false

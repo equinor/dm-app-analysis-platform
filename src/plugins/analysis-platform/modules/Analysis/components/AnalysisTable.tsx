@@ -38,10 +38,9 @@ export const AnalysisTable = (props: TAnalysisTableProps) => {
     data_source: string
     entity_id: string
   }>()
-  const settings: TDmtSettings = useContext(ApplicationContext)
 
   const getViewUrl = (index: number, rowDocumentId: string): string => {
-    const urlBase = `/${settings.urlPath}/view`
+    const urlBase = `/view`
 
     if (data_source && entity_id) {
       // We're viewing an asset. Access the .analyses subdocuments

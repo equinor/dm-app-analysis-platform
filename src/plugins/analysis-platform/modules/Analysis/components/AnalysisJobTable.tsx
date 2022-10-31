@@ -19,7 +19,6 @@ import styled from 'styled-components'
 import { AxiosError, AxiosResponse } from 'axios'
 // @ts-ignore
 import { NotificationManager } from 'react-notifications'
-import { ANALYSIS_PLATFORM_URLPATH } from '../../../const'
 
 type TAnalysisJobTableProps = {
   jobs: any
@@ -48,9 +47,9 @@ const JobRow = (props: {
   const dmssAPI = new DmssAPI(token)
   const [loading, setLoading] = useState<boolean>(false)
   const [jobStatus, setJobStatus] = useState<EJobStatus>(EJobStatus.UNKNOWN)
-  const jobURL: string = `/${ANALYSIS_PLATFORM_URLPATH}/view/${dataSourceId}/${analysisId}.jobs.${index}`
+  const jobURL: string = `/view/${dataSourceId}/${analysisId}.jobs.${index}`
   const resultURL = job.result?._id
-    ? `/${ANALYSIS_PLATFORM_URLPATH}/view/${dataSourceId}/${job.result?._id}`
+    ? `/view/${dataSourceId}/${job.result?._id}`
     : undefined
 
   const viewJob = () => {
