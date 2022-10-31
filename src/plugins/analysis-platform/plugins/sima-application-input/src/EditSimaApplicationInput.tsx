@@ -67,8 +67,11 @@ const STaskBlueprint = 'AnalysisPlatformDS/models/STask'
 export const EditSimaApplicationInput = (props: IDmtUIPlugin) => {
   const { dataSourceId, onOpen, documentId, readOnly } = props
   const [formData, setFormData] = useState<TSIMAApplicationInput | null>(null)
-  const [document, loading, updateDocument] =
-    useDocument<TSIMAApplicationInput>(dataSourceId, documentId)
+  const [
+    document,
+    loading,
+    updateDocument,
+  ] = useDocument<TSIMAApplicationInput>(dataSourceId, documentId)
 
   useEffect(() => {
     if (!document) return
