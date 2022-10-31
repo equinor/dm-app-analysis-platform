@@ -7,7 +7,6 @@ import { View } from './modules'
 const Routes: Array<TRoute> = [
   {
     path: '/',
-    //@ts-ignore
     content: AssetOverview,
   },
   {
@@ -16,27 +15,22 @@ const Routes: Array<TRoute> = [
   },
   {
     path: '/asset/new',
-    //@ts-ignore
     content: AssetCreate,
   },
   {
     path: '/analysis/new/:asset_id',
-    //@ts-ignore
     content: AnalysisCreate,
   },
   {
     path: '/analysis/new',
-    //@ts-ignore
     content: AnalysisCreate,
   },
   {
     path: '/analysis/:data_source/:entity_id',
-    //@ts-ignore
     content: View,
   },
   {
     path: '/view/:data_source/:entity_id',
-    //@ts-ignore
     content: View,
   },
 ]
