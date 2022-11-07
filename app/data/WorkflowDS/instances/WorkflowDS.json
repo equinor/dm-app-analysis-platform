@@ -1,0 +1,6 @@
+{
+  "_id": "4493c9b0-d505-46c9-a157-94c79f4d7c8c",
+  "type": "WorkflowDS/Blueprints/WorkflowDS",
+  "label": "Workflow DS",
+  "dataSources": ["WorkflowDS"]
+}
