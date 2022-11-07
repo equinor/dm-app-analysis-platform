@@ -2,7 +2,7 @@
  "name" : "Report",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity", "/report/ReportItemContainer"],
+ "extends" : ["system/SIMOS/NamedEntity", "/marmo/report/ReportItemContainer"],
  "attributes" : [{
    "name" : "title",
    "type" : "system/SIMOS/BlueprintAttribute",

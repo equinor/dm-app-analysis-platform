@@ -6,7 +6,7 @@
  "attributes" : [{
    "name" : "items",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "/report/ReportItem",
+   "attributeType" : "/marmo/report/ReportItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true

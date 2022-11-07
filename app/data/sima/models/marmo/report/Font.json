@@ -17,7 +17,7 @@
    "name" : "style",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/report/FontStyle",
+   "enumType" : "/marmo/report/FontStyle",
    "optional" : true,
    "default" : "NORMAL"
   }],

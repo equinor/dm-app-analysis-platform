@@ -2,7 +2,7 @@
  "name" : "Paragraph",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity", "/report/ReportItem"],
+ "extends" : ["system/SIMOS/NamedEntity", "/marmo/report/ReportItem"],
  "attributes" : [{
    "name" : "text",
    "type" : "system/SIMOS/BlueprintAttribute",

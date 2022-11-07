@@ -52,31 +52,31 @@
   }, {
    "name" : "titlefont",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "/report/Font",
+   "attributeType" : "/marmo/report/Font",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "legendfont",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "/report/Font",
+   "attributeType" : "/marmo/report/Font",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "xaxis",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "/report/Axis",
+   "attributeType" : "/marmo/report/Axis",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "yaxis",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "/report/Axis",
+   "attributeType" : "/marmo/report/Axis",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "lines",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "/report/PlotLine",
+   "attributeType" : "/marmo/report/PlotLine",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false

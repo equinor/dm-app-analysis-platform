@@ -2,7 +2,7 @@
  "name" : "StringColumn",
  "type" : "system/SIMOS/Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity", "/report/Column"],
+ "extends" : ["system/SIMOS/NamedEntity", "/marmo/report/Column"],
  "attributes" : [{
    "name" : "cells",
    "type" : "system/SIMOS/BlueprintAttribute",

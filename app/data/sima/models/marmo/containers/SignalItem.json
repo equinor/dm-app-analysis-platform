@@ -6,7 +6,7 @@
  "attributes" : [{
    "name" : "attributes",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "/containers/Attribute",
+   "attributeType" : "/marmo/containers/Attribute",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true

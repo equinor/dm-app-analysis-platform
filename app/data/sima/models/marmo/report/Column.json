@@ -16,7 +16,7 @@
   }, {
    "name" : "headerfont",
    "type" : "system/SIMOS/BlueprintAttribute",
-   "attributeType" : "/report/Font",
+   "attributeType" : "/marmo/report/Font",
    "contained" : true,
    "optional" : true
   }],
