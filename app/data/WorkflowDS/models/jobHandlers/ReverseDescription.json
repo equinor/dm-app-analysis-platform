@@ -9,7 +9,7 @@
       "attributeType": "string",
       "type": "system/SIMOS/BlueprintAttribute",
       "label": "Type",
-      "default": "WorkflowDS/Blueprints/jobHandlers/ReverseDescription",
+      "default": "WorkflowDS/models/jobHandlers/ReverseDescription",
       "optional": false
     }
   ],
