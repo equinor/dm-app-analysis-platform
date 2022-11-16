@@ -46,7 +46,7 @@
    "name" : "size",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/report/PlotSize",
+   "enumType" : "/marmo/report/PlotSize",
    "optional" : true,
    "default" : "DYNAMIC"
   }, {

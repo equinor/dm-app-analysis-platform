@@ -44,14 +44,14 @@
    "name" : "linestyle",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/report/LineStyle",
+   "enumType" : "/marmo/report/LineStyle",
    "optional" : true,
    "default" : "SOLID"
   }, {
    "name" : "pointstyle",
    "type" : "system/SIMOS/BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/report/PointStyle",
+   "enumType" : "/marmo/report/PointStyle",
    "optional" : true,
    "default" : "NONE"
   }, {
