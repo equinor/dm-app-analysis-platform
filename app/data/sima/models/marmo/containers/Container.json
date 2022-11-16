@@ -1,0 +1,25 @@
+{
+ "name" : "Container",
+ "type" : "system/SIMOS/Blueprint",
+ "description" : "Containers contain signals and other containers",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity", "/marmo/containers/SignalItem"],
+ "attributes" : [{
+   "name" : "signals",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/marmo/containers/Signal",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }, {
+   "name" : "containers",
+   "type" : "system/SIMOS/BlueprintAttribute",
+   "attributeType" : "/marmo/containers/Container",
+   "dimensions" : "*",
+   "contained" : true,
+   "optional" : true
+  }],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+

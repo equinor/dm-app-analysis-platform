@@ -1,0 +1,9 @@
+{
+ "name" : "Appendix",
+ "type" : "system/SIMOS/Blueprint",
+ "abstract" : false,
+ "extends" : ["system/SIMOS/NamedEntity", "marmo/report/Section"],
+ "storageRecipes" : [],
+ "uiRecipes" : []
+}
+
