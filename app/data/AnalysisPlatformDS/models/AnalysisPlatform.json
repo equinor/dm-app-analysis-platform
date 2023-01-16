@@ -15,6 +15,12 @@
       "type": "CORE:BlueprintAttribute",
       "attributeType": "string",
       "optional": false
+    },
+    {
+      "name": "name",
+      "type": "CORE:BlueprintAttribute",
+      "attributeType": "string",
+      "optional": false
     }
   ]
 }

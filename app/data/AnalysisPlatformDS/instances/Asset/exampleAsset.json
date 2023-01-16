@@ -1,6 +1,6 @@
 {
   "_id": "4483c9b0-d505-46c9-a157-94c79f4d7a6b",
-  "type": "AnalysisPlatformDS/models/Asset",
+  "type": "/models/Asset",
   "name": "exampleAsset",
   "description": "example asset",
   "creator": "MOAMU",
@@ -9,20 +9,20 @@
   "analyses": [
     {
       "_id": "4483c9b0-d505-46c9-a157-94c79f4d7a6a",
-      "type": "AnalysisPlatformDS/models/Analysis",
+      "type": "/models/Analysis",
       "name": "exampleAnalysis",
       "contained": false
     },
     {
       "_id": "5583c9b0-d505-46c9-a157-94c79f4d7a6a",
-      "type": "AnalysisPlatformDS/models/Analysis",
+      "type": "/models/Analysis",
       "name": "simaJobExampleAnalysis",
       "contained": false
     }
   ],
   "location": {
     "_id": "4483c9b0-d505-46c9-a157-94c79f4d7a6c",
-    "type": "AnalysisPlatformDS/models/Location",
+    "type": "/models/Location",
     "name": "exampleLocation",
     "contained": false
   },

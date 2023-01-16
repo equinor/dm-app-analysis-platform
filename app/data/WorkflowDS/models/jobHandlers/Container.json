@@ -14,7 +14,7 @@
       "optional": true
     },
     {
-      "attributeType": "AnalysisPlatformDS/Blueprints/ContainerImage",
+      "attributeType": "dmss://AnalysisPlatformDS/models/ContainerImage",
       "type": "system/SIMOS/BlueprintAttribute",
       "name": "image"
     },

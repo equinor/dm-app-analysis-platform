@@ -9,7 +9,7 @@
       "category": "view",
       "roles": [],
       "config": {
-        "type": "DMT-Internal/DMT/ui-plugins/tabs/Config",
+        "type": "/models/ui-plugins/tabs/Config",
         "subCategories": ["view"]
       }
     }
