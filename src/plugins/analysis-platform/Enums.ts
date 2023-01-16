@@ -3,6 +3,6 @@ export enum EBlueprints {
   ASSET = 'dmss://AnalysisPlatformDS/models/Asset',
   TASK = 'dmss://WorkflowDS/models/Task',
   LOCATION = 'dmss://AnalysisPlatformDS/models/Location',
-  CONTAINER_IMAGE = "dmss://AnalysisPlatformDS/models/ContainerImage",
-  STASK = "dmss://AnalysisPlatformDS/models/STask"
+  CONTAINER_IMAGE = 'dmss://AnalysisPlatformDS/models/ContainerImage',
+  STASK = 'dmss://AnalysisPlatformDS/models/STask',
 }
