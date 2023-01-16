@@ -13,7 +13,7 @@ import { ChangeEvent, useEffect, useState } from 'react'
 import { Button, Progress, Typography } from '@equinor/eds-core-react'
 import styled from 'styled-components'
 import _ from 'lodash'
-import {EBlueprints} from "../../../Enums";
+import { EBlueprints } from '../../../Enums'
 
 const Wrapper = styled.div`
   margin: 10px;

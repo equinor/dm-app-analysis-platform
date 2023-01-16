@@ -3,7 +3,7 @@ import React from 'react'
 import { AnalysisOverview } from './AnalysisOverview'
 import { DMSS_ADMIN_ROLE, DOMAIN_ROLES } from '@development-framework/dm-core'
 import { mockSearch, TestWrapper } from '../../utils/test-utils'
-import {EBlueprints} from "../../Enums";
+import { EBlueprints } from '../../Enums'
 
 const settings = {
   name: '',

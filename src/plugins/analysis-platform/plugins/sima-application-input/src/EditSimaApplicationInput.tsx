@@ -32,7 +32,7 @@ import {
 } from './components'
 import _ from 'lodash'
 import { TSIMAApplicationInput } from './Types'
-import {EBlueprints} from "../../../Enums";
+import { EBlueprints } from '../../../Enums'
 
 const ReadOnlyPathTextField = (props: { path: string; label: string }) => {
   return (
