@@ -5,7 +5,7 @@ import {
   TContainerImage,
   useDocument,
   getFullContainerImageName,
-  // useSearch,
+  useSearch,
   Loading,
 } from '@development-framework/dm-core'
 import * as React from 'react'
@@ -32,13 +32,13 @@ export const EditContainer = (props: IUIPlugin) => {
     idReference,
     999
   )
-  // const [containerImages, loadingImages] = useSearch<TContainerImage>(
-  //   {
-  //     type: 'AnalysisPlatformDS/models/ContainerImage',
-  //   },
-  //   dataSourceId,
-  //   '_id'
-  // )
+  const [containerImages, loadingImages] = useSearch<TContainerImage>(
+    {
+      type: 'AnalysisPlatformDS/models/ContainerImage',
+    },
+    dataSourceId,
+    '_id'
+  )
 
   useEffect(() => {
     if (!document) return
@@ -67,8 +67,7 @@ export const EditContainer = (props: IUIPlugin) => {
       return ''
     }
   }
-  if (loadingDocument) {
-    // || loadingImages) { TODO fix after usesearch fix
+  if (loadingDocument || loadingImages) {
     return <Loading />
   }
 
@@ -94,19 +93,18 @@ export const EditContainer = (props: IUIPlugin) => {
               onChange={(e: ChangeEvent<HTMLSelectElement>) => {
                 setFormData({ ...formData, image: JSON.parse(e.target.value) })
               }}
-              // value={getImageStoredInFormData(containerImages, formData)} TODO enable after usesearch fix
+              value={getImageStoredInFormData(containerImages, formData)}
             >
               <option value={''} selected disabled hidden>
                 Choose image...
               </option>
-              {/*todo enable after usesearch fix*/}
-              {/*{containerImages.map((image: TContainerImage, index: number) => {*/}
-              {/*  return (*/}
-              {/*    <option key={index} value={JSON.stringify(image)}>*/}
-              {/*      {getFullContainerImageName(image)}*/}
-              {/*    </option>*/}
-              {/*  )*/}
-              {/*})}*/}
+              {containerImages.map((image: TContainerImage, index: number) => {
+                return (
+                  <option key={index} value={JSON.stringify(image)}>
+                    {getFullContainerImageName(image)}
+                  </option>
+                )
+              })}
             </Select>
           </HeaderWrapper>
           {/*<HeaderWrapper>*/}

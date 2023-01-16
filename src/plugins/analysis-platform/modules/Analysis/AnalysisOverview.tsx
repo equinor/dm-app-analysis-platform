@@ -1,7 +1,7 @@
 import {
   hasExpertRole,
   Loading,
-  // useSearch,
+  useSearch,
 } from '@development-framework/dm-core'
 import React, { ReactNode, useContext } from 'react'
 import { DEFAULT_DATASOURCE_ID } from '../../const'
@@ -14,14 +14,14 @@ import { AuthContext } from 'react-oauth2-code-pkce'
 export const AnalysisOverview = (): JSX.Element => {
   const { tokenData } = useContext(AuthContext)
 
-  // const [analyses, isLoading] = useSearch<TAnalysis>(
-  //   {
-  //     type: EBlueprints.ANALYSIS,
-  //   },
-  //   DEFAULT_DATASOURCE_ID
-  // )
+  const [analyses, isLoading] = useSearch<TAnalysis>(
+    {
+      type: EBlueprints.ANALYSIS,
+    },
+    DEFAULT_DATASOURCE_ID
+  )
 
-  // if (isLoading) return <Loading />
+  if (isLoading) return <Loading />
 
   return (
     <>
@@ -31,7 +31,7 @@ export const AnalysisOverview = (): JSX.Element => {
           <Divider variant="medium" />
         </>
       )}
-      {/*<AnalysisTable analyses={analyses} /> // todo enable after usersearch fix*/}
+      <AnalysisTable analyses={analyses} />
     </>
   )
 }
