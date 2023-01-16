@@ -1,29 +1,29 @@
 {
   "_id": "5583c9b0-d505-46c9-a157-94c79f4d7a6a",
-  "type": "AnalysisPlatformDS/models/Analysis",
+  "type": "models/Analysis",
   "name": "simaJobExampleAnalysis",
   "description": "example analysis",
   "creator": "STOO",
   "created": "2022-03-02T14:15:59.601Z",
   "updated": "2022-03-02T14:15:59.601Z",
   "task": {
-    "type": "WorkflowDS/models/Task",
+    "type": "dmss://WorkflowDS/models/Task",
     "name": "task-sKBDJzBE",
     "description": "",
     "label": "",
-    "inputType": "AnalysisPlatformDS/models/SIMAApplicationInput",
+    "inputType": "/models/SIMAApplicationInput",
     "applicationInput": {
       "_id": "9429e1f3-e94d-4cde-9fb6-a08031b0b04a",
       "name": "ULS_Intact",
-      "type": "AnalysisPlatformDS/models/SIMAApplicationInput",
+      "type": "/models/SIMAApplicationInput",
       "contained": false
     },
     "outputType": "CORE:NamedEntity",
     "runner": {
-      "type": "WorkflowDS/models/jobHandlers/Container",
+      "type": "dmss://WorkflowDS/models/jobHandlers/Container",
       "image": {
         "imageName": "dmt-job/srs",
-        "type": "AnalysisPlatformDS/models/ContainerImage",
+        "type": "/models/ContainerImage",
         "version": "latest",
         "registryName": "datamodelingtool.azurecr.io",
         "description": ""

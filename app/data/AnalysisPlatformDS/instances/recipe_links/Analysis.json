@@ -9,7 +9,7 @@
       "category": "view",
       "roles": ["inspector"],
       "config": {
-        "type": "DMT-Internal/DMT/ui-plugins/tabs/Config",
+        "type": "/models/ui-plugins/tabs/Config",
         "subCategories": ["view"]
       }
     },
@@ -20,7 +20,7 @@
       "category": "view",
       "roles": ["operator", "expert-operator", "domain-developer", "domain-expert", "dmss-admin"],
       "config": {
-        "type": "DMT-Internal/DMT/ui-plugins/tabs/Config",
+        "type": "/models/ui-plugins/tabs/Config",
         "subCategories": ["view"]
       }
     }
