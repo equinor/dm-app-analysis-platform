@@ -16,13 +16,5 @@
       "attributeType": "string",
       "optional": false
     }
-  ],
-  "uiRecipes": [
-    {
-      "name": "Default",
-      "type": "CORE:UiRecipe",
-      "plugin": "analysisPlatformApp",
-      "category": "Application"
-    }
   ]
 }

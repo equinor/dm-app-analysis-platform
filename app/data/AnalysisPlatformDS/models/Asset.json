@@ -66,18 +66,5 @@
       "attributeType": "string",
       "optional": true
     }
-  ],
-  "uiRecipes": [
-    {
-      "name": "View Asset",
-      "type": "CORE:UiRecipe",
-      "plugin": "view-asset",
-      "category": "view",
-      "roles": [],
-      "config": {
-        "type": "DMT-Internal/DMT/ui-plugins/tabs/Config",
-        "subCategories": ["view"]
-      }
-    }
   ]
 }

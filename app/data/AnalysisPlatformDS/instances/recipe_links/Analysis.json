@@ -1,0 +1,33 @@
+{
+  "type": "CORE:RecipeLink",
+  "_blueprintPath_": "/models/Analysis",
+  "uiRecipes": [
+    {
+      "name": "Inspector view",
+      "type": "CORE:UiRecipe",
+      "plugin": "view-analysis-inspector",
+      "category": "view",
+      "roles": ["inspector"],
+      "config": {
+        "type": "DMT-Internal/DMT/ui-plugins/tabs/Config",
+        "subCategories": ["view"]
+      }
+    },
+    {
+      "name": "Operator view",
+      "type": "CORE:UiRecipe",
+      "plugin": "view-analysis-operator",
+      "category": "view",
+      "roles": ["operator", "expert-operator", "domain-developer", "domain-expert", "dmss-admin"],
+      "config": {
+        "type": "DMT-Internal/DMT/ui-plugins/tabs/Config",
+        "subCategories": ["view"]
+      }
+    }
+  ]
+}
+
+
+
+
+

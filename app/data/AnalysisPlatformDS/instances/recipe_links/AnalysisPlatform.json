@@ -1,0 +1,12 @@
+{
+  "type": "CORE:RecipeLink",
+  "_blueprintPath_": "/models/AnalysisPlatform",
+  "uiRecipes": [
+    {
+      "name": "Default",
+      "type": "CORE:UiRecipe",
+      "plugin": "analysisPlatformApp",
+      "category": "Application"
+    }
+  ]
+}

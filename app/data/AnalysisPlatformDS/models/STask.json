@@ -1,7 +1,7 @@
 {
   "name": "STask",
   "type": "CORE:Blueprint",
-  "extends": ["CORE:DefaultUiRecipes", "CORE:NamedEntity"],
+  "extends": ["CORE:NamedEntity"],
   "description": "Contains metadata for a SIMOS STask, and a Blob type for the blob data",
   "attributes": [
     {
@@ -17,14 +17,6 @@
       "description": "",
       "attributeType": "string",
       "optional": true
-    }
-  ],
-  "uiRecipes": [
-    {
-      "name": "Tabs",
-      "type": "CORE:UiRecipe",
-      "plugin": "tabs",
-      "category": "container"
     }
   ]
 }

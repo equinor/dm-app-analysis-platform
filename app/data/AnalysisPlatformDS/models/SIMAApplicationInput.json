@@ -2,7 +2,6 @@
   "name": "SIMAApplicationInput",
   "type": "CORE:Blueprint",
   "extends": [
-    "CORE:DefaultUiRecipes",
     "CORE:NamedEntity"
   ],
   "description": "Entities from this blueprint are used as input to a container (as json string) when running SIMA jobs",
@@ -80,39 +79,6 @@
       "attributeType": "string",
       "default": "/var/opt/sima/storage/outputs/results_file.json",
       "optional": true
-    }
-  ],
-  "uiRecipes": [
-    {
-      "name": "Tabs",
-      "label": "Tabs",
-      "type": "CORE:UiRecipe",
-      "plugin": "tabs",
-      "category": "container",
-      "config": {
-        "type": "DMT-Internal/DMT/ui-plugins/tabs/Config",
-        "subCategories": ["edit"]
-      }
-    },
-    {
-      "name": "Edit",
-      "type": "CORE:UiRecipe",
-      "plugin": "edit-sima-application-input",
-      "category": "edit",
-      "roles": ["dmss-admin", "domain-expert"]
-    },
-    {
-      "name": "View",
-      "type": "CORE:UiRecipe",
-      "plugin": "view-sima-application-input",
-      "category": "view"
-    },
-    {
-      "name": "Analysis Input",
-      "type": "CORE:UiRecipe",
-      "plugin": "edit-sima-application-input-input",
-      "category": "edit",
-      "roles": ["operator", "expert-operator"]
     }
   ]
 }

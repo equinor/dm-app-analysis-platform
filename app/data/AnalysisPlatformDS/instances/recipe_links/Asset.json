@@ -1,0 +1,19 @@
+{
+  "type": "CORE:RecipeLink",
+  "_blueprintPath_": "/models/Asset",
+  "uiRecipes": [
+    {
+      "name": "View Asset",
+      "type": "CORE:UiRecipe",
+      "plugin": "view-asset",
+      "category": "view",
+      "roles": [],
+      "config": {
+        "type": "DMT-Internal/DMT/ui-plugins/tabs/Config",
+        "subCategories": ["view"]
+      }
+    }
+  ]
+}
+
+

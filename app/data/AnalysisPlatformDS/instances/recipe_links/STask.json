@@ -1,0 +1,16 @@
+{
+  "type": "CORE:RecipeLink",
+  "_blueprintPath_": "/models/STask",
+  "uiRecipes": [
+    {
+      "name": "Tabs",
+      "type": "CORE:UiRecipe",
+      "plugin": "tabs",
+      "category": "container"
+    }
+  ]
+}
+
+
+
+

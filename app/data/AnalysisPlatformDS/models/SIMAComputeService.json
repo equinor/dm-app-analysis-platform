@@ -2,7 +2,6 @@
   "name": "SIMAComputeService",
   "type": "CORE:Blueprint",
   "extends": [
-    "CORE:DefaultUiRecipes",
     "CORE:NamedEntity"
   ],
   "description": ""
