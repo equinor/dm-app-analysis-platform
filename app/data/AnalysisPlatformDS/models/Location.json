@@ -1,7 +1,7 @@
 {
     "name": "Location",
     "type": "CORE:Blueprint",
-    "extends": ["CORE:DefaultUiRecipes", "CORE:NamedEntity"],
+    "extends": ["CORE:NamedEntity"],
     "description": "Coordinates for a geographical location",
     "attributes": [
       {
