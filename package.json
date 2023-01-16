@@ -10,9 +10,9 @@
     "styled-components": "5.2.3"
   },
   "dependencies": {
-    "@development-framework/dm-core": "1.0.16",
-    "@development-framework/tabs": "1.0.0",
-    "@development-framework/yaml-view": "1.0.2",
+    "@development-framework/dm-core": "1.0.31",
+    "@development-framework/tabs": "1.0.2",
+    "@development-framework/yaml-view": "1.0.4",
     "@equinor/eds-core-react": "^0.20.0",
     "@equinor/eds-icons": "^0.12.0",
     "@equinor/eds-tokens": "^0.7.0",
