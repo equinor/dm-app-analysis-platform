@@ -18,7 +18,7 @@
       "type": "AnalysisPlatformDS/models/SIMAApplicationInput",
       "contained": false
     },
-    "outputType": "system/SIMOS/NamedEntity",
+    "outputType": "CORE:NamedEntity",
     "runner": {
       "type": "WorkflowDS/models/jobHandlers/Container",
       "image": {

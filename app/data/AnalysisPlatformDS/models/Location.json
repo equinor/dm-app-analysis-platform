@@ -1,22 +1,22 @@
 {
     "name": "Location",
-    "type": "system/SIMOS/Blueprint",
-    "extends": ["system/SIMOS/DefaultUiRecipes", "system/SIMOS/NamedEntity"],
+    "type": "CORE:Blueprint",
+    "extends": ["CORE:DefaultUiRecipes", "CORE:NamedEntity"],
     "description": "Coordinates for a geographical location",
     "attributes": [
       {
         "name": "lat",
-        "type": "system/SIMOS/BlueprintAttribute",
+        "type": "CORE:BlueprintAttribute",
         "attributeType": "number"
       },
       {
         "name": "long",
-        "type": "system/SIMOS/BlueprintAttribute",
+        "type": "CORE:BlueprintAttribute",
         "attributeType": "number"
       },
       {
         "name": "label",
-        "type": "system/SIMOS/BlueprintAttribute",
+        "type": "CORE:BlueprintAttribute",
         "attributeType": "string",
         "optional": true
       }

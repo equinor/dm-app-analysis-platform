@@ -1,18 +1,18 @@
 {
   "name": "Asset",
-  "type": "system/SIMOS/Blueprint",
-  "extends": ["system/SIMOS/NamedEntity"],
+  "type": "CORE:Blueprint",
+  "extends": ["CORE:NamedEntity"],
   "description": "",
   "attributes": [
     {
       "name": "label",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "attributeType": "string",
       "optional": true
     },
     {
       "name": "analyses",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "attributeType": "/Analysis",
       "optional": false,
       "default": [],
@@ -20,49 +20,49 @@
     },
     {
       "name": "location",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "attributeType": "/Location",
       "optional": true,
       "contained": false
     },
     {
       "name": "start",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "attributeType": "string",
       "optional": true
     },
     {
       "name": "end",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "attributeType": "string",
       "optional": true
     },
     {
       "name": "description",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "attributeType": "string",
       "optional": true
     },
     {
       "name": "contact",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "attributeType": "string",
       "optional": true
     },
     {
       "name": "creator",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "attributeType": "string"
     },
     {
       "name": "created",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "attributeType": "string",
       "optional": true
     },
     {
       "name": "updated",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "attributeType": "string",
       "optional": true
     }
@@ -70,7 +70,7 @@
   "uiRecipes": [
     {
       "name": "View Asset",
-      "type": "system/SIMOS/UiRecipe",
+      "type": "CORE:UiRecipe",
       "plugin": "view-asset",
       "category": "view",
       "roles": [],

@@ -1,9 +1,9 @@
 {
   "name": "SIMAComputeService",
-  "type": "system/SIMOS/Blueprint",
+  "type": "CORE:Blueprint",
   "extends": [
-    "system/SIMOS/DefaultUiRecipes",
-    "system/SIMOS/NamedEntity"
+    "CORE:DefaultUiRecipes",
+    "CORE:NamedEntity"
   ],
   "description": ""
 }

@@ -4,7 +4,7 @@
   "name": "dummy",
   "blob": {
     "name": "/STasks/dummy.stask",
-    "type": "system/SIMOS/Blob",
+    "type": "CORE:Blob",
     "_blob_id": "04cf2783-6118-4bfd-a427-9485b00fa9da"
   }
 }
