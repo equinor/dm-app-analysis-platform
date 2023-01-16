@@ -32,6 +32,7 @@ import {
 } from './components'
 import _ from 'lodash'
 import { TSIMAApplicationInput } from './Types'
+import {EBlueprints} from "../../../Enums";
 
 const ReadOnlyPathTextField = (props: { path: string; label: string }) => {
   return (
@@ -62,7 +63,7 @@ const ReadOnlyTextField = (props: { text: string; label: string }) => {
   )
 }
 
-const STaskBlueprint = 'AnalysisPlatformDS/models/STask'
+const STaskBlueprint = EBlueprints.STASK
 
 export const EditSimaApplicationInput = (props: IUIPlugin) => {
   const { idReference, onOpen, readOnly } = props
@@ -81,7 +82,7 @@ export const EditSimaApplicationInput = (props: IUIPlugin) => {
 
   function getNewSTaskBody(filename: string): TSTaskBody {
     return {
-      type: 'AnalysisPlatformDS/models/STask',
+      type: EBlueprints.STASK,
       name: filename.replace('.', '_'),
       blob: {
         name: filename,

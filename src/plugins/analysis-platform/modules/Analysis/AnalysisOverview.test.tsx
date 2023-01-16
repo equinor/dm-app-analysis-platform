@@ -3,6 +3,7 @@ import React from 'react'
 import { AnalysisOverview } from './AnalysisOverview'
 import { DMSS_ADMIN_ROLE, DOMAIN_ROLES } from '@development-framework/dm-core'
 import { mockSearch, TestWrapper } from '../../utils/test-utils'
+import {EBlueprints} from "../../Enums";
 
 const settings = {
   name: '',
@@ -100,7 +101,7 @@ describe('AnalysisOverview', () => {
 
         expect(mock).toHaveBeenCalledWith({
           body: {
-            type: 'AnalysisPlatformDS/models/Analysis',
+            type: EBlueprints.ANALYSIS,
           },
           dataSources: ['AnalysisPlatformDS'],
           sortByAttribute: undefined,

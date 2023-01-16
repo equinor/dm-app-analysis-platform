@@ -13,6 +13,7 @@ import { ChangeEvent, useEffect, useState } from 'react'
 import { Button, Progress, Typography } from '@equinor/eds-core-react'
 import styled from 'styled-components'
 import _ from 'lodash'
+import {EBlueprints} from "../../../Enums";
 
 const Wrapper = styled.div`
   margin: 10px;
@@ -34,7 +35,7 @@ export const EditContainer = (props: IUIPlugin) => {
   )
   const [containerImages, loadingImages] = useSearch<TContainerImage>(
     {
-      type: 'AnalysisPlatformDS/models/ContainerImage',
+      type: EBlueprints.CONTAINER_IMAGE,
     },
     dataSourceId,
     '_id'
