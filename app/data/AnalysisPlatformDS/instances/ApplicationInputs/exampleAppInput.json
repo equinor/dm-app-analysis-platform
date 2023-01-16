@@ -3,8 +3,8 @@
   "name": "exampleAppInput",
   "description": "example SIMA application input for local container",
   "type": "AnalysisPlatformDS/models/SIMAApplicationInput",
-  "inputType": "system/SIMOS/NamedEntity",
-  "outputType": "system/SIMOS/NamedEntity",
+  "inputType": "CORE:NamedEntity",
+  "outputType": "CORE:NamedEntity",
   "input": {
   },
   "workflowTask": "response_forecast",

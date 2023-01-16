@@ -4,7 +4,7 @@
   "name": "simaTestStask",
   "blob": {
     "name": "/sima_test/srs.stask",
-    "type": "system/SIMOS/Blob",
+    "type": "CORE:Blob",
     "_blob_id": "26cf2783-6118-4bfd-a427-9485b00fa9da"
   }
 }

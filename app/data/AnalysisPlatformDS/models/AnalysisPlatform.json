@@ -1,18 +1,18 @@
 {
   "name": "AnalysisPlatform",
-  "type": "system/SIMOS/Blueprint",
-  "extends": ["system/SIMOS/Application"],
+  "type": "CORE:Blueprint",
+  "extends": ["CORE:Application"],
   "description": "",
   "attributes": [
     {
       "name": "label",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "attributeType": "string",
       "optional": true
     },
     {
       "name": "dataSources",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "attributeType": "string",
       "optional": false
     }
@@ -20,7 +20,7 @@
   "uiRecipes": [
     {
       "name": "Default",
-      "type": "system/SIMOS/UiRecipe",
+      "type": "CORE:UiRecipe",
       "plugin": "analysisPlatformApp",
       "category": "Application"
     }
