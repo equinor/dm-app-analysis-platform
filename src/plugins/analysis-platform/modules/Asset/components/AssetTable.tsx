@@ -4,7 +4,6 @@ import {
   DynamicTable,
   formatDate,
   ApplicationContext,
-  TDmtSettings,
 } from '@development-framework/dm-core'
 import { TAsset } from '../../../Types'
 
@@ -33,7 +32,7 @@ type TAssetTableProps = {
 
 export const AssetTable = (props: TAssetTableProps) => {
   const { assets } = props
-  const settings: TDmtSettings = useContext(ApplicationContext)
+  const settings = useContext(ApplicationContext)
 
   const getViewUrl = (rowDocumentId: string): string =>
     `/view/${DEFAULT_DATASOURCE_ID}/${rowDocumentId}`

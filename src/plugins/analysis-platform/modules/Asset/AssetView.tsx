@@ -1,17 +1,15 @@
 import React from 'react'
-import {
-  IDmtUIPlugin,
-  useDocument,
-  Loading,
-} from '@development-framework/dm-core'
+import { IUIPlugin, useDocument, Loading } from '@development-framework/dm-core'
 import { AssetInfoCard } from './components'
 import { AnalysisTable } from '../Analysis'
+import { TAsset } from '../../Types'
 
-export const AssetView = (props: IDmtUIPlugin): JSX.Element => {
-  const { documentId, dataSourceId } = props
-  const [asset, loading] = useDocument(dataSourceId, documentId)
+export const AssetView = (props: IUIPlugin): JSX.Element => {
+  const { idReference } = props
+  const [dataSourceId, documentId] = idReference.split('/', 2)
+  const [asset, loading] = useDocument<TAsset>(idReference)
 
-  if (loading) {
+  if (loading || asset === null) {
     return <Loading />
   }
   return (

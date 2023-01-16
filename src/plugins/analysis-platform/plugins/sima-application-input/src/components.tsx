@@ -72,7 +72,7 @@ export function EditInputEntity(props: {
         />
         <NewEntityButton
           type={formData?.inputType || ''}
-          setReference={(createdEntity: TReference) =>
+          onCreated={(createdEntity: TReference) =>
             setFormData({
               ...formData,
               input: createdEntity,

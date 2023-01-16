@@ -1,6 +1,6 @@
 import {
   BlueprintPicker,
-  IDmtUIPlugin,
+  IUIPlugin,
   JobHandlerPicker,
   TReference,
   UIPluginSelector,
@@ -37,11 +37,11 @@ const HeaderWrapper = styled.div`
   margin-top: 8px;
 `
 
-export const EditTask = (props: IDmtUIPlugin) => {
-  const { documentId, dataSourceId, onOpen, onSubmit } = props
+export const EditTask = (props: IUIPlugin) => {
+  const { idReference, onOpen, onSubmit } = props
+  const [dataSourceId, documentId] = idReference.split('/', 2)
   const [document, loading, updateDocument] = useDocument<TTaskFormData>(
-    dataSourceId,
-    documentId,
+    idReference,
     999
   )
 
@@ -129,7 +129,7 @@ export const EditTask = (props: IDmtUIPlugin) => {
               <NewEntityButton
                 type={formData.inputType}
                 defaultDestination={entityDestination}
-                setReference={(createdEntity: TReference) => {
+                onCreated={(createdEntity: TReference) => {
                   setFormData({
                     ...formData,
                     applicationInput: createdEntity,

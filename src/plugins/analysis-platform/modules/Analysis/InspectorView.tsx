@@ -1,14 +1,21 @@
 import React, { useEffect, useState } from 'react'
-import { IDmtUIPlugin, TJob, useDocument } from '@development-framework/dm-core'
+import {
+  IUIPlugin,
+  TGenericObject,
+  TJob,
+  useDocument,
+} from '@development-framework/dm-core'
 import { AnalysisInfoCard, AnalysisJobTable } from './components'
 
 import { Loading } from '@development-framework/dm-core'
+import { TAnalysis } from '../../Types'
 
-export const InspectorView = (props: IDmtUIPlugin): JSX.Element => {
-  const { documentId, dataSourceId } = props
+export const InspectorView = (props: IUIPlugin): JSX.Element => {
+  const { idReference } = props
+  const [dataSourceId, documentId] = idReference.split('/', 2)
   const [jobs, setJobs] = useState<any[]>([])
-  const [document, loading] = useDocument(dataSourceId, documentId)
-  const [analysis, setAnalysis] = useState<any>()
+  const [document, loading] = useDocument<TAnalysis>(idReference)
+  const [analysis, setAnalysis] = useState<TAnalysis | null>(null)
 
   useEffect(() => {
     if (!document) return
@@ -19,7 +26,7 @@ export const InspectorView = (props: IDmtUIPlugin): JSX.Element => {
     if (!analysis) return
     setJobs(analysis.jobs)
   }, [analysis])
-  if (loading) {
+  if (loading || analysis === null) {
     return <Loading />
   }
   return (

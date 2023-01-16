@@ -3,7 +3,6 @@ import {
   ApplicationContext,
   DynamicTable,
   formatDate,
-  TDmtSettings,
 } from '@development-framework/dm-core'
 import { TAnalysis } from '../../../Types'
 import { useParams } from 'react-router-dom'

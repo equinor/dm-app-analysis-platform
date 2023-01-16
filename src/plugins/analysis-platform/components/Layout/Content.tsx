@@ -1,9 +1,10 @@
 import React from 'react'
 import { Layout } from 'antd'
 import styled from 'styled-components'
+import { ReactNode } from 'react'
 import { useParams } from 'react-router-dom'
 
-import { TContent, DocumentPath } from '@development-framework/dm-core'
+import { DocumentPath } from '@development-framework/dm-core'
 import { backgroundColorDefault } from '../Design/Colors'
 
 const { Content } = Layout
@@ -12,6 +13,11 @@ const PageContent = styled.div`
   padding: 20px;
   background-color: ${backgroundColorDefault};
 `
+
+type TContent = {
+  content: ReactNode
+  settings: any
+}
 
 export default (props: TContent): JSX.Element => {
   const { content, settings } = props
