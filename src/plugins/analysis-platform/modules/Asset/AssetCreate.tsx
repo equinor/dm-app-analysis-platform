@@ -39,10 +39,9 @@ export const AssetCreate = (): JSX.Element => {
     }
     dmssAPI
       .documentAddToPath({
-        dataSourceId: DEFAULT_DATASOURCE_ID,
+        pathReference: `${DEFAULT_DATASOURCE_ID}${ASSET_PATH}`,
         updateUncontained: true,
         document: JSON.stringify(data),
-        directory: ASSET_PATH,
       })
       .then((response: AxiosResponse<any>) => {
         history.push(`/view/${DEFAULT_DATASOURCE_ID}/${response.data.uid}`)

@@ -20,7 +20,7 @@ export const View = () => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     setDocument,
     error,
-  ] = useDocument<TValidEntity>(data_source, entity_id)
+  ] = useDocument<TValidEntity>(`${data_source}/${entity_id}`)
 
   if (error)
     return (

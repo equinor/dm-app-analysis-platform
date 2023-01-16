@@ -9,9 +9,9 @@ import React, { useContext, useEffect, useState } from 'react'
 import {
   AuthContext,
   DmssAPI,
-  EJobStatus,
+  JobStatus,
   hasOperatorRole,
-  DmtAPI,
+  DmJobAPI,
   TJob,
   ErrorResponse,
 } from '@development-framework/dm-core'
@@ -43,10 +43,10 @@ const JobRow = (props: {
 }) => {
   const { job, index, analysisId, dataSourceId, removeJob, setJob } = props
   const { token, tokenData } = useContext(AuthContext)
-  const dmtApi = new DmtAPI(token)
+  const jobApi = new DmJobAPI(token)
   const dmssAPI = new DmssAPI(token)
   const [loading, setLoading] = useState<boolean>(false)
-  const [jobStatus, setJobStatus] = useState<EJobStatus>(EJobStatus.UNKNOWN)
+  const [jobStatus, setJobStatus] = useState<JobStatus>(JobStatus.Unknown)
   const jobURL: string = `/view/${dataSourceId}/${analysisId}.jobs.${index}`
   const resultURL = job.result?._id
     ? `/view/${dataSourceId}/${job.result?._id}`
@@ -66,7 +66,7 @@ const JobRow = (props: {
 
   const startJob = () => {
     setLoading(true)
-    dmtApi
+    jobApi
       .startJob({ jobDmssId: `${dataSourceId}/${analysisId}.jobs.${index}` })
       .then((result: AxiosResponse) => {
         NotificationManager.success(
@@ -74,8 +74,8 @@ const JobRow = (props: {
           'Simulation job started'
         )
         const now = new Date().toLocaleString(navigator.language)
-        setJobStatus(EJobStatus.STARTING)
-        setJob({ ...job, started: now, status: EJobStatus.STARTING })
+        setJobStatus(JobStatus.Starting)
+        setJob({ ...job, started: now, status: JobStatus.Starting })
       })
       .catch((error: AxiosError<ErrorResponse>) => {
         console.error(error.response?.data)
@@ -93,7 +93,7 @@ const JobRow = (props: {
       })
       .then(() => {
         if (job?.uid) {
-          dmtApi.removeJob({ jobUid: job.uid }).then(() => removeJob)
+          jobApi.removeJob({ jobUid: job.uid }).then(() => removeJob)
         }
       })
       .catch((error: AxiosError<ErrorResponse>) => {
@@ -114,7 +114,7 @@ const JobRow = (props: {
       return
     }
     setLoading(true)
-    dmtApi
+    jobApi
       .jobStatus({ jobUid: job.uid })
       .then((result: any) => {
         setJobStatus(result.data.status)
@@ -129,7 +129,7 @@ const JobRow = (props: {
   return (
     <Table.Row>
       <Table.Cell onClick={viewJob}>
-        {jobStatus !== EJobStatus.CREATED
+        {jobStatus !== JobStatus.NotStarted
           ? new Date(job.started).toLocaleString(navigator.language)
           : 'Not started'}
       </Table.Cell>
@@ -154,7 +154,7 @@ const JobRow = (props: {
         </Table.Cell>
       ) : hasOperatorRole(tokenData) ? (
         <Table.Cell>
-          {jobStatus === EJobStatus.CREATED ? (
+          {jobStatus === JobStatus.NotStarted ? (
             <Button variant="ghost_icon" onClick={() => startJob()}>
               <Icon name="play" title="play" />
             </Button>

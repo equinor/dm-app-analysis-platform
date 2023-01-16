@@ -1,7 +1,7 @@
 import {
   BlueprintPicker,
   DestinationPicker,
-  IDmtUIPlugin,
+  IUIPlugin,
   EntityPickerInput,
   INPUT_FIELD_WIDTH,
   Loading,
@@ -64,14 +64,15 @@ const ReadOnlyTextField = (props: { text: string; label: string }) => {
 
 const STaskBlueprint = 'AnalysisPlatformDS/models/STask'
 
-export const EditSimaApplicationInput = (props: IDmtUIPlugin) => {
-  const { dataSourceId, onOpen, documentId, readOnly } = props
+export const EditSimaApplicationInput = (props: IUIPlugin) => {
+  const { idReference, onOpen, readOnly } = props
   const [formData, setFormData] = useState<TSIMAApplicationInput | null>(null)
+  const [dataSourceId, documentId] = idReference.split('/', 2)
   const [
     document,
     loading,
     updateDocument,
-  ] = useDocument<TSIMAApplicationInput>(dataSourceId, documentId)
+  ] = useDocument<TSIMAApplicationInput>(idReference)
 
   useEffect(() => {
     if (!document) return
@@ -89,7 +90,7 @@ export const EditSimaApplicationInput = (props: IDmtUIPlugin) => {
     }
   }
 
-  if (loading || formData === null) return <Loading />
+  if (loading || document === null || formData === null) return <Loading />
   return (
     <Container>
       <div style={{ marginBottom: '10px' }}>

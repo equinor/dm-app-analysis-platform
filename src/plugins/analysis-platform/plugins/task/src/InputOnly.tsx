@@ -1,14 +1,14 @@
 import {
-  IDmtUIPlugin,
+  IUIPlugin,
   Loading,
   UIPluginSelector,
   useDocument,
 } from '@development-framework/dm-core'
 import * as React from 'react'
 
-export const EditInput = (props: IDmtUIPlugin) => {
-  const { documentId, dataSourceId, onOpen } = props
-  const [document, loading] = useDocument<any>(dataSourceId, documentId)
+export const EditInput = (props: IUIPlugin) => {
+  const { idReference, onOpen } = props
+  const [document, loading] = useDocument<any>(idReference)
   if (loading) {
     return <Loading />
   }
@@ -18,10 +18,10 @@ export const EditInput = (props: IDmtUIPlugin) => {
   return (
     <div>
       <UIPluginSelector
-        absoluteDottedId={`${dataSourceId}/${documentId}.applicationInput`}
+        absoluteDottedId={`${idReference}.applicationInput`}
         type={document?.applicationInput.type}
         categories={['edit']}
-        referencedBy={`${dataSourceId}/${documentId}.applicationInput`}
+        referencedBy={`${idReference}.applicationInput`}
         onOpen={onOpen}
       />
     </div>

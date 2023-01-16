@@ -1,8 +1,7 @@
 import {
   AuthContext,
-  TDmtSettings,
   hasDomainRole,
-  useSearch,
+  // useSearch,
   Loading,
 } from '@development-framework/dm-core'
 import React, { ReactNode, useContext } from 'react'
@@ -20,16 +19,16 @@ export const AssetOverview = (): ReactNode => {
     pathname: `/analyses`,
     state: location.state,
   }
-  const [assets, isLoading] = useSearch<TAsset>(
-    {
-      type: EBlueprints.ASSET,
-    },
-    DEFAULT_DATASOURCE_ID
-  )
+  // const [assets, isLoading] = useSearch<TAsset>(
+  //   {
+  //     type: EBlueprints.ASSET,
+  //   },
+  //   DEFAULT_DATASOURCE_ID
+  // )
 
-  if (isLoading) {
-    return <Loading />
-  }
+  // if (isLoading) {
+  //   return <Loading />
+  // }
 
   return (
     <>
@@ -51,7 +50,7 @@ export const AssetOverview = (): ReactNode => {
       </div>
 
       <Divider variant="medium" />
-      <AssetTable assets={assets} />
+      {/*<AssetTable assets={assets} /> //TODO enable after usesearch fix*/}
     </>
   )
 }

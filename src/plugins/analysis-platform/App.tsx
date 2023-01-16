@@ -7,10 +7,15 @@ import {
   ApplicationContext,
   Header,
   FSTreeProvider,
-  TLayout,
 } from '@development-framework/dm-core'
 import Content from './components/Layout/Content'
 import Menu from './components/Layout/Menu'
+
+type TLayout = {
+  content: any
+  settings: any
+  allApps?: any[]
+}
 
 const MainLayout = (props: TLayout) => {
   const { content, settings } = props

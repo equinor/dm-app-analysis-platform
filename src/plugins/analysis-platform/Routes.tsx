@@ -1,8 +1,13 @@
-import { TRoute } from '@development-framework/dm-core'
 import { AssetOverview } from './modules/Asset'
+import { ReactNode } from 'react'
 import { AssetCreate } from './modules/Asset'
 import { AnalysisCreate, AnalysisOverview } from './modules/Analysis'
 import { View } from './modules'
+
+type TRoute = {
+  path: string
+  content: ReactNode
+}
 
 const Routes: Array<TRoute> = [
   {

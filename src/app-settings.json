@@ -1,3 +1,10 @@
 {
-  "applicationId": "AnalysisPlatformDS/4483c9b0-d505-46c9-a157-94c79f4d7b7b"
+  "applicationId": "AnalysisPlatformDS/4483c9b0-d505-46c9-a157-94c79f4d7b7b",
+  "dataSources": [
+    "sima",
+    "WorkflowDS",
+    "app_mooring_db",
+    "app_asgardb_db",
+    "AnalysisPlatformDS"
+  ]
 }

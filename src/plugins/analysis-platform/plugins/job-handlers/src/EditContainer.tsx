@@ -1,11 +1,11 @@
 import {
-  IDmtUIPlugin,
+  IUIPlugin,
   PATH_INPUT_FIELD_WIDTH,
   Select,
   TContainerImage,
   useDocument,
   getFullContainerImageName,
-  useSearch,
+  // useSearch,
   Loading,
 } from '@development-framework/dm-core'
 import * as React from 'react'
@@ -24,21 +24,21 @@ const HeaderWrapper = styled.div`
   width: 70%;
 `
 
-export const EditContainer = (props: IDmtUIPlugin) => {
-  const { dataSourceId, documentId, onSubmit } = props
+export const EditContainer = (props: IUIPlugin) => {
+  const { idReference, onSubmit } = props
+  const [dataSourceId, documentId] = idReference.split('/', 2)
   const [formData, setFormData] = useState<any>()
   const [document, loadingDocument, updateDocument] = useDocument(
-    dataSourceId,
-    documentId,
+    idReference,
     999
   )
-  const [containerImages, loadingImages] = useSearch<TContainerImage>(
-    {
-      type: 'AnalysisPlatformDS/models/ContainerImage',
-    },
-    dataSourceId,
-    '_id'
-  )
+  // const [containerImages, loadingImages] = useSearch<TContainerImage>(
+  //   {
+  //     type: 'AnalysisPlatformDS/models/ContainerImage',
+  //   },
+  //   dataSourceId,
+  //   '_id'
+  // )
 
   useEffect(() => {
     if (!document) return
@@ -67,7 +67,8 @@ export const EditContainer = (props: IDmtUIPlugin) => {
       return ''
     }
   }
-  if (loadingDocument || loadingImages) {
+  if (loadingDocument) {
+    // || loadingImages) { TODO fix after usesearch fix
     return <Loading />
   }
 
@@ -93,18 +94,19 @@ export const EditContainer = (props: IDmtUIPlugin) => {
               onChange={(e: ChangeEvent<HTMLSelectElement>) => {
                 setFormData({ ...formData, image: JSON.parse(e.target.value) })
               }}
-              value={getImageStoredInFormData(containerImages, formData)}
+              // value={getImageStoredInFormData(containerImages, formData)} TODO enable after usesearch fix
             >
               <option value={''} selected disabled hidden>
                 Choose image...
               </option>
-              {containerImages.map((image: TContainerImage, index: number) => {
-                return (
-                  <option key={index} value={JSON.stringify(image)}>
-                    {getFullContainerImageName(image)}
-                  </option>
-                )
-              })}
+              {/*todo enable after usesearch fix*/}
+              {/*{containerImages.map((image: TContainerImage, index: number) => {*/}
+              {/*  return (*/}
+              {/*    <option key={index} value={JSON.stringify(image)}>*/}
+              {/*      {getFullContainerImageName(image)}*/}
+              {/*    </option>*/}
+              {/*  )*/}
+              {/*})}*/}
             </Select>
           </HeaderWrapper>
           {/*<HeaderWrapper>*/}

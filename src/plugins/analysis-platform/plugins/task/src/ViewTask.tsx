@@ -1,20 +1,17 @@
 import React from 'react'
 import { Card, Icon, Typography } from '@equinor/eds-core-react'
 import styled from 'styled-components'
-import {
-  IDmtUIPlugin,
-  Loading,
-  useDocument,
-} from '@development-framework/dm-core'
+import { IUIPlugin, Loading, useDocument } from '@development-framework/dm-core'
+import { TTask } from '../../../Types'
 
 const Pre = styled.pre`
   font-size: 0.9em;
 `
 
-export const ViewTask = (props: IDmtUIPlugin): JSX.Element => {
-  const { documentId, dataSourceId } = props
+export const ViewTask = (props: IUIPlugin): JSX.Element => {
+  const { idReference } = props
 
-  const [task, loading] = useDocument<any>(dataSourceId, documentId)
+  const [task, loading] = useDocument<any>(idReference) // TODO add type for task
   if (loading) {
     return <Loading />
   }

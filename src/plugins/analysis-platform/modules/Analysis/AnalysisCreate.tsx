@@ -53,10 +53,9 @@ export const AnalysisCreate = (): JSX.Element => {
     }
     dmssAPI
       .documentAddToPath({
-        dataSourceId: DEFAULT_DATASOURCE_ID,
+        pathReference: `${DEFAULT_DATASOURCE_ID}${ANALYSIS_PATH}`,
         updateUncontained: false,
         document: JSON.stringify(data),
-        directory: ANALYSIS_PATH,
       })
       .then((response: AxiosResponse<any>) => {
         const newUID = response.data.uid

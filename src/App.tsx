@@ -26,16 +26,12 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 `
-
-const _applicationId = appSettings.applicationId.split('/')
-const dataSourceId = _applicationId[0]
-const applicationId = _applicationId[1]
+const [dataSourceId, documentId] = appSettings.applicationId.split('/', 2)
 
 function App() {
   const { loading: isPluginsLoading } = useContext(UiPluginContext)
-  const [application, isLoading, updateApplication, error] = useDocument(
-    dataSourceId,
-    applicationId
+  const [application, isLoading, updateDocument, error] = useDocument<any>(
+    appSettings.applicationId
   )
 
   if (isLoading || isPluginsLoading)
