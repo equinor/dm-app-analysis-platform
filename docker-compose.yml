@@ -56,10 +56,3 @@ services:
     command: "redis-server --save 30 1 --loglevel notice"
     #    volumes:
     #     - ./redis_data:/data
-
-  web:
-    build: .
-    image: analysis-platform
-    restart: unless-stopped
-    ports:
-      - "80:3000"
