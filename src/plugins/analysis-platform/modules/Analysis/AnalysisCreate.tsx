@@ -64,7 +64,7 @@ export const AnalysisCreate = (): JSX.Element => {
           handleUpdateAsset(asset_id, newAnalysis)
             .then(
               () =>
-                (document.location = `/view/${DEFAULT_DATASOURCE_ID}/${newUID}`)
+                (document.location.pathname = `/view/${DEFAULT_DATASOURCE_ID}/${newUID}`)
             )
             .catch((error: AxiosError<any>) => {
               console.log(error.response?.data)
@@ -72,7 +72,7 @@ export const AnalysisCreate = (): JSX.Element => {
             })
         } else {
           // TODO: Should we use props.history.push instead?
-          document.location = `view/${DEFAULT_DATASOURCE_ID}/${newUID}`
+          document.location.pathname = `/view/${DEFAULT_DATASOURCE_ID}/${newUID}`
         }
       })
       .catch((error: AxiosError<ErrorResponse>) => {

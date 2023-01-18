@@ -28,6 +28,8 @@ const GlobalStyle = createGlobalStyle`
 `
 const [dataSourceId, documentId] = appSettings.applicationId.split('/', 2) // TODO create helper function to do this split
 
+
+TODO update dm-core-package version and yarn install after dm-core-packages pr merge
 function App() {
   const { loading: isPluginsLoading } = useContext(UiPluginContext)
   const [application, isLoading, updateDocument, error] = useDocument<any>(

@@ -41,6 +41,9 @@ export const EditContainer = (props: IUIPlugin) => {
     '_id'
   )
 
+  console.log("containerImages", containerImages)
+  console.log("formdata", formData)
+
   useEffect(() => {
     if (!document) return
     setFormData(document)

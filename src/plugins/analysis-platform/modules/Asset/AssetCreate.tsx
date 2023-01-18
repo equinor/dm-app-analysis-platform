@@ -17,7 +17,6 @@ import { AxiosError, AxiosResponse } from 'axios'
 import { useHistory } from 'react-router-dom'
 
 export const AssetCreate = (): JSX.Element => {
-  const settings = useContext<any>(ApplicationContext)
   const { tokenData, token } = useContext(AuthContext)
   const history = useHistory()
   const dmssAPI = new DmssAPI(token)
