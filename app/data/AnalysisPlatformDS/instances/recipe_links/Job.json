@@ -1,0 +1,27 @@
+{
+  "type": "CORE:RecipeLink",
+  "_blueprintPath_": "dmss://WorkflowDS/Blueprints/Job",
+  "uiRecipes": [
+    {
+      "name": "Edit",
+      "type": "CORE:UiRecipe",
+      "plugin": "jobInputEdit",
+      "category": "edit",
+      "roles": ["dmss-admin", "domain-expert", "expert-operator", "operator"]
+    },
+    {
+      "name": "Control pane",
+      "type": "CORE:UiRecipe",
+      "plugin": "jobControl",
+      "category": "view",
+      "roles": ["dmss-admin", "domain-expert", "expert-operator", "operator"]
+    }
+  ]
+}
+
+
+
+
+
+
+
