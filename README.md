@@ -1,47 +1,102 @@
-# Create Data Modelling App
+# Analysis platform
 
-Create new data modelling apps with just one command!
+This application has been created with [create-dm-app](https://github.com/equinor/create-dm-app)
 
-## Quick Overview
+## Getting started
+
+By following these steps, you will have the application up and running locally on your machine.
+
+Requirements:
+
+- [Node 14.0.0](https://nodejs.org/en/) or later (We recommend using the latest LTS version).
+- [Docker compose](https://docs.docker.com/compose/)
+- [Python](https://www.python.org/) 3.8 or later
+- [dm-cli](https://pypi.org/project/dm-cli/0.1.4/) python package
+
+
+### 1) Start required services
+To run the Analysis Platform application locally, you will need an instance of DMSS running locally.
+
+Go to the `dm-app-analysis-platform` folder in a terminal and run the commands:
 
 ```
-npx @development-framework/create-dm-app my-app
-cd my-app
+docker-compose pull
+docker-compose up --build
+```
+
+This will start all required services.
+
+To reset the database, open a new terminal window and navigate to the `dm-app-analysis-platform` folder and run the commands:
+
+```
+docker-compose run --rm dmss reset-app
+```
+### 2) Install dm-cli
+
+_Note: it is recommended to use a python virtual environment before you install the dm-cli package_
+
+```
+pip install dm-cli
+```
+
+### 4) Upload documents/models to DMSS
+
+Run the following command to upload the documents in the folder my-app/app to DMSS
+
+```
+dm reset app/
+```
+
+You must also upload documents from [dm-job](https://github.com/equinor/dm-job)
+```
+docker-compose run --rm job-api dm -u http://dmss:5000 reset ../app
+```
+
+
+### 5) Create a lookup table in DMSS
+
+In your terminal window, go to the `dm-app-analysis-platform` folder in the terminal and run
+
+```
+dm create-lookup analysis-platform AnalysisPlatformDS/instances/recipe_links
+```
+
+### 6) Start the web application
+
+When inside the `dm-app-analysis-platform` folder in the terminal, run
+
+```
+yarn install
+yarn start
+```
+
+or alternatively
+
+```
+npm install
 npm start
 ```
 
-_([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) comes with npm 5.2+ and higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))_
-
-Then open [http://localhost:3000/](http://localhost:3000/) to see your app.<br>
-
-When you’re ready to deploy to production, create a minified bundle with `npm run build`.
-
-## Creating an App
-
-You’ll need to have Node 14.0.0 or later version on your local development machine (but it’s not required on the server). We recommend using the latest LTS version. 
-
-To create a new app, you may choose one of the following methods:
-* `npx create-dm-app my-app`
-
-It will create a directory called my-app inside the current folder.
-
-Inside that directory, it will generate the initial project structure and install the transitive dependencies:
-
-Inside the newly created project, you can run some built-in commands:
-
-### `npm start` or `yarn start`
-
-Runs the app in development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will automatically reload if you make changes to the code.<br>
-You will see the build errors and lint warnings in the console.
-
-Create-dm-app is using [create-react-app](https://create-react-app.dev/) so go to [create-react-app](https://github.com/facebook/create-react-app) to get a list of all possible commands, or just look inside the package.json file and under scripts.
+The web app can now be reached at [http://localhost:3000](http://localhost:3000) in the web browser.
+(Remember, you must have the docker-compose services running to use the web application)
 
 ## Development tips
 
-### Link core
+### Pre commit
 
-If you want to work on the core and don't want to release new core versions to see the changes in create-dm-app, then change the  `@development-framework/dm-core` from inside `package.json` to point to core locally like `link:./../data-modelling-tool/web/packages/dmt-core/`. You have to run `yarn rollup`inside dm-core to get changes, since this will bild a new dist that will be picked-up by create-dm-app. 
+In this repo, [pre-commit](https://pre-commit.com/) has been used to ensure consistent code formatting. The pre-commit
+hook
+will run [prettier](https://prettier.io/) formatting and analyze the JavaScript code using [eslint](https://eslint.org/)
+.
 
+To run pre-commit, it needs to be installed on your local machine with
+
+```bash
+pip install pre-commit
+```
+
+Once installed, pre-commit can be run with:
+
+```bash
+pre-commit run --all-files
+```
