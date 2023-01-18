@@ -1,38 +1,36 @@
 {
   "name": "SimaInput",
-  "type": "system/SIMOS/Blueprint",
+  "type": "CORE:Blueprint",
   "extends": [
-      "system/SIMOS/NamedEntity"
+      "CORE:NamedEntity"
   ],
   "attributes": [
       {
-          "type": "system/SIMOS/BlueprintAttribute",
+          "type": "CORE:BlueprintAttribute",
           "name": "task",
           "attributeType": "string",
           "default": "WorkflowTask"
       },
       {
-          "type": "system/SIMOS/BlueprintAttribute",
+          "type": "CORE:BlueprintAttribute",
           "name": "workflow",
           "attributeType": "string",
           "default": "workflow"
       },
       {
-          "type": "system/SIMOS/BlueprintAttribute",
+          "type": "CORE:BlueprintAttribute",
           "name": "report",
           "attributeType": "sima/marmo/report/ReportItemContainer",
           "optional": true,
           "contained": true
       },
       {
-          "type": "system/SIMOS/BlueprintAttribute",
+          "type": "CORE:BlueprintAttribute",
           "name": "output",
           "attributeType": "string",
           "default": "res",
           "optional": true,
           "contained": true
       }
-  ],
-  "storageRecipes": [],
-  "uiRecipes": []
+  ]
 }

@@ -1,12 +1,12 @@
 {
   "name": "Environment",
   "description": "",
-  "type": "system/SIMOS/Blueprint",
+  "type": "CORE:Blueprint",
   "attributes": [
     {
       "name": "name",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "variable name for named accessing",
       "default": "environment",
       "contained": true,
@@ -15,7 +15,7 @@
     {
       "name": "description",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "instance description",
       "default": "",
       "contained": true,
@@ -24,12 +24,12 @@
     {
       "name": "type",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute"
+      "type": "CORE:BlueprintAttribute"
     },
     {
       "name": "label",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "instance label",
       "default": "Enviromental Condition",
       "contained": true,
@@ -37,7 +37,7 @@
     },
     {
       "name": "wave",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "attributeType": "app_mooring_db/simpos/mooringSRS/env/Wave",
       "description": "wave",
       "contained": true,
@@ -45,7 +45,7 @@
     },
     {
       "name": "wind",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "attributeType": "app_mooring_db/simpos/mooringSRS/env/Wind",
       "description": "wind",
       "contained": true,
@@ -53,7 +53,7 @@
     },
     {
       "name": "current",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "attributeType": "app_mooring_db/simpos/mooringSRS/env/Current",
       "description": "current",
       "contained": true,
@@ -63,14 +63,14 @@
   "storageRecipes": [],
   "uiRecipes": [
     {
-      "type": "system/SIMOS/UiRecipe",
+      "type": "CORE:UiRecipe",
       "name": "SRS Env. Form",
       "description": "Some external plugin",
       "plugin": "EXTERNAL",
       "attributes": []
     },
     {
-      "type": "system/SIMOS/UiRecipe",
+      "type": "CORE:UiRecipe",
       "name": "SRS Env. Table",
       "description": "Some external plugin",
       "plugin": "EXTERNAL",
@@ -79,7 +79,7 @@
 
     {
       "name": "Raw",
-      "type": "system/SIMOS/UiRecipe",
+      "type": "CORE:UiRecipe",
       "description": "",
       "plugin": "PREVIEW",
       "field": "",

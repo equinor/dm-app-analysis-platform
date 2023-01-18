@@ -1,11 +1,11 @@
 {
   "name": "ColTable",
   "description": "Description of a column table.",
-  "type": "system/SIMOS/Blueprint",
+  "type": "CORE:Blueprint",
   "attributes": [
     {
       "name": "name",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "",
       "default": "table",
       "contained": true,
@@ -14,7 +14,7 @@
     },
     {
       "name": "description",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "",
       "default": "",
       "contained": true,
@@ -23,13 +23,13 @@
     },
     {
       "name": "type",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "",
       "attributeType": "string"
     },
     {
       "name": "caption",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "default": "",
       "contained": true,
       "optional": false,
@@ -37,7 +37,7 @@
     },
     {
       "name": "title",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "default": "",
       "contained": true,
       "optional": false,
@@ -45,25 +45,23 @@
     },
     {
       "name": "transposed",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "default": "false",
       "attributeType": "boolean"
     },
     {
       "name": "strColumns",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "dimensions": "*",
       "optional": true,
       "attributeType": "app_mooring_db/simpos/sima/report/table/StringColumn"
     },
     {
       "name": "numColumns",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "dimensions": "*",
       "optional": true,
       "attributeType": "app_mooring_db/simpos/sima/report/table/NumberColumn"
     }
-  ],
-  "storageRecipes": [],
-  "uiRecipes": []
+  ]
 }

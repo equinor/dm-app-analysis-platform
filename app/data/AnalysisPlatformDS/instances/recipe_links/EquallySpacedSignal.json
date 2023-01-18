@@ -1,0 +1,49 @@
+{
+  "type": "CORE:RecipeLink",
+  "_blueprintPath_": "dmss://app_mooring_db/marmo/containers/EquallySpacedSignal",
+  "uiRecipes": [    {
+    "type": "CORE:UiRecipe",
+    "name": "Plot View",
+    "description": "Some external plugin",
+    "plugin": "marmo-ess-plot-view",
+    "attributes": []
+  },
+  {
+    "type": "CORE:UiRecipe",
+    "name": "Table View",
+    "description": "external editor",
+    "plugin": "marmo-ess-table-view",
+    "attributes": []
+  },
+  {
+    "type": "CORE:UiRecipe",
+    "name": "Edit View",
+    "description": "external editor",
+    "plugin": "marmo-ess-edit-form",
+    "attributes": []
+  },
+  {
+    "type": "CORE:UiRecipe",
+    "name": "Edit Object",
+    "description": "external editor",
+    "plugin": "marmo-edit-ess",
+    "attributes": []
+  },
+  {
+    "name": "Raw",
+    "type": "CORE:UiRecipe",
+    "description": "",
+    "plugin": "default-preview",
+    "field": "",
+    "hideTab": false,
+    "options": [],
+    "attributes": []
+  } ]
+}
+
+
+
+
+
+
+

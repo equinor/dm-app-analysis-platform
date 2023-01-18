@@ -1,36 +1,36 @@
 {
   "name": "TextFile",
   "description": "",
-  "type": "system/SIMOS/Blueprint",
+  "type": "CORE:Blueprint",
   "attributes": [
     {
       "name": "name",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "variable name for named accessing",
       "default": "textFile"
     },
     {
       "name": "description",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "instance description",
       "default": ""
     },
     {
       "name": "type",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute"
+      "type": "CORE:BlueprintAttribute"
     },
     {
       "name": "value",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "content"
     },
     {
       "name": "label",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "file label",
       "attributeType": "string"
     }
@@ -38,7 +38,7 @@
   "storageRecipes": [],
   "uiRecipes": [
     {
-      "type": "system/SIMOS/UiRecipe",
+      "type": "CORE:UiRecipe",
       "name": "SIMPOS Text File View",
       "description": "Some external plugin",
       "plugin": "EXTERNAL",
@@ -47,7 +47,7 @@
 
     {
       "name": "Raw",
-      "type": "system/SIMOS/UiRecipe",
+      "type": "CORE:UiRecipe",
       "description": "",
       "plugin": "PREVIEW",
       "field": "",

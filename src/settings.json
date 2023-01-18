@@ -1,5 +1,5 @@
 {
   "name": "portal",
-  "type": "System/SIMOS/portal",
+  "type": "CORE:Portal",
   "dmssUrl": "localhost:5000"
 }

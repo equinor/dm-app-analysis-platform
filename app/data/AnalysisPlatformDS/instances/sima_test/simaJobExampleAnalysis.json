@@ -23,7 +23,7 @@
       "type": "dmss://WorkflowDS/models/jobHandlers/Container",
       "image": {
         "imageName": "dmt-job/srs",
-        "type": "/models/ContainerImage",
+        "type": "dmss://WorkflowDS/Blueprints/ContainerImage",
         "version": "latest",
         "registryName": "datamodelingtool.azurecr.io",
         "description": ""

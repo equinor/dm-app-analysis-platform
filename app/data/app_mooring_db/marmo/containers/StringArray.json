@@ -107,7 +107,5 @@
       "contained": true,
       "optional": false
     }
-  ],
-  "storageRecipes": [],
-  "uiRecipes": []
+  ]
 }

@@ -1,12 +1,12 @@
 {
   "name": "Mooring",
   "description": "Description of the target mooring line.",
-  "type": "system/SIMOS/Blueprint",
+  "type": "CORE:Blueprint",
   "attributes": [
     {
       "name": "name",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "Mooring line name.",
       "default": "mooring",
       "contained": true,
@@ -15,7 +15,7 @@
     {
       "name": "description",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "mooring line description",
       "default": "",
       "contained": true,
@@ -24,13 +24,13 @@
     {
       "name": "type",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "mooring line type"
     },
     {
       "name": "label",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "instance label",
       "default": "Mooring System",
       "contained": true,
@@ -39,7 +39,7 @@
     {
       "name": "conditions",
       "attributeType": "app_mooring_db/simpos/mooringLS/positioning/Condition",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "dimensions": "*",
       "description": "selected mooring conditions"
     }
@@ -47,7 +47,7 @@
   "storageRecipes": [],
   "uiRecipes": [
     {
-      "type": "system/SIMOS/UiRecipe",
+      "type": "CORE:UiRecipe",
       "name": "LS Mooring Cond",
       "description": "Some external plugin",
       "plugin": "EXTERNAL",

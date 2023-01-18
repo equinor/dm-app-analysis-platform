@@ -1,11 +1,11 @@
 {
   "name": "Section",
   "description": "Description of the report.",
-  "type": "system/SIMOS/Blueprint",
+  "type": "CORE:Blueprint",
   "attributes": [
     {
       "name": "name",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "",
       "default": "report",
       "contained": true,
@@ -14,7 +14,7 @@
     },
     {
       "name": "description",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "",
       "default": "",
       "contained": true,
@@ -23,19 +23,19 @@
     },
     {
       "name": "type",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "",
       "attributeType": "string"
     },
     {
       "name": "title",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "",
       "attributeType": "string"
     },
     {
       "name": "plots",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "dimensions": "*",
       "description": "",
       "contained": true,
@@ -44,7 +44,7 @@
     },
     {
       "name": "tables",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "dimensions": "*",
       "description": "",
       "contained": true,
@@ -53,7 +53,7 @@
     },
     {
       "name": "sections",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "dimensions": "*",
       "description": "",
       "contained": true,
@@ -64,7 +64,7 @@
   "storageRecipes": [],
   "uiRecipes": [
     {
-      "type": "system/SIMOS/UiRecipe",
+      "type": "CORE:UiRecipe",
       "name": "SIMA Report View",
       "description": "Some external plugin",
       "plugin": "simpos-report-view",
@@ -73,7 +73,7 @@
 
     {
       "name": "Raw",
-      "type": "system/SIMOS/UiRecipe",
+      "type": "CORE:UiRecipe",
       "description": "",
       "plugin": "PREVIEW",
       "field": "",

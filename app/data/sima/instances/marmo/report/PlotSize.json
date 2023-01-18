@@ -1,6 +1,6 @@
 {
  "name" : "PlotSize",
- "type" : "system/SIMOS/Enum",
+ "type" : "CORE:Enum",
  "values" : ["DYNAMIC", "FIXED", "FIXED_ASPECT_RATIO"],
  "labels" : ["Dynamic", "Fixed", "Fixed Aspect Ratio"]
 }

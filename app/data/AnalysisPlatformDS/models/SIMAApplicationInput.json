@@ -40,7 +40,7 @@
     },
     {
       "name": "stask",
-      "attributeType": "/STask",
+      "attributeType": "/models/STask",
       "type": "CORE:BlueprintAttribute",
       "description": "",
       "optional": true,

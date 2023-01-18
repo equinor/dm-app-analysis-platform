@@ -1,9 +1,7 @@
 {
  "name" : "ReportItem",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "CORE:Blueprint",
  "abstract" : true,
- "extends" : ["system/SIMOS/NamedEntity"],
- "storageRecipes" : [],
- "uiRecipes" : []
+ "extends" : ["CORE:NamedEntity"]
 }
 

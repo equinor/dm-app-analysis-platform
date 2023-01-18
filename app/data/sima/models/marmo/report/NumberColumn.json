@@ -1,21 +1,19 @@
 {
  "name" : "NumberColumn",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "CORE:Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity", "/marmo/report/Column"],
+ "extends" : ["CORE:NamedEntity", "/marmo/report/Column"],
  "attributes" : [{
    "name" : "cells",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "number",
    "dimensions" : "*",
    "default" : "0.0"
   }, {
    "name" : "format",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }
 

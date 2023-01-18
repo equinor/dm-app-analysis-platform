@@ -1,12 +1,12 @@
 {
   "name": "RunOutput",
   "description": "",
-  "type": "system/SIMOS/Blueprint",
+  "type": "CORE:Blueprint",
   "attributes": [
     {
       "name": "name",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "variable name for named accessing",
       "default": "runOutput",
       "contained": true,
@@ -15,7 +15,7 @@
     {
       "name": "description",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "instance description",
       "default": "",
       "contained": true,
@@ -24,19 +24,19 @@
     {
       "name": "type",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute"
+      "type": "CORE:BlueprintAttribute"
     },
     {
       "name": "status",
       "attributeType": "app_mooring_db/simpos/sima/run/RunStatus",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "status",
       "contained": true,
       "optional": false
     },
     {
       "name": "serverConfig",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "Simulation configuration.",
       "contained": true,
       "optional": false,
@@ -45,7 +45,7 @@
     {
       "name": "report",
       "attributeType": "app_mooring_db/simpos/sima/report/Section",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "",
       "contained": true,
       "optional": false
@@ -54,7 +54,7 @@
   "storageRecipes": [],
   "uiRecipes": [
     {
-      "type": "system/SIMOS/UiRecipe",
+      "type": "CORE:UiRecipe",
       "name": "SIMA RunOutput View",
       "description": "External plugin for cese.",
       "plugin": "simpos-run-output-view",
@@ -63,7 +63,7 @@
 
     {
       "name": "Raw",
-      "type": "system/SIMOS/UiRecipe",
+      "type": "CORE:UiRecipe",
       "description": "",
       "plugin": "PREVIEW",
       "field": "",

@@ -1,6 +1,6 @@
 {
   "name": "Platforms",
-  "type": "system/SIMOS/Enum",
+  "type": "CORE:Enum",
   "description": "",
   "labels": ["Åsgard B", "Kristin", "Aasta Hansteen"],
   "values": ["asgardb", "kristin", "aastaHansteen"]

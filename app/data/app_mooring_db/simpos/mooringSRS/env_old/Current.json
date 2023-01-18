@@ -1,12 +1,12 @@
 {
   "name": "Current",
   "description": "Current model.",
-  "type": "system/SIMOS/Blueprint",
+  "type": "CORE:Blueprint",
   "attributes": [
     {
       "name": "name",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "variable name for named accessing",
       "default": "current",
       "contained": true,
@@ -15,7 +15,7 @@
     {
       "name": "description",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "instance description",
       "default": "",
       "contained": true,
@@ -24,12 +24,12 @@
     {
       "name": "type",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute"
+      "type": "CORE:BlueprintAttribute"
     },
     {
       "name": "label",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "instance label",
       "default": "Current",
       "contained": true,
@@ -38,7 +38,7 @@
     {
       "name": "currentDepths",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "A list of current levels, positive downward, in [m].",
       "default": "0.0,-50,-150,-297,-300",
       "contained": true,
@@ -47,7 +47,7 @@
     {
       "name": "currentDirection",
       "attributeType": "number",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "Current direction -going to- in [deg].",
       "default": "330",
       "contained": true,
@@ -56,7 +56,7 @@
     {
       "name": "currentVelocities",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "A list of current velocities at dfferent levels [m/s].",
       "default": "0.826, 0.504, 0.344, 0.244, 0.0",
       "contained": true,

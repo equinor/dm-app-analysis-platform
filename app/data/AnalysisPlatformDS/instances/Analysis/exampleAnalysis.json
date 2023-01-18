@@ -20,10 +20,10 @@
     },
     "outputType": "CORE:NamedEntity",
     "runner": {
-      "type": "/models/jobHandlers/Container",
+      "type": "dmss://WorkflowDS/Blueprints/Container",
       "image": {
         "imageName": "dmt-job/srs",
-        "type": "/models/ContainerImage",
+        "type": "dmss://WorkflowDS/Blueprints/ContainerImage",
         "version": "latest",
         "registryName": "datamodelingtool.azurecr.io",
         "description": ""

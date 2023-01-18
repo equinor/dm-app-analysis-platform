@@ -1,11 +1,11 @@
 {
   "name": "Simulation",
   "description": "Simulation configuration.",
-  "type": "system/SIMOS/Blueprint",
+  "type": "CORE:Blueprint",
   "attributes": [
     {
       "name": "name",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "simulation config name.",
       "default": "simulation",
       "contained": true,
@@ -14,7 +14,7 @@
     },
     {
       "name": "description",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "",
       "default": "",
       "contained": true,
@@ -23,21 +23,21 @@
     },
     {
       "name": "type",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "simulation config type",
       "attributeType": "string"
     },
     {
       "name": "simulationLength",
       "attributeType": "app_mooring_db/marmo/containers/DimensionalScalar",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "simulation length in seconds.",
       "default": "{\"name\": \"simulationLength\", \"description\": \"simulation length in seconds for limit state analysis.\", \"type\": \"app_mooring_db/marmo/containers/DimensionalScalar\", \"label\": \"Simulation Length [s]\", \"unit\": \"s\", \"value\":50}"
     },
     {
       "name": "numberOfSeeds",
       "attributeType": "app_mooring_db/marmo/containers/DimensionalScalar",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "number of seeds for sample variability study.",
       "default": "{\"name\": \"numberOfSeeds\", \"description\": \"Number of seeds for sample variability study of stochastic waves.\", \"type\": \"app_mooring_db/marmo/containers/DimensionalScalar\", \"label\": \"Number of Seeds\", \"unit\": \"-\", \"value\":3}"
     }
@@ -45,7 +45,7 @@
   "storageRecipes": [],
   "uiRecipes": [
     {
-      "type": "system/SIMOS/UiRecipe",
+      "type": "CORE:UiRecipe",
       "name": "SRS Simulation Config",
       "description": "Some external plugin",
       "plugin": "simpos-single-object-form",
@@ -53,7 +53,7 @@
     },
     {
       "name": "Raw",
-      "type": "system/SIMOS/UiRecipe",
+      "type": "CORE:UiRecipe",
       "description": "",
       "plugin": "PREVIEW",
       "field": "",

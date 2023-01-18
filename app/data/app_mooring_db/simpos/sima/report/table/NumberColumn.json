@@ -1,11 +1,11 @@
 {
   "name": "NumberColumn",
   "description": "Description of a column in col-table.",
-  "type": "system/SIMOS/Blueprint",
+  "type": "CORE:Blueprint",
   "attributes": [
     {
       "name": "name",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "",
       "default": "column",
       "contained": true,
@@ -14,7 +14,7 @@
     },
     {
       "name": "description",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "",
       "default": "",
       "contained": true,
@@ -23,33 +23,31 @@
     },
     {
       "name": "type",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "",
       "attributeType": "string"
     },
     {
       "name": "header",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "attributeType": "string"
     },
     {
       "name": "label",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "attributeType": "string"
     },
     {
       "name": "fontSize",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "default": "10",
       "attributeType": "number"
     },
     {
       "name": "value",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "dimensions": "*",
       "attributeType": "number"
     }
-  ],
-  "storageRecipes": [],
-  "uiRecipes": []
+  ]
 }
