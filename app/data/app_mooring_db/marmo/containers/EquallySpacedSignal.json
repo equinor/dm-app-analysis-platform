@@ -1,12 +1,12 @@
 {
   "name": "EquallySpacedSignal",
   "description": "data model for an equally spaced signal.",
-  "type": "system/SIMOS/Blueprint",
+  "type": "CORE:Blueprint",
   "attributes": [
     {
       "name": "name",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "variable name for named accessing",
       "default": "equallySpacedSignal",
       "contained": true,
@@ -15,7 +15,7 @@
     {
       "name": "description",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "instance description",
       "default": "",
       "contained": true,
@@ -24,12 +24,12 @@
     {
       "name": "type",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute"
+      "type": "CORE:BlueprintAttribute"
     },
     {
       "name": "value",
       "attributeType": "number",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "data points.",
       "default": "0.0",
       "dimensions": "*",
@@ -39,7 +39,7 @@
     {
       "name": "xname",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "name for the x value",
       "default": "time",
       "contained": true,
@@ -48,7 +48,7 @@
     {
       "name": "xdescription",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "description for the x-axis",
       "default": "",
       "contained": true,
@@ -57,7 +57,7 @@
     {
       "name": "xunit",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "x-axis unit.",
       "default": "",
       "contained": true,
@@ -66,7 +66,7 @@
     {
       "name": "xdelta",
       "attributeType": "number",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "x-axis or index spacing.",
       "default": "1",
       "contained": true,
@@ -75,7 +75,7 @@
     {
       "name": "xstart",
       "attributeType": "number",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "x-axis or index start.",
       "default": "0",
       "contained": true,
@@ -84,7 +84,7 @@
     {
       "name": "xlabel",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "label for the x-axis.",
       "default": "",
       "contained": true,
@@ -93,7 +93,7 @@
     {
       "name": "label",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "label for the y-axis.",
       "default": "",
       "contained": true,
@@ -102,7 +102,7 @@
     {
       "name": "legend",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "description of xy values to be used as legend.",
       "default": "",
       "contained": true,
@@ -111,7 +111,7 @@
     {
       "name": "unit",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "data unit.",
       "default": "",
       "contained": true,
@@ -120,28 +120,28 @@
   ],
   "storageRecipes": [],
   "uiRecipes": [    {
-    "type": "system/SIMOS/UiRecipe",
+    "type": "CORE:UiRecipe",
     "name": "Plot View",
     "description": "Some external plugin",
     "plugin": "marmo-ess-plot-view",
     "attributes": []
   },
   {
-    "type": "system/SIMOS/UiRecipe",
+    "type": "CORE:UiRecipe",
     "name": "Table View",
     "description": "external editor",
     "plugin": "marmo-ess-table-view",
     "attributes": []
   },
   {
-    "type": "system/SIMOS/UiRecipe",
+    "type": "CORE:UiRecipe",
     "name": "Edit View",
     "description": "external editor",
     "plugin": "marmo-ess-edit-form",
     "attributes": []
   },  
   {
-    "type": "system/SIMOS/UiRecipe",
+    "type": "CORE:UiRecipe",
     "name": "Edit Object",
     "description": "external editor",
     "plugin": "marmo-edit-ess",
@@ -149,7 +149,7 @@
   },
   {
     "name": "Raw",
-    "type": "system/SIMOS/UiRecipe",
+    "type": "CORE:UiRecipe",
     "description": "",
     "plugin": "default-preview",
     "field": "",

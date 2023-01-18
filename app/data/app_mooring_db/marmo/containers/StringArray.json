@@ -1,12 +1,12 @@
 {
   "name": "StringArray",
   "description": "String array.",
-  "type": "system/SIMOS/Blueprint",
+  "type": "CORE:Blueprint",
   "attributes": [
     {
       "name": "name",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "variable name for named accessing",
       "default": "stringArray",
       "contained": true,
@@ -15,7 +15,7 @@
     {
       "name": "description",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "instance description",
       "default": "",
       "contained": true,
@@ -24,12 +24,12 @@
     {
       "name": "type",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute"
+      "type": "CORE:BlueprintAttribute"
     },
     {
       "name": "value",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "data strings.",
       "dimensions": "*",
       "contained": true,
@@ -38,7 +38,7 @@
     {
       "name": "xname",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "name for the x value",
       "default": "index",
       "contained": true,
@@ -47,7 +47,7 @@
     {
       "name": "xdescription",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "name for the x value",
       "default": "",
       "contained": true,
@@ -56,7 +56,7 @@
     {
       "name": "xunit",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "delta unit.",
       "default": "",
       "contained": true,
@@ -65,7 +65,7 @@
     {
       "name": "xdelta",
       "attributeType": "number",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "signal spacing.",
       "default": 1,
       "contained": true,
@@ -74,7 +74,7 @@
     {
       "name": "xstart",
       "attributeType": "number",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "start of the signal input.",
       "default": 0,
       "contained": true,
@@ -83,7 +83,7 @@
     {
       "name": "xlabel",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "label for the x value.",
       "default": "",
       "contained": true,
@@ -92,7 +92,7 @@
     {
       "name": "label",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "label for the y value.",
       "default": "",
       "contained": true,
@@ -101,7 +101,7 @@
     {
       "name": "legend",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "description of xy values to be used as legend.",
       "default": "",
       "contained": true,

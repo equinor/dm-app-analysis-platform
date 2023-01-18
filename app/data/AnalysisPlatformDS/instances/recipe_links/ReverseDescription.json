@@ -1,0 +1,20 @@
+{
+  "type": "CORE:RecipeLink",
+  "_blueprintPath_": "dmss://WorkflowDS/Blueprints/ReverseDescription",
+  "uiRecipes": [
+    {
+      "name": "Edit",
+      "type": "CORE:UiRecipe",
+      "plugin": "edit-reverse-description",
+      "configType": "",
+      "category": "edit"
+    }
+  ]
+}
+
+
+
+
+
+
+

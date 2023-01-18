@@ -1,38 +1,38 @@
 {
   "name": "SimpleString",
   "description": "String data.",
-  "type": "system/SIMOS/Blueprint",
+  "type": "CORE:Blueprint",
   "attributes": [
     {
       "name": "name",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "variable name for named accessing",
       "default": "simpleString"
     },
     {
       "name": "description",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "instance description",
       "default": ""
     },
     {
       "name": "type",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute"
+      "type": "CORE:BlueprintAttribute"
     },
     {
       "name": "label",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "string.",
       "default": ""
     },
     {
       "name": "value",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "string.",
       "default": ""
     }

@@ -13,7 +13,7 @@
     {
       "name": "task",
       "type": "CORE:BlueprintAttribute",
-      "attributeType": "dmss://WorkflowDS/models/Task",
+      "attributeType": "/models/Task",
       "contained": true
     },
     {

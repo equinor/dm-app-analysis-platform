@@ -7,7 +7,7 @@
   "created": "2022-03-02T14:15:59.601Z",
   "updated": "2022-03-02T14:15:59.601Z",
   "task": {
-    "type": "dmss://WorkflowDS/models/Task",
+    "type": "/models/Task",
     "name": "task-sKBDJzBE",
     "description": "",
     "label": "",
