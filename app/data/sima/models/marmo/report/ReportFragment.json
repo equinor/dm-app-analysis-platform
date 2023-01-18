@@ -1,18 +1,8 @@
 {
  "name" : "ReportFragment",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "CORE:Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity", "/marmo/report/ReportItemContainer", "/marmo/report/ReportItem", "system/SIMOS/DefaultUiRecipes"],
- "attributes" : [],
- "storageRecipes" : [],
- "uiRecipes" : [
-    {
-        "type": "system/SIMOS/UiRecipe",
-        "name": "SIMA Report View",
-        "description": "Some external plugin",
-        "plugin": "simpos-report-view",
-        "category": "view"
-      }
- ]
+ "extends" : ["CORE:NamedEntity", "/marmo/report/ReportItemContainer", "/marmo/report/ReportItem"],
+ "attributes" : []
 }
 

@@ -1,27 +1,25 @@
 {
  "name" : "Table",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "CORE:Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity", "/marmo/report/ReportItem"],
+ "extends" : ["CORE:NamedEntity", "/marmo/report/ReportItem"],
  "attributes" : [{
    "name" : "caption",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "transposed",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
   }, {
    "name" : "columns",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "/marmo/report/Column",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }
 

@@ -1,29 +1,27 @@
 {
  "name" : "Image",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "CORE:Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity", "/marmo/report/ReportItem"],
+ "extends" : ["CORE:NamedEntity", "/marmo/report/ReportItem"],
  "attributes" : [{
    "name" : "path",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "string"
   }, {
    "name" : "caption",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "height",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
   }, {
    "name" : "width",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }
 

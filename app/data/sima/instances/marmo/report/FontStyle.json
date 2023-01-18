@@ -1,6 +1,6 @@
 {
  "name" : "FontStyle",
- "type" : "system/SIMOS/Enum",
+ "type" : "CORE:Enum",
  "values" : ["NORMAL", "BOLD", "ITALIC", "BOLD_ITALIC"],
  "labels" : ["Normal", "Bold", "Italic", "Bold Italic"]
 }

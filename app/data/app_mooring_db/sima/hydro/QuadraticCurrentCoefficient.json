@@ -1,28 +1,18 @@
 {
  "name" : "QuadraticCurrentCoefficient",
- "type" : "system/SIMOS/Blueprint",
- "extends" : ["system/SIMOS/NamedEntity"],
+ "type" : "CORE:Blueprint",
+ "extends" : ["CORE:NamedEntity"],
  "attributes" : [{
    "name" : "id",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "string"
   }, {
    "name" : "items",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "/hydro/QuadraticCurrentCoefficientItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : [
-   {
-    "type": "system/SIMOS/UiRecipe",
-    "name": "Plot View",
-    "description": "Quad Current PlotView",
-    "plugin": "sima-model-view-quad-current-coeff",
-    "attributes": []
-  }
-  ]
+  }]
 }
 

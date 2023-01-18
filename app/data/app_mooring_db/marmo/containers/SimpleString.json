@@ -36,7 +36,5 @@
       "description": "string.",
       "default": ""
     }
-  ],
-  "storageRecipes": [],
-  "uiRecipes": []
+  ]
 }

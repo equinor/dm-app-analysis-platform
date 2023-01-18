@@ -1,19 +1,17 @@
 {
  "name" : "Section",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "CORE:Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity", "/marmo/report/ReportItemContainer", "/marmo/report/ReportItem"],
+ "extends" : ["CORE:NamedEntity", "/marmo/report/ReportItemContainer", "/marmo/report/ReportItem"],
  "attributes" : [{
    "name" : "title",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "string"
   }, {
    "name" : "landscape",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }
 

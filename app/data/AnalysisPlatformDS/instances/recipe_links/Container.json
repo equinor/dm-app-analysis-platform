@@ -1,7 +1,7 @@
 {
   "type": "CORE:RecipeLink",
   "_blueprintPath_": "dmss://WorkflowDS/Blueprints/Container",
-    "uiRecipes": [
+  "uiRecipes": [
     {
       "name": "Edit",
       "type": "CORE:UiRecipe",

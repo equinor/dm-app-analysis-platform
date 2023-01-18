@@ -1,11 +1,11 @@
 {
   "name": "SimaAppService",
   "description": "Configuration for sima application service.",
-  "type": "system/SIMOS/Blueprint",
+  "type": "CORE:Blueprint",
   "attributes": [
     {
       "name": "name",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "sima application service configuration name.",
       "default": "simulationServer",
       "contained": true,
@@ -14,7 +14,7 @@
     },
     {
       "name": "description",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "The description of the simulation server",
       "default": "This is abel.",
       "contained": true,
@@ -23,48 +23,48 @@
     },
     {
       "name": "type",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "simulation config type",
       "attributeType": "string"
     },
     {
       "name": "platform",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "platform name",
       "default": "Asgard B",
       "attributeType": "string"
     },
     {
       "name": "application",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "application name",
       "default": "Mooring SRS",
       "attributeType": "string"
     },
     {
       "name": "task",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "task name",
       "default": "Task",
       "attributeType": "string"
     },
     {
       "name": "workflow",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "workflow name",
       "default": "ULS",
       "attributeType": "string"
     },
     {
       "name": "address",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "server address.",
       "default": "http://abel.sintef.no",
       "attributeType": "string"
     },
     {
       "name": "port",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "port number",
       "default": "8085",
       "attributeType": "integer"
@@ -73,7 +73,7 @@
   "storageRecipes": [],
   "uiRecipes": [
     {
-      "type": "system/SIMOS/UiRecipe",
+      "type": "CORE:UiRecipe",
       "name": "SIMA Application Service Config",
       "description": "SIMA App",
       "plugin": "simpos-single-object-form",
@@ -82,7 +82,7 @@
 
     {
       "name": "Raw",
-      "type": "system/SIMOS/UiRecipe",
+      "type": "CORE:UiRecipe",
       "description": "",
       "plugin": "PREVIEW",
       "field": "",

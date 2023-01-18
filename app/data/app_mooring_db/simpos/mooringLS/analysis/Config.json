@@ -1,46 +1,46 @@
 {
   "name": "Config",
   "description": "Screening configuration.",
-  "type": "system/SIMOS/Blueprint",
+  "type": "CORE:Blueprint",
   "attributes": [
     {
       "name": "name",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "analysis configuration.",
       "default": "analysisConfig"
     },
     {
       "name": "description",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "analysis config",
       "default": ""
     },
     {
       "name": "type",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": ""
     },
     {
       "name": "label",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "instance label",
       "default": "Analysis Configuration"
     },
     {
       "name": "numberOfSeeds",
       "attributeType": "app_mooring_db/marmo/containers/DimensionalScalar",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "number of seeds for sample variability study.",
       "default": "{\"name\": \"numberOfSeeds\", \"description\": \"Number of seeds for sample variability study of stochastic waves.\", \"type\": \"app_mooring_db/marmo/containers/DimensionalScalar\", \"label\": \"Number of Seeds\", \"unit\": \"-\", \"value\":3}"
     },
     {
       "name": "simulationLength",
       "attributeType": "app_mooring_db/marmo/containers/DimensionalScalar",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "simulation length in seconds.",
       "default": "{\"name\": \"simulationLength\", \"description\": \"simulation length in seconds for limit state analysis.\", \"type\": \"app_mooring_db/marmo/containers/DimensionalScalar\", \"label\": \"Simulation Length [s]\", \"unit\": \"s\", \"value\":50}"
     }
@@ -48,7 +48,7 @@
   "storageRecipes": [],
   "uiRecipes": [
     {
-      "type": "system/SIMOS/UiRecipe",
+      "type": "CORE:UiRecipe",
       "name": "LS Analysis Config",
       "description": "Some external plugin",
       "plugin": "EXTERNAL",
@@ -56,7 +56,7 @@
     },
     {
       "name": "Raw",
-      "type": "system/SIMOS/UiRecipe",
+      "type": "CORE:UiRecipe",
       "description": "",
       "plugin": "PREVIEW",
       "field": "",

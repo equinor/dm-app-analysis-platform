@@ -1,26 +1,24 @@
 {
  "name" : "Column",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "CORE:Blueprint",
  "abstract" : true,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["CORE:NamedEntity"],
  "attributes" : [{
    "name" : "header",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "label",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "headerfont",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "/marmo/report/Font",
    "contained" : true,
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }
 

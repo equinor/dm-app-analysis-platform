@@ -7,7 +7,7 @@ from config import config
 from services.job_handler_interface import JobHandlerInterface
 from utils.logging import logger
 
-_SUPPORTED_TYPE = "WorkflowDS/models/jobHandlers/ReverseDescription"
+_SUPPORTED_TYPE = "dmss://WorkflowDS/models/jobHandlers/ReverseDescription"
 
 
 class JobHandler(JobHandlerInterface):

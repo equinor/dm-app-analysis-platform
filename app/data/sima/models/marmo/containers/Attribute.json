@@ -1,16 +1,14 @@
 {
  "name" : "Attribute",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "CORE:Blueprint",
  "description" : "Represents a key/value entry",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["CORE:NamedEntity"],
  "attributes" : [{
    "name" : "value",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }
 

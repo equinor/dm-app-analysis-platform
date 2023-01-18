@@ -33,7 +33,7 @@
       "description": "Reference to a Blueprint",
       "optional": true
     }, {
-      "attributeType": "/jobHandlers/JobHandler",
+      "attributeType": "dmss://WorkflowDS/Blueprints/JobHandler",
       "type": "CORE:BlueprintAttribute",
       "name": "runner",
       "label": "Runner",

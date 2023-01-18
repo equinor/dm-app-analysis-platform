@@ -1,0 +1,17 @@
+{
+  "type": "CORE:RecipeLink",
+  "_blueprintPath_": "dmss://sima/models/marmo/report/ReportFragment",
+  "uiRecipes" : [
+    {
+        "type": "CORE:UiRecipe",
+        "name": "SIMA Report View",
+        "description": "Some external plugin",
+        "plugin": "simpos-report-view",
+        "category": "view"
+      }
+ ]
+}
+
+
+
+

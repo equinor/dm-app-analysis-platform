@@ -1,12 +1,12 @@
 {
   "name": "Wave",
   "description": "A model for wave condition.",
-  "type": "system/SIMOS/Blueprint",
+  "type": "CORE:Blueprint",
   "attributes": [
     {
       "name": "name",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "wave condition name",
       "default": "wave",
       "contained": true,
@@ -15,7 +15,7 @@
     {
       "name": "description",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "wave condition description",
       "default": "",
       "contained": true,
@@ -24,13 +24,13 @@
     {
       "name": "type",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "wave condition type"
     },
     {
       "name": "label",
       "attributeType": "string",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "instance label",
       "default": "Wave",
       "contained": true,
@@ -39,21 +39,21 @@
     {
       "name": "significantWaveHeight",
       "attributeType": "app_mooring_db/marmo/containers/DimensionalScalar",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "Significant wave height in [m].",
       "default": "{\"name\": \"significantWaveHeight\", \"description\": \"Significant wave height in [m].\", \"type\": \"app_mooring_db/marmo/containers/DimensionalScalar\", \"label\": \"Significant Wave Height [m]\", \"unit\": \"m\", \"value\":14.687}"
     },
     {
       "name": "peakPeriod",
       "attributeType": "app_mooring_db/marmo/containers/DimensionalScalar",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "Peak period in [s].",
       "default": "{\"name\": \"peakPeriod\", \"description\": \"Peak period in [s].\", \"type\": \"app_mooring_db/marmo/containers/DimensionalScalar\", \"unit\": \"s\", \"label\": \"Peak Period [s]\", \"value\":17.243}"
     },
     {
       "name": "waveDirection",
       "attributeType": "app_mooring_db/marmo/containers/DimensionalScalar",
-      "type": "system/SIMOS/BlueprintAttribute",
+      "type": "CORE:BlueprintAttribute",
       "description": "Wave propagation direction -comming from- in [deg].",
       "default": "{\"name\": \"waveDirection\", \"description\": \"Wave propagation direction -comming from- in [deg].\", \"type\": \"app_mooring_db/marmo/containers/DimensionalScalar\", \"label\": \"Wave Direction [deg]\", \"unit\": \"deg\", \"value\":330.0}"
     }

@@ -1,87 +1,85 @@
 {
  "name" : "LinePlot",
- "type" : "system/SIMOS/Blueprint",
+ "type" : "CORE:Blueprint",
  "abstract" : false,
- "extends" : ["system/SIMOS/NamedEntity"],
+ "extends" : ["CORE:NamedEntity"],
  "attributes" : [{
    "name" : "title",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "string"
   }, {
    "name" : "xlabel",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "ylabel",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "showlegend",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
   }, {
    "name" : "showtitle",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "boolean",
    "optional" : true
   }, {
    "name" : "caption",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "string",
    "optional" : true
   }, {
    "name" : "width",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
   }, {
    "name" : "height",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "integer",
    "optional" : true
   }, {
    "name" : "size",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "string",
    "enumType" : "/marmo/report/PlotSize",
    "optional" : true,
    "default" : "DYNAMIC"
   }, {
    "name" : "titlefont",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "/marmo/report/Font",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "legendfont",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "/marmo/report/Font",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "xaxis",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "/marmo/report/Axis",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "yaxis",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "/marmo/report/Axis",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "lines",
-   "type" : "system/SIMOS/BlueprintAttribute",
+   "type" : "CORE:BlueprintAttribute",
    "attributeType" : "/marmo/report/PlotLine",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false
-  }],
- "storageRecipes" : [],
- "uiRecipes" : []
+  }]
 }
 

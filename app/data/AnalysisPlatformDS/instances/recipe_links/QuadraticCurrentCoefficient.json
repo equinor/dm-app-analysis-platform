@@ -1,0 +1,18 @@
+{
+  "type": "CORE:RecipeLink",
+  "_blueprintPath_": "dmss://app_mooring_db/sima/hydro/QuadraticCurrentCoefficient",
+ "uiRecipes" : [
+   {
+    "type": "CORE:UiRecipe",
+    "name": "Plot View",
+    "description": "Quad Current PlotView",
+    "plugin": "sima-model-view-quad-current-coeff",
+    "attributes": []
+  }
+  ]
+}
+
+
+
+
+

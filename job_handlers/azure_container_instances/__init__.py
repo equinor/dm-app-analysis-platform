@@ -25,7 +25,7 @@ from utils.logging import logger
 AccessToken = namedtuple("AccessToken", ["token", "expires_on"])
 logging.getLogger("azure").setLevel(logging.WARNING)
 
-_SUPPORTED_TYPE = "WorkflowDS/models/jobHandlers/AzureContainer"
+_SUPPORTED_TYPE = "dmss://WorkflowDS/models/jobHandlers/AzureContainer"
 
 
 class JobHandler(JobHandlerInterface):
