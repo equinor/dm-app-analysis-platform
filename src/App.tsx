@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 `
-const [dataSourceId, documentId] = appSettings.applicationId.split('/', 2)
+const [dataSourceId, documentId] = appSettings.applicationId.split('/', 2) // TODO create helper function to do this split
 
 function App() {
   const { loading: isPluginsLoading } = useContext(UiPluginContext)
