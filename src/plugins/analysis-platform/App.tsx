@@ -11,6 +11,7 @@ import {
 import Content from './components/Layout/Content'
 import Menu from './components/Layout/Menu'
 
+// TODO find proper types
 type TLayout = {
   content: any
   settings: any
