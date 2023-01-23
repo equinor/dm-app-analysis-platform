@@ -13,7 +13,7 @@
     {
       "name": "analyses",
       "type": "CORE:BlueprintAttribute",
-      "attributeType": "/Analysis",
+      "attributeType": "/models/Analysis",
       "optional": false,
       "default": [],
       "dimensions": "*"
@@ -21,7 +21,7 @@
     {
       "name": "location",
       "type": "CORE:BlueprintAttribute",
-      "attributeType": "/Location",
+      "attributeType": "/models/Location",
       "optional": true,
       "contained": false
     },
