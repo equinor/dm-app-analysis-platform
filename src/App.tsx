@@ -28,8 +28,6 @@ const GlobalStyle = createGlobalStyle`
 `
 const [dataSourceId, documentId] = appSettings.applicationId.split('/', 2) // TODO create helper function to do this split
 
-
-
 function App() {
   const { loading: isPluginsLoading } = useContext(UiPluginContext)
   const [application, isLoading, updateDocument, error] = useDocument<any>(

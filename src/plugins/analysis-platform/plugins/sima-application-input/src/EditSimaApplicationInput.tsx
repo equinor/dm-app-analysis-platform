@@ -86,7 +86,7 @@ export const EditSimaApplicationInput = (props: IUIPlugin) => {
       name: filename.replace('.', '_'),
       blob: {
         name: filename,
-        type: 'system/SIMOS/Blob',
+        type: 'CORE:Blob',
       },
     }
   }
