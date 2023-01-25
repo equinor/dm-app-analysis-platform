@@ -50,26 +50,5 @@
       "contained": true,
       "optional": false
     }
-  ],
-  "storageRecipes": [],
-  "uiRecipes": [
-    {
-      "type": "CORE:UiRecipe",
-      "name": "SIMA RunOutput View",
-      "description": "External plugin for cese.",
-      "plugin": "simpos-run-output-view",
-      "attributes": []
-    },
-
-    {
-      "name": "Raw",
-      "type": "CORE:UiRecipe",
-      "description": "",
-      "plugin": "PREVIEW",
-      "field": "",
-      "hideTab": true,
-      "options": [],
-      "attributes": []
-    }
   ]
 }

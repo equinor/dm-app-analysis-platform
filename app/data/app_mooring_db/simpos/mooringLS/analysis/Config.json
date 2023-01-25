@@ -44,25 +44,5 @@
       "description": "simulation length in seconds.",
       "default": "{\"name\": \"simulationLength\", \"description\": \"simulation length in seconds for limit state analysis.\", \"type\": \"app_mooring_db/marmo/containers/DimensionalScalar\", \"label\": \"Simulation Length [s]\", \"unit\": \"s\", \"value\":50}"
     }
-  ],
-  "storageRecipes": [],
-  "uiRecipes": [
-    {
-      "type": "CORE:UiRecipe",
-      "name": "LS Analysis Config",
-      "description": "Some external plugin",
-      "plugin": "EXTERNAL",
-      "attributes": []
-    },
-    {
-      "name": "Raw",
-      "type": "CORE:UiRecipe",
-      "description": "",
-      "plugin": "PREVIEW",
-      "field": "",
-      "hideTab": true,
-      "options": [],
-      "attributes": []
-    }
   ]
 }

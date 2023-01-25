@@ -43,15 +43,5 @@
       "dimensions": "*",
       "description": "selected mooring conditions"
     }
-  ],
-  "storageRecipes": [],
-  "uiRecipes": [
-    {
-      "type": "CORE:UiRecipe",
-      "name": "LS Mooring Cond",
-      "description": "Some external plugin",
-      "plugin": "EXTERNAL",
-      "attributes": []
-    }
   ]
 }

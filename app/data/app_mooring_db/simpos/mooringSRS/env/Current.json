@@ -56,9 +56,5 @@
       "description": "A list of current velocities at dfferent levels [m/s].",
       "default": "{\"name\": \"currentVelocities\", \"description\": \"A list of current velocities at dfferent levels [m/s].\", \"type\": \"app_mooring_db/marmo/containers/SimpleString\", \"label\": \"Current Velocities [m/s]\", \"value\":\"0.826, 0.504, 0.344, 0.244, 0.0\"}"
     }
-  ],
-  "storageRecipes": [],
-  "uiRecipes": [
-
   ]
 }

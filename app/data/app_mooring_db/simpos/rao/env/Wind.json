@@ -49,9 +49,5 @@
       "description": "Average wind speed 10[m] above mean water surface in [m/s].",
       "default": "{\"name\": \"windVelocity\", \"description\": \"Average wind speed 10[m] above mean water surface in [m/s].\", \"type\": \"app_mooring_db/marmo/containers/DimensionalScalar\", \"label\": \"Wind Velocity [m/s]\", \"unit\": \"m/s\", \"value\":31.73}"
     }
-  ],
-  "storageRecipes": [],
-  "uiRecipes": [
-
   ]
 }

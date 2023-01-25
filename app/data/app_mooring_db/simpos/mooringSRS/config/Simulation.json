@@ -41,25 +41,5 @@
       "description": "number of seeds for sample variability study.",
       "default": "{\"name\": \"numberOfSeeds\", \"description\": \"Number of seeds for sample variability study of stochastic waves.\", \"type\": \"app_mooring_db/marmo/containers/DimensionalScalar\", \"label\": \"Number of Seeds\", \"unit\": \"-\", \"value\":3}"
     }
-  ],
-  "storageRecipes": [],
-  "uiRecipes": [
-    {
-      "type": "CORE:UiRecipe",
-      "name": "SRS Simulation Config",
-      "description": "Some external plugin",
-      "plugin": "simpos-single-object-form",
-      "attributes": []
-    },
-    {
-      "name": "Raw",
-      "type": "CORE:UiRecipe",
-      "description": "",
-      "plugin": "PREVIEW",
-      "field": "",
-      "hideTab": true,
-      "options": [],
-      "attributes": []
-    }
   ]
 }

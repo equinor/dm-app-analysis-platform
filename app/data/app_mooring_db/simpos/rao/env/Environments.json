@@ -45,19 +45,5 @@
       "attributeType": "app_mooring_db/simpos/rao/env/Environment",
       "description": "env_2"
     }
-  ],
-  "storageRecipes": [],
-  "uiRecipes": [
-
-    {
-      "name": "Raw",
-      "type": "CORE:UiRecipe",
-      "description": "",
-      "plugin": "PREVIEW",
-      "field": "",
-      "hideTab": false,
-      "options": [],
-      "attributes": []
-    }
   ]
 }

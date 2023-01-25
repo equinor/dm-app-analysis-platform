@@ -1,0 +1,30 @@
+{
+  "type": "CORE:RecipeLink",
+  "_blueprintPath_": "dmss://app_mooring_db/simpos/MooringLS/analysis/Config",
+  "uiRecipes": [
+    {
+      "type": "CORE:UiRecipe",
+      "name": "LS Analysis Config",
+      "description": "Some external plugin",
+      "plugin": "EXTERNAL",
+      "attributes": []
+    },
+    {
+      "name": "Raw",
+      "type": "CORE:UiRecipe",
+      "description": "",
+      "plugin": "PREVIEW",
+      "field": "",
+      "hideTab": true,
+      "options": [],
+      "attributes": []
+    }
+  ]
+}
+
+
+
+
+
+
+

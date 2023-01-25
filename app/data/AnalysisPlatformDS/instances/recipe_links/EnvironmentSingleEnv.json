@@ -1,0 +1,24 @@
+{
+  "type": "CORE:RecipeLink",
+  "_blueprintPath_": "dmss://app_mooring_db/simpos/models/singleEnv/Environment",
+  "uiRecipes": [
+
+    {
+      "name": "Raw",
+      "type": "CORE:UiRecipe",
+      "description": "",
+      "plugin": "PREVIEW",
+      "field": "",
+      "hideTab": false,
+      "options": [],
+      "attributes": []
+    }
+  ]
+}
+
+
+
+
+
+
+

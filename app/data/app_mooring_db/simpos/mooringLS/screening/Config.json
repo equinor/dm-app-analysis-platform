@@ -44,9 +44,5 @@
       "description": "simulation length in seconds.",
       "default": "{\"name\": \"simulationLength\", \"description\": \"simulation length in seconds for screening analysis.\", \"type\": \"app_mooring_db/marmo/containers/DimensionalScalar\", \"label\": \"Simulation Length [s]\", \"unit\": \"s\", \"value\":50}"
     }
-  ],
-  "storageRecipes": [],
-  "uiRecipes": [
-
   ]
 }
