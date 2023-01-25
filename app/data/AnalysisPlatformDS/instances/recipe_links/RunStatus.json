@@ -1,0 +1,31 @@
+{
+  "type": "CORE:RecipeLink",
+  "_blueprintPath_": "dmss://app_mooring_db/simpos/sima/run/RunStatus",
+  "uiRecipes": [
+    {
+      "type": "CORE:UiRecipe",
+      "name": "SIMA Status View",
+      "description": "Some external plugin",
+      "plugin": "simpos-run-status-view",
+      "attributes": []
+    },
+
+    {
+      "name": "Raw",
+      "type": "CORE:UiRecipe",
+      "description": "",
+      "plugin": "PREVIEW",
+      "field": "",
+      "hideTab": true,
+      "options": [],
+      "attributes": []
+    }
+  ]
+}
+
+
+
+
+
+
+

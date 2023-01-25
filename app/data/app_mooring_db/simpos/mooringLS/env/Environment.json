@@ -75,9 +75,5 @@
       "description": "Current direction relative to wind direction [deg]",
       "default": "{\"name\": \"currentDirectionRelativeToWind\", \"description\": \"Current direction relative to wind direction in degrees.\", \"type\": \"app_mooring_db/marmo/containers/DimensionalScalar\", \"label\": \"Current Dir. Rel. to Wind [deg]\", \"unit\": \"deg\", \"value\":0.0}"
     }
-  ],
-  "storageRecipes": [],
-  "uiRecipes": [
-
   ]
 }

@@ -1,0 +1,24 @@
+{
+  "type": "CORE:RecipeLink",
+  "_blueprintPath_": "dmss://app_mooring_db/simpos/mooringSRS/config/Simulation",
+  "uiRecipes": [
+    {
+      "type": "CORE:UiRecipe",
+      "name": "SRS Simulation Config",
+      "description": "Some external plugin",
+      "plugin": "simpos-single-object-form",
+      "attributes": []
+    },
+    {
+      "name": "Raw",
+      "type": "CORE:UiRecipe",
+      "description": "",
+      "plugin": "PREVIEW",
+      "field": "",
+      "hideTab": true,
+      "options": [],
+      "attributes": []
+    }
+  ]
+}
+

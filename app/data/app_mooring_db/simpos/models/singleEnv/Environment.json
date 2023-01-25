@@ -47,19 +47,5 @@
       "attributeType": "app_mooring_db/simpos/models/singleEnv/Current",
       "description": "current"
     }
-  ],
-  "storageRecipes": [],
-  "uiRecipes": [
-
-    {
-      "name": "Raw",
-      "type": "CORE:UiRecipe",
-      "description": "",
-      "plugin": "PREVIEW",
-      "field": "",
-      "hideTab": false,
-      "options": [],
-      "attributes": []
-    }
   ]
 }

@@ -53,32 +53,5 @@
       "description": "Simulation configuration.",
       "attributeType": "app_mooring_db/simpos/sima/config/SimaAppService"
     }
-  ],
-  "storageRecipes": [],
-  "uiRecipes": [
-    {
-      "type": "CORE:UiRecipe",
-      "name": "LS Screening",
-      "description": "Some external plugin",
-      "plugin": "simpos-ls-sce-form",
-      "attributes": []
-    },
-    {
-      "type": "CORE:UiRecipe",
-      "name": "SIMOS Raw View",
-      "description": "Some external plugin",
-      "plugin": "simos-raw-view",
-      "attributes": []
-    },
-    {
-      "name": "Raw",
-      "type": "CORE:UiRecipe",
-      "description": "",
-      "plugin": "PREVIEW",
-      "field": "",
-      "hideTab": false,
-      "options": [],
-      "attributes": []
-    }
   ]
 }

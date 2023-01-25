@@ -57,9 +57,5 @@
       "description": "Wave propagation direction -comming from- in [deg].",
       "default": "{\"name\": \"waveDirection\", \"description\": \"Wave propagation direction -comming from- in [deg].\", \"type\": \"app_mooring_db/marmo/containers/DimensionalScalar\", \"label\": \"Wave Direction [deg]\", \"unit\": \"deg\", \"value\":330.0}"
     }
-  ],
-  "storageRecipes": [],
-  "uiRecipes": [
-
   ]
 }

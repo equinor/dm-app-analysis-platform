@@ -1,0 +1,27 @@
+{
+  "type": "CORE:RecipeLink",
+  "_blueprintPath_": "dmss://app_mooring_db/simpos/sima/report/Section",
+  "uiRecipes": [
+    {
+      "type": "CORE:UiRecipe",
+      "name": "SIMA Report View",
+      "description": "Some external plugin",
+      "plugin": "simpos-report-view",
+      "attributes": []
+    },
+
+    {
+      "name": "Raw",
+      "type": "CORE:UiRecipe",
+      "description": "",
+      "plugin": "PREVIEW",
+      "field": "",
+      "hideTab": true,
+      "options": [],
+      "attributes": []
+    }
+  ]
+}
+
+
+

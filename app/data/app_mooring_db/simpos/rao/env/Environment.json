@@ -59,26 +59,5 @@
       "contained": true,
       "optional": false
     }
-  ],
-  "storageRecipes": [],
-  "uiRecipes": [
-    {
-      "type": "CORE:UiRecipe",
-      "name": "SRS Env. Form",
-      "description": "Some external plugin",
-      "plugin": "EXTERNAL",
-      "attributes": []
-    },
-
-    {
-      "name": "Raw",
-      "type": "CORE:UiRecipe",
-      "description": "",
-      "plugin": "PREVIEW",
-      "field": "",
-      "hideTab": false,
-      "options": [],
-      "attributes": []
-    }
   ]
 }

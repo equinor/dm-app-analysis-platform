@@ -1,0 +1,34 @@
+{
+  "type": "CORE:RecipeLink",
+  "_blueprintPath_": "dmss://app_mooring_db/simpos/mooringSRS/MooringSRS",
+  "uiRecipes": [
+    {
+      "type": "CORE:UiRecipe",
+      "name": "SRS Sce Form",
+      "description": "Some external plugin",
+      "plugin": "simpos-srs-sce-form",
+      "category": "edit"
+    },
+    {
+      "type": "CORE:UiRecipe",
+      "name": "SRS Simulation",
+      "description": "Some external plugin",
+      "plugin": "simpos-srs-sce-simulation-form",
+      "roles": ["expert-operator", "domain-expert", "dmss-admin"],
+      "category": "edit"
+    },
+    {
+      "type": "CORE:UiRecipe",
+      "name": "SIMOS Raw View",
+      "description": "Some external plugin",
+      "plugin": "simos-raw-view",
+      "category": "view"
+    },
+    {
+      "type": "CORE:UiRecipe",
+      "name": "Blueprint",
+      "description": "Viewing the entities Blueprint.",
+      "plugin": "dmt-blueprint-table-view"
+    }
+  ]
+}

@@ -44,9 +44,5 @@
       "description": "mooring line number, a comma separated list.",
       "default": "{\"name\": \"lineNumbers\", \"description\": \"A comma separated list of considered mooring line numbers, no space, e.g. 1,2-5,8: [1,2,3,4,5,8] .\", \"type\": \"app_mooring_db/marmo/containers/SimpleString\", \"label\": \"Lines Numbers\", \"value\":\"1-2\"}"
     }
-  ],
-  "storageRecipes": [],
-  "uiRecipes": [
-
   ]
 }

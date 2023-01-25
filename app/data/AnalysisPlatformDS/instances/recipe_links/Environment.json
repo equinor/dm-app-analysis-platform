@@ -1,0 +1,30 @@
+{
+  "type": "CORE:RecipeLink",
+  "_blueprintPath_": "dmss://app_mooring_db/simpos/rao/env/Environment",
+  "uiRecipes": [
+    {
+      "type": "CORE:UiRecipe",
+      "name": "SRS Env. Form",
+      "description": "Some external plugin",
+      "plugin": "EXTERNAL",
+      "attributes": []
+    },
+    {
+      "name": "Raw",
+      "type": "CORE:UiRecipe",
+      "description": "",
+      "plugin": "PREVIEW",
+      "field": "",
+      "hideTab": false,
+      "options": [],
+      "attributes": []
+    }
+  ]
+}
+
+
+
+
+
+
+

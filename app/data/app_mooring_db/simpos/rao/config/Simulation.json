@@ -51,9 +51,5 @@
       "attributeType": "app_mooring_db/marmo/containers/DimensionalScalar",
       "default": "{\"name\": \"freNPeriod\", \"description\": \"Number of calculation periods between start and end.\", \"type\": \"app_mooring_db/marmo/containers/DimensionalScalar\", \"label\": \"End Period [-]\", \"unit\": \"-\", \"value\":30}"
     }
-  ],
-  "storageRecipes": [],
-  "uiRecipes": [
-
   ]
 }
