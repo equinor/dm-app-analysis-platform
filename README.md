@@ -19,7 +19,7 @@ To run the Analysis Platform application locally, you will need an instance of D
 
 Go to the `dm-app-analysis-platform` folder in a terminal and run the commands:
 
-```
+```bash
 docker-compose pull
 docker-compose up --build
 ```
@@ -28,14 +28,14 @@ This will start all required services.
 
 To reset the database, open a new terminal window and navigate to the `dm-app-analysis-platform` folder and run the commands:
 
-```
+```bash
 docker-compose run --rm dmss reset-app
 ```
 ### 2) Install dm-cli
 
 _Note: it is recommended to use a python virtual environment before you install the dm-cli package_
 
-```
+```bash
 pip install dm-cli
 ```
 
@@ -43,12 +43,12 @@ pip install dm-cli
 
 Run the following command to upload the documents in the folder my-app/app to DMSS
 
-```
+```bash
 dm reset app/
 ```
 
 You must also upload documents from [dm-job](https://github.com/equinor/dm-job)
-```
+```bash
 docker-compose run --rm job-api dm -u http://dmss:5000 reset ../app
 ```
 
@@ -57,7 +57,7 @@ docker-compose run --rm job-api dm -u http://dmss:5000 reset ../app
 
 In your terminal window, go to the `dm-app-analysis-platform` folder in the terminal and run
 
-```
+```bash
 dm create-lookup analysis-platform AnalysisPlatformDS/instances/recipe_links
 ```
 
@@ -65,14 +65,14 @@ dm create-lookup analysis-platform AnalysisPlatformDS/instances/recipe_links
 
 When inside the `dm-app-analysis-platform` folder in the terminal, run
 
-```
+```bash
 yarn install
 yarn start
 ```
 
 or alternatively
 
-```
+```bash
 npm install
 npm start
 ```
@@ -81,6 +81,12 @@ The web app can now be reached at [http://localhost:3000](http://localhost:3000)
 (Remember, you must have the docker-compose services running to use the web application)
 
 ## Development tips
+
+### Database setup
+Oneliner to get database up and running:
+```bash
+reset_dmss && dm reset app && docker-compose run --rm job-api dm -u http://dmss:5000 reset ../app && dm create-lookup analysis-platform AnalysisPlatformDS/instances/recipe_links
+```
 
 ### Pre commit
 
