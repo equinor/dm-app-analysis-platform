@@ -16,7 +16,7 @@
   }, {
    "name" : "headerfont",
    "type" : "CORE:BlueprintAttribute",
-   "attributeType" : "/marmo/report/Font",
+   "attributeType" : "models/marmo/report/Font",
    "contained" : true,
    "optional" : true
   }]

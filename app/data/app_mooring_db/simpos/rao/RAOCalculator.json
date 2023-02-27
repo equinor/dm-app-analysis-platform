@@ -27,20 +27,20 @@
       "name": "envs",
       "type": "CORE:BlueprintAttribute",
       "description": "The environmental condition.",
-      "attributeType": "app_mooring_db/simpos/rao/env/Environment",
+      "attributeType": "dmss://app_mooring_db/simpos/rao/env/Environment",
       "dimensions": "*"
     },
     {
       "name": "config",
       "type": "CORE:BlueprintAttribute",
       "description": "Simulation configuration.",
-      "attributeType": "app_mooring_db/simpos/rao/config/Simulation"
+      "attributeType": "dmss://app_mooring_db/simpos/rao/config/Simulation"
     },
     {
       "name": "serverConfig",
       "type": "CORE:BlueprintAttribute",
       "description": "Simulation configuration.",
-      "attributeType": "app_mooring_db/simpos/sima/config/SimaAppService"
+      "attributeType": "dmss://app_mooring_db/simpos/sima/config/SimaAppService"
     }
   ]
 }

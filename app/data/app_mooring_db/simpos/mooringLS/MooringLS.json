@@ -27,31 +27,31 @@
       "name": "env",
       "type": "CORE:BlueprintAttribute",
       "description": "The environmental condition.",
-      "attributeType": "app_mooring_db/simpos/mooringLS/env/Environment"
+      "attributeType": "dmss://app_mooring_db/simpos/mooringLS/env/Environment"
     },
     {
       "name": "mooring",
       "type": "CORE:BlueprintAttribute",
       "description": "The target mooring lines description.",
-      "attributeType": "app_mooring_db/simpos/mooringLS/positioning/Mooring"
+      "attributeType": "dmss://app_mooring_db/simpos/mooringLS/positioning/Mooring"
     },
     {
       "name": "screeningConfig",
       "type": "CORE:BlueprintAttribute",
       "description": "Screening configuration.",
-      "attributeType": "app_mooring_db/simpos/mooringLS/screening/Config"
+      "attributeType": "dmss://app_mooring_db/simpos/mooringLS/screening/Config"
     },
     {
       "name": "analysisConfig",
       "type": "CORE:BlueprintAttribute",
       "description": "Analysis configuration.",
-      "attributeType": "app_mooring_db/simpos/mooringLS/analysis/Config"
+      "attributeType": "dmss://app_mooring_db/simpos/mooringLS/analysis/Config"
     },
     {
       "name": "serverConfig",
       "type": "CORE:BlueprintAttribute",
       "description": "Simulation configuration.",
-      "attributeType": "app_mooring_db/simpos/sima/config/SimaAppService"
+      "attributeType": "dmss://app_mooring_db/simpos/sima/config/SimaAppService"
     }
   ]
 }

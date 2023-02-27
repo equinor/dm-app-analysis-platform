@@ -67,7 +67,7 @@
     },
     {
       "name": "lines",
-      "attributeType": "app_mooring_db/simpos/sima/report/plot/Line",
+      "attributeType": "dmss://app_mooring_db/simpos/sima/report/plot/Line",
       "type": "CORE:BlueprintAttribute",
       "dimensions": "*",
       "optional": true

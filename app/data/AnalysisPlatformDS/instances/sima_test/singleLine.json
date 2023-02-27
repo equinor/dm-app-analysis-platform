@@ -3,11 +3,11 @@
   "name": "singleLine",
   "description": "example SIMA application input for local container",
   "type": "/models/SIMAApplicationInput",
-  "inputType": "app_mooring_db/models/simpos/mooringSRS/MooringSRS",
+  "inputType": "dmss://app_mooring_db/models/simpos/mooringSRS/MooringSRS",
   "outputType": "dmss://sima/models/marmo/report/ReportFragment",
   "input": {
     "_id": "6683c9b0-d505-46c9-a157-94c79f4d7a6a",
-    "type": "app_mooring_db/models/simpos/mooringSRS/MooringSRS",
+    "type": "dmss://app_mooring_db/models/simpos/mooringSRS/MooringSRS",
     "name": "MooringSRS"
   },
   "workflowTask": "FRA_WS_SR_singleLine",

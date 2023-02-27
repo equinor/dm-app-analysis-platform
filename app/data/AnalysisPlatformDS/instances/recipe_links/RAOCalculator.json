@@ -1,6 +1,6 @@
 {
   "type": "CORE:RecipeLink",
-  "_blueprintPath_": "dmss://app_moring_db/simpos/rao/RAOCalculator",
+  "_blueprintPath_": "dmss://app_mooring_db/simpos/rao/RAOCalculator",
   "uiRecipes": [
     {
       "type": "CORE:UiRecipe",

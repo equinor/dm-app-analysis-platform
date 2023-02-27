@@ -38,7 +38,7 @@
     },
     {
       "name": "conditions",
-      "attributeType": "app_mooring_db/simpos/mooringLS/positioning/Condition",
+      "attributeType": "dmss://app_mooring_db/simpos/mooringLS/positioning/Condition",
       "type": "CORE:BlueprintAttribute",
       "dimensions": "*",
       "description": "selected mooring conditions"

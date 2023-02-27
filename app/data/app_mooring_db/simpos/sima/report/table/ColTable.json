@@ -54,14 +54,14 @@
       "type": "CORE:BlueprintAttribute",
       "dimensions": "*",
       "optional": true,
-      "attributeType": "app_mooring_db/simpos/sima/report/table/StringColumn"
+      "attributeType": "dmss://app_mooring_db/simpos/sima/report/table/StringColumn"
     },
     {
       "name": "numColumns",
       "type": "CORE:BlueprintAttribute",
       "dimensions": "*",
       "optional": true,
-      "attributeType": "app_mooring_db/simpos/sima/report/table/NumberColumn"
+      "attributeType": "dmss://app_mooring_db/simpos/sima/report/table/NumberColumn"
     }
   ]
 }

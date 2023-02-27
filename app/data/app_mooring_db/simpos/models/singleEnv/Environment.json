@@ -32,19 +32,19 @@
     {
       "name": "wave",
       "type": "CORE:BlueprintAttribute",
-      "attributeType": "app_mooring_db/simpos/models/singleEnv/Wave",
+      "attributeType": "dmss://app_mooring_db/simpos/models/singleEnv/Wave",
       "description": "wave"
     },
     {
       "name": "wind",
       "type": "CORE:BlueprintAttribute",
-      "attributeType": "app_mooring_db/simpos/models/singleEnv/Wind",
+      "attributeType": "dmss://app_mooring_db/simpos/models/singleEnv/Wind",
       "description": "wind"
     },
     {
       "name": "current",
       "type": "CORE:BlueprintAttribute",
-      "attributeType": "app_mooring_db/simpos/models/singleEnv/Current",
+      "attributeType": "dmss://app_mooring_db/simpos/models/singleEnv/Current",
       "description": "current"
     }
   ]

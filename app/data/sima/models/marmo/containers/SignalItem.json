@@ -6,7 +6,7 @@
  "attributes" : [{
    "name" : "attributes",
    "type" : "CORE:BlueprintAttribute",
-   "attributeType" : "/marmo/containers/Attribute",
+   "attributeType" : "/models/marmo/containers/Attribute",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true

@@ -1,6 +1,6 @@
 {
   "type": "CORE:RecipeLink",
-  "_blueprintPath_": "dmss://app_mooring_db/simpos/MooringLS/analysis/Config",
+  "_blueprintPath_": "dmss://app_mooring_db/simpos/mooringLS/analysis/Config",
   "uiRecipes": [
     {
       "type": "CORE:UiRecipe",

@@ -20,7 +20,7 @@
       {
           "type": "CORE:BlueprintAttribute",
           "name": "report",
-          "attributeType": "sima/marmo/report/ReportItemContainer",
+          "attributeType": "dmss://sima/models/marmo/report/ReportItemContainer",
           "optional": true,
           "contained": true
       },

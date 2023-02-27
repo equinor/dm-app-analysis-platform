@@ -27,25 +27,25 @@
       "name": "env",
       "type": "CORE:BlueprintAttribute",
       "description": "The environmental condition.",
-      "attributeType": "app_mooring_db/simpos/mooringSRS/env/Environment"
+      "attributeType": "dmss://app_mooring_db/simpos/mooringSRS/env/Environment"
     },
     {
       "name": "mooring",
       "type": "CORE:BlueprintAttribute",
       "description": "The target mooring lines description.",
-      "attributeType": "app_mooring_db/simpos/mooringSRS/positioning/Mooring"
+      "attributeType": "dmss://app_mooring_db/simpos/mooringSRS/positioning/Mooring"
     },
     {
       "name": "simulation",
       "type": "CORE:BlueprintAttribute",
       "description": "Simulation configuration.",
-      "attributeType": "app_mooring_db/simpos/mooringSRS/config/Simulation"
+      "attributeType": "dmss://app_mooring_db/simpos/mooringSRS/config/Simulation"
     },
     {
       "name": "serverConfig",
       "type": "CORE:BlueprintAttribute",
       "description": "Simulation configuration.",
-      "attributeType": "app_mooring_db/simpos/sima/config/SimaAppService"
+      "attributeType": "dmss://app_mooring_db/simpos/sima/config/SimaAppService"
     }
   ]
 }

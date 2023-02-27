@@ -2,7 +2,7 @@
  "name" : "StringArray",
  "type" : "CORE:Blueprint",
  "abstract" : false,
- "extends" : ["CORE:NamedEntity", "/marmo/containers/Signal"],
+ "extends" : ["CORE:NamedEntity", "/models/marmo/containers/Signal"],
  "attributes" : [{
    "name" : "value",
    "type" : "CORE:BlueprintAttribute",

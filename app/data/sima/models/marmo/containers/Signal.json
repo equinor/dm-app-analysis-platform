@@ -3,6 +3,6 @@
  "type" : "CORE:Blueprint",
  "description" : "Signal base type",
  "abstract" : true,
- "extends" : ["CORE:NamedEntity", "/marmo/containers/SignalItem"]
+ "extends" : ["CORE:NamedEntity", "/models/marmo/containers/SignalItem"]
 }
 

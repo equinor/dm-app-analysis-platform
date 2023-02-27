@@ -6,7 +6,7 @@
  "attributes" : [{
    "name" : "items",
    "type" : "CORE:BlueprintAttribute",
-   "attributeType" : "/marmo/report/ReportItem",
+   "attributeType" : "/models/marmo/report/ReportItem",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true
