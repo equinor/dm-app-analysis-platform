@@ -2,7 +2,7 @@
  "name" : "Table",
  "type" : "CORE:Blueprint",
  "abstract" : false,
- "extends" : ["CORE:NamedEntity", "/marmo/report/ReportItem"],
+ "extends" : ["CORE:NamedEntity", "/models/marmo/report/ReportItem"],
  "attributes" : [{
    "name" : "caption",
    "type" : "CORE:BlueprintAttribute",
@@ -16,7 +16,7 @@
   }, {
    "name" : "columns",
    "type" : "CORE:BlueprintAttribute",
-   "attributeType" : "/marmo/report/Column",
+   "attributeType" : "/models/marmo/report/Column",
    "dimensions" : "*",
    "contained" : true,
    "optional" : true

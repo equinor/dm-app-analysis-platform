@@ -46,37 +46,37 @@
    "name" : "size",
    "type" : "CORE:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/marmo/report/PlotSize",
+   "enumType" : "//marmo/report/PlotSize",
    "optional" : true,
    "default" : "DYNAMIC"
   }, {
    "name" : "titlefont",
    "type" : "CORE:BlueprintAttribute",
-   "attributeType" : "/marmo/report/Font",
+   "attributeType" : "/models/marmo/report/Font",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "legendfont",
    "type" : "CORE:BlueprintAttribute",
-   "attributeType" : "/marmo/report/Font",
+   "attributeType" : "/models/marmo/report/Font",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "xaxis",
    "type" : "CORE:BlueprintAttribute",
-   "attributeType" : "/marmo/report/Axis",
+   "attributeType" : "/models/marmo/report/Axis",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "yaxis",
    "type" : "CORE:BlueprintAttribute",
-   "attributeType" : "/marmo/report/Axis",
+   "attributeType" : "/models/marmo/report/Axis",
    "contained" : true,
    "optional" : true
   }, {
    "name" : "lines",
    "type" : "CORE:BlueprintAttribute",
-   "attributeType" : "/marmo/report/PlotLine",
+   "attributeType" : "/models/marmo/report/PlotLine",
    "dimensions" : "*",
    "contained" : true,
    "optional" : false

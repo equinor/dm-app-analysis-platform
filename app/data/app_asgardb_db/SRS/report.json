@@ -1,26 +1,26 @@
 {
-  "type": "sima/marmo/report/ReportFragment",
+  "type": "dmss://sima/models/marmo/report/ReportFragment",
   "name": "SimoRfilexReport",
   "items": [
     {
-      "type": "sima/marmo/report/Section",
+      "type": "dmss://sima/models/marmo/report/Section",
       "name": "Statistics",
       "title": "Statistics",
       "items": [
         {
-          "type": "sima/marmo/report/Table",
+          "type": "dmss://sima/models/marmo/report/Table",
           "name": "TensionTable",
           "caption": "Statistical values",
           "transposed": true,
           "columns": [
             {
-              "type": "sima/marmo/report/NumberColumn",
+              "type": "dmss://sima/models/marmo/report/NumberColumn",
               "name": "varStats",
               "cells": [2150.011474609375, 2148.871337890625, 2149.192107599432, 0.3570991594329635, 0],
               "header": "MooringLine9 Fairlead",
               "label": "Tension [kN]"
             }, {
-              "type": "sima/marmo/report/NumberColumn",
+              "type": "dmss://sima/models/marmo/report/NumberColumn",
               "name": "varStats_duplicate_1",
               "cells": [12.67780994863629, 0, 5.143387368090473, 3.630264418909132, 0],
               "header": "Simo",
@@ -30,12 +30,12 @@
         }
       ]
     }, {
-      "type": "sima/marmo/report/Section",
+      "type": "dmss://sima/models/marmo/report/Section",
       "name": "Time Series",
       "title": "Time Series",
       "items": [
         {
-          "type": "sima/marmo/report/LinePlot",
+          "type": "dmss://sima/models/marmo/report/LinePlot",
           "name": "tension",
           "title": "tension",
           "xlabel": "time [s]",
@@ -45,7 +45,7 @@
           "size": "dynamic",
           "caption": "Tension Time Series",
           "xaxis": {
-            "type": "sima/marmo/report/Axis",
+            "type": "dmss://sima/models/marmo/report/Axis",
             "name": "xaxis",
             "autoformat": true,
             "autoscale": true,
@@ -53,7 +53,7 @@
             "format": "0.####E0"
           },
           "yaxis": {
-            "type": "sima/marmo/report/Axis",
+            "type": "dmss://sima/models/marmo/report/Axis",
             "name": "yaxis",
             "autoformat": true,
             "autoscale": true,
@@ -62,7 +62,7 @@
           },
           "lines": [
             {
-              "type": "sima/marmo/report/PlotLine",
+              "type": "dmss://sima/models/marmo/report/PlotLine",
               "name": "line1",
               "x": [
                 0.10000000149011612, 0.20000000298023224, 0.30000000447034836, 0.4000000059604645,
@@ -300,7 +300,7 @@
             }
           ]
         }, {
-          "type": "sima/marmo/report/LinePlot",
+          "type": "dmss://sima/models/marmo/report/LinePlot",
           "name": "Offset",
           "title": "Offset",
           "xlabel": "time [s]",
@@ -310,7 +310,7 @@
           "size": "dynamic",
           "caption": "Offset time series",
           "xaxis": {
-            "type": "sima/marmo/report/Axis",
+            "type": "dmss://sima/models/marmo/report/Axis",
             "name": "xaxis",
             "autoformat": true,
             "autoscale": true,
@@ -318,7 +318,7 @@
             "format": "0.####E0"
           },
           "yaxis": {
-            "type": "sima/marmo/report/Axis",
+            "type": "dmss://sima/models/marmo/report/Axis",
             "name": "yaxis",
             "autoformat": true,
             "autoscale": true,
@@ -327,7 +327,7 @@
           },
           "lines": [
             {
-              "type": "sima/marmo/report/PlotLine",
+              "type": "dmss://sima/models/marmo/report/PlotLine",
               "name": "line1",
               "x": [
                 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5,
@@ -373,7 +373,7 @@
             }
           ]
         }, {
-          "type": "sima/marmo/report/LinePlot",
+          "type": "dmss://sima/models/marmo/report/LinePlot",
           "name": "Heave",
           "title": "Heave",
           "xlabel": "time [s]",
@@ -383,7 +383,7 @@
           "size": "dynamic",
           "caption": "Heave time series",
           "xaxis": {
-            "type": "sima/marmo/report/Axis",
+            "type": "dmss://sima/models/marmo/report/Axis",
             "name": "xaxis",
             "autoformat": true,
             "autoscale": true,
@@ -391,7 +391,7 @@
             "format": "0.####E0"
           },
           "yaxis": {
-            "type": "sima/marmo/report/Axis",
+            "type": "dmss://sima/models/marmo/report/Axis",
             "name": "yaxis",
             "autoformat": true,
             "autoscale": true,
@@ -400,7 +400,7 @@
           },
           "lines": [
             {
-              "type": "sima/marmo/report/PlotLine",
+              "type": "dmss://sima/models/marmo/report/PlotLine",
               "name": "line1",
               "x": [
                 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5,

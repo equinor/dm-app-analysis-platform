@@ -2,7 +2,7 @@
  "name" : "ReportFragment",
  "type" : "CORE:Blueprint",
  "abstract" : false,
- "extends" : ["CORE:NamedEntity", "/marmo/report/ReportItemContainer", "/marmo/report/ReportItem"],
+ "extends" : ["CORE:NamedEntity", "/models/marmo/report/ReportItemContainer", "/models/marmo/report/ReportItem"],
  "attributes" : []
 }
 

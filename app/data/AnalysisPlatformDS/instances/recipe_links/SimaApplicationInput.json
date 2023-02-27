@@ -1,6 +1,6 @@
 {
   "type": "CORE:RecipeLink",
-  "_blueprintPath_": "/models/SimaApplicationInput",
+  "_blueprintPath_": "/models/SIMAApplicationInput",
   "uiRecipes": [
     {
       "name": "Tabs",

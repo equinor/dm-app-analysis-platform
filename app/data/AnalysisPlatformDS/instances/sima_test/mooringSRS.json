@@ -121,7 +121,7 @@
   "serverConfig": {
     "name": "serverConfig",
     "description": "This is abel.",
-    "type": "app_mooring_db/models/simpos/sima/config/SimaAppService",
+    "type": "dmss://app_mooring_db/models/simpos/sima/config/SimaAppService",
     "platform": "Asgard B",
     "application": "Mooring SRS",
     "task": "Task",

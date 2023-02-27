@@ -38,7 +38,7 @@
     {
       "name": "wave",
       "type": "CORE:BlueprintAttribute",
-      "attributeType": "app_mooring_db/simpos/mooringSRS/env/Wave",
+      "attributeType": "dmss://app_mooring_db/simpos/mooringSRS/env/Wave",
       "description": "wave",
       "contained": true,
       "optional": false
@@ -46,7 +46,7 @@
     {
       "name": "wind",
       "type": "CORE:BlueprintAttribute",
-      "attributeType": "app_mooring_db/simpos/mooringSRS/env/Wind",
+      "attributeType": "dmss://app_mooring_db/simpos/mooringSRS/env/Wind",
       "description": "wind",
       "contained": true,
       "optional": false
@@ -54,7 +54,7 @@
     {
       "name": "current",
       "type": "CORE:BlueprintAttribute",
-      "attributeType": "app_mooring_db/simpos/mooringSRS/env/Current",
+      "attributeType": "dmss://app_mooring_db/simpos/mooringSRS/env/Current",
       "description": "current",
       "contained": true,
       "optional": false

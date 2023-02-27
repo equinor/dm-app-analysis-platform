@@ -17,7 +17,7 @@
    "name" : "style",
    "type" : "CORE:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/marmo/report/FontStyle",
+   "enumType" : "/models/marmo/report/FontStyle",
    "optional" : true,
    "default" : "NORMAL"
   }]

@@ -28,7 +28,7 @@
     },
     {
       "name": "status",
-      "attributeType": "app_mooring_db/simpos/sima/run/RunStatus",
+      "attributeType": "dmss://app_mooring_db/simpos/sima/run/RunStatus",
       "type": "CORE:BlueprintAttribute",
       "description": "status",
       "contained": true,
@@ -40,11 +40,11 @@
       "description": "Simulation configuration.",
       "contained": true,
       "optional": false,
-      "attributeType": "app_mooring_db/simpos/sima/config/SimaAppService"
+      "attributeType": "dmss://app_mooring_db/simpos/sima/config/SimaAppService"
     },
     {
       "name": "report",
-      "attributeType": "app_mooring_db/simpos/sima/report/Section",
+      "attributeType": "dmss://app_mooring_db/simpos/sima/report/Section",
       "type": "CORE:BlueprintAttribute",
       "description": "",
       "contained": true,

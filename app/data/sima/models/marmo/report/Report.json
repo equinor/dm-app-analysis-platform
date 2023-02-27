@@ -2,7 +2,7 @@
  "name" : "Report",
  "type" : "CORE:Blueprint",
  "abstract" : false,
- "extends" : ["CORE:NamedEntity", "/marmo/report/ReportItemContainer"],
+ "extends" : ["CORE:NamedEntity", "/models/marmo/report/ReportItemContainer"],
  "attributes" : [{
    "name" : "title",
    "type" : "CORE:BlueprintAttribute",

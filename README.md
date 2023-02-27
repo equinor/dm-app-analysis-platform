@@ -85,7 +85,7 @@ The web app can now be reached at [http://localhost:3000](http://localhost:3000)
 ### Database setup
 Oneliner to get database up and running:
 ```bash
-reset_dmss && dm reset app && docker-compose run --rm job-api dm -u http://dmss:5000 reset ../app && dm create-lookup analysis-platform AnalysisPlatformDS/instances/recipe_links
+docker-compose run --rm dmss reset-app && dm reset app && docker-compose run --rm job-api dm -u http://dmss:5000 reset ../app && dm create-lookup analysis-platform AnalysisPlatformDS/instances/recipe_links
 ```
 
 ### Pre commit

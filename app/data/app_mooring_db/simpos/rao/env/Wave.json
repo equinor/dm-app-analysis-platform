@@ -38,24 +38,24 @@
     },
     {
       "name": "significantWaveHeight",
-      "attributeType": "app_mooring_db/marmo/containers/DimensionalScalar",
+      "attributeType": "dmss://app_mooring_db/marmo/containers/DimensionalScalar",
       "type": "CORE:BlueprintAttribute",
       "description": "Significant wave height in [m].",
-      "default": "{\"name\": \"significantWaveHeight\", \"description\": \"Significant wave height in [m].\", \"type\": \"app_mooring_db/marmo/containers/DimensionalScalar\", \"label\": \"Significant Wave Height [m]\", \"unit\": \"m\", \"value\":14.687}"
+      "default": "{\"name\": \"significantWaveHeight\", \"description\": \"Significant wave height in [m].\", \"type\": \"dmss://app_mooring_db/marmo/containers/DimensionalScalar\", \"label\": \"Significant Wave Height [m]\", \"unit\": \"m\", \"value\":14.687}"
     },
     {
       "name": "peakPeriod",
-      "attributeType": "app_mooring_db/marmo/containers/DimensionalScalar",
+      "attributeType": "dmss://app_mooring_db/marmo/containers/DimensionalScalar",
       "type": "CORE:BlueprintAttribute",
       "description": "Peak period in [s].",
-      "default": "{\"name\": \"peakPeriod\", \"description\": \"Peak period in [s].\", \"type\": \"app_mooring_db/marmo/containers/DimensionalScalar\", \"unit\": \"s\", \"label\": \"Peak Period [s]\", \"value\":17.243}"
+      "default": "{\"name\": \"peakPeriod\", \"description\": \"Peak period in [s].\", \"type\": \"dmss://app_mooring_db/marmo/containers/DimensionalScalar\", \"unit\": \"s\", \"label\": \"Peak Period [s]\", \"value\":17.243}"
     },
     {
       "name": "waveDirection",
-      "attributeType": "app_mooring_db/marmo/containers/DimensionalScalar",
+      "attributeType": "dmss://app_mooring_db/marmo/containers/DimensionalScalar",
       "type": "CORE:BlueprintAttribute",
       "description": "Wave propagation direction -comming from- in [deg].",
-      "default": "{\"name\": \"waveDirection\", \"description\": \"Wave propagation direction -comming from- in [deg].\", \"type\": \"app_mooring_db/marmo/containers/DimensionalScalar\", \"label\": \"Wave Direction [deg]\", \"unit\": \"deg\", \"value\":330.0}"
+      "default": "{\"name\": \"waveDirection\", \"description\": \"Wave propagation direction -comming from- in [deg].\", \"type\": \"dmss://app_mooring_db/marmo/containers/DimensionalScalar\", \"label\": \"Wave Direction [deg]\", \"unit\": \"deg\", \"value\":330.0}"
     }
   ]
 }

@@ -44,14 +44,14 @@
    "name" : "linestyle",
    "type" : "CORE:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/marmo/report/LineStyle",
+   "enumType" : "/models/marmo/report/LineStyle",
    "optional" : true,
    "default" : "SOLID"
   }, {
    "name" : "pointstyle",
    "type" : "CORE:BlueprintAttribute",
    "attributeType" : "string",
-   "enumType" : "/marmo/report/PointStyle",
+   "enumType" : "/models/marmo/report/PointStyle",
    "optional" : true,
    "default" : "NONE"
   }, {

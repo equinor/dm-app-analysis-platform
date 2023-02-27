@@ -32,17 +32,17 @@
     },
     {
       "name": "screeningTol",
-      "attributeType": "app_mooring_db/marmo/containers/DimensionalScalar",
+      "attributeType": "dmss://app_mooring_db/marmo/containers/DimensionalScalar",
       "type": "CORE:BlueprintAttribute",
       "description": "screening tolerance.",
-      "default": "{\"name\": \"screeningTol\", \"description\": \"Screening tolerance. 0.0: means only the higest tension is considered, 0.1: means all cases with maximum tension 10 percent below the absolute max are to be considered.\", \"type\": \"app_mooring_db/marmo/containers/DimensionalScalar\", \"label\": \"Screening Tolerance\", \"unit\": \"-\", \"value\":0.02}"
+      "default": "{\"name\": \"screeningTol\", \"description\": \"Screening tolerance. 0.0: means only the higest tension is considered, 0.1: means all cases with maximum tension 10 percent below the absolute max are to be considered.\", \"type\": \"dmss://app_mooring_db/marmo/containers/DimensionalScalar\", \"label\": \"Screening Tolerance\", \"unit\": \"-\", \"value\":0.02}"
     },
     {
       "name": "simulationLength",
-      "attributeType": "app_mooring_db/marmo/containers/DimensionalScalar",
+      "attributeType": "dmss://app_mooring_db/marmo/containers/DimensionalScalar",
       "type": "CORE:BlueprintAttribute",
       "description": "simulation length in seconds.",
-      "default": "{\"name\": \"simulationLength\", \"description\": \"simulation length in seconds for screening analysis.\", \"type\": \"app_mooring_db/marmo/containers/DimensionalScalar\", \"label\": \"Simulation Length [s]\", \"unit\": \"s\", \"value\":50}"
+      "default": "{\"name\": \"simulationLength\", \"description\": \"simulation length in seconds for screening analysis.\", \"type\": \"dmss://app_mooring_db/marmo/containers/DimensionalScalar\", \"label\": \"Simulation Length [s]\", \"unit\": \"s\", \"value\":50}"
     }
   ]
 }
