@@ -25,7 +25,7 @@
     {
       "name": "jobs",
       "type": "CORE:BlueprintAttribute",
-      "attributeType": "dmss://WorkflowDS/models/Job",
+      "attributeType": "dmss://WorkflowDS/Blueprints/Job",
       "dimensions": "*"
     },
     {

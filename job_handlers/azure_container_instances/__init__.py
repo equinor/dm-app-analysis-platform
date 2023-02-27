@@ -25,7 +25,7 @@ from utils.logging import logger
 AccessToken = namedtuple("AccessToken", ["token", "expires_on"])
 logging.getLogger("azure").setLevel(logging.WARNING)
 
-_SUPPORTED_TYPE = "dmss://WorkflowDS/models/jobHandlers/AzureContainer"
+_SUPPORTED_TYPE = "dmss://WorkflowDS/Blueprints/AzureContainer"
 
 
 class JobHandler(JobHandlerInterface):
@@ -42,7 +42,10 @@ class JobHandler(JobHandlerInterface):
             client_secret=config.AZURE_JOB_SP_SECRET,
             tenant_id=config.AZURE_JOB_SP_TENANT_ID,
         )
-        self.azure_valid_container_name = self.job.entity["name"].lower().replace(".", "-")
+        if "name" in self.job.entity.keys():
+            self.azure_valid_container_name = self.job.entity["name"].lower().replace(".", "-")
+        else:
+            self.azure_valid_container_name = "azure_container_job"
         self.aci_client = ContainerInstanceManagementClient(
             azure_credentials, subscription_id=config.AZURE_JOB_SUBSCRIPTION
         )
@@ -55,7 +58,7 @@ class JobHandler(JobHandlerInterface):
         raise NotImplementedError
 
     def start(self) -> str:
-        logger.info(f"JobName: '{self.job.job_id}'. Starting Azure Container job...")
+        logger.info(f"JobName: '{self.job.job_uid}'. Starting Azure Container job...")
 
         # Add env-vars from deployment first
         env_vars: list[EnvironmentVariable] = [

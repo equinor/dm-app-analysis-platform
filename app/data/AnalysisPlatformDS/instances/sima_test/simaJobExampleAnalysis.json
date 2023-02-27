@@ -20,7 +20,7 @@
     },
     "outputType": "CORE:NamedEntity",
     "runner": {
-      "type": "dmss://WorkflowDS/models/jobHandlers/Container",
+      "type": "dmss://WorkflowDS/Blueprints/jobHandlers/Container",
       "image": {
         "imageName": "dmt-job/srs",
         "type": "dmss://WorkflowDS/Blueprints/ContainerImage",
