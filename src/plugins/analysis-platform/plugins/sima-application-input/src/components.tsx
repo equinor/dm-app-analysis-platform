@@ -91,8 +91,7 @@ export function EditInputEntity(props: {
           {formData?.input?.type && (
             <UIPluginSelector
               type={formData.input.type}
-              categories={['edit']}
-              absoluteDottedId={`${dataSourceId}/${formData?.input?._id}`}
+              idReference={`${dataSourceId}/${formData?.input?._id}`}
             />
           )}
         </div>

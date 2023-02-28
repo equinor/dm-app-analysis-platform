@@ -1,12 +1,38 @@
 {
   "type": "CORE:RecipeLink",
   "_blueprintPath_": "/models/AnalysisPlatform",
+    "initialUiRecipe": {
+    "name": "Header",
+    "type": "CORE:UiRecipe",
+    "plugin": "header",
+      "config": {
+        "type": "/models/ui-plugins/header/HeaderPluginConfig",
+        "hideAbout": false,
+        "hideUserInfo": false,
+        "uiRecipesList": ["Home", "Yaml", "Explorer"]
+      }
+  },
   "uiRecipes": [
     {
-      "name": "Default",
+    "name": "Home",
+    "type": "CORE:UiRecipe",
+    "plugin": "tabs",
+    "config": {
+      "type": "/models/ui-plugins/tabs/TabsPluginConfig",
+      "childTabsOnRender": true,
+      "asSidebar": true,
+      "homeRecipe": "home"
+    }
+  },
+    {
+      "name": "Yaml",
       "type": "CORE:UiRecipe",
-      "plugin": "analysisPlatformApp",
-      "category": "Application"
+      "plugin": "yaml-view"
+    },
+        {
+      "name": "Explorer",
+      "type": "CORE:UiRecipe",
+      "plugin": "explorer"
     }
   ]
 }

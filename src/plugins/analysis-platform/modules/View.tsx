@@ -39,7 +39,7 @@ export const View = () => {
     <>
       {document && (
         <UIPluginSelector
-          absoluteDottedId={`${data_source}/${entity_id}`}
+          idReference={`${data_source}/${entity_id}`}
           type={document.type}
         />
       )}

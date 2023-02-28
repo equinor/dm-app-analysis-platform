@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Button, TextField } from '@equinor/eds-core-react'
-import { INPUT_FIELD_WIDTH, TLocation } from '@development-framework/dm-core'
-import { TAsset } from '../../../Types'
+import { INPUT_FIELD_WIDTH } from '@development-framework/dm-core'
+import { TAsset, TLocation } from '../../../Types'
 import { EBlueprints } from '../../../Enums'
 import { FormWrapper } from '../../../components/Design/Styled'
 

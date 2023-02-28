@@ -41,8 +41,7 @@ export const OperatorView = (props: IUIPlugin): JSX.Element => {
         {hasDomainRole(tokenData) && (
           <UIPluginSelector
             type={analysis.task.type}
-            absoluteDottedId={`${dataSourceId}/${analysis._id}.task`}
-            categories={['container']}
+            idReference={`${dataSourceId}/${analysis._id}.task`}
             onSubmit={(formData: any) => {
               setAnalysis({ ...analysis, task: formData })
             }}

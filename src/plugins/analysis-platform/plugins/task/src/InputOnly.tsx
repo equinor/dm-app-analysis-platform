@@ -18,10 +18,8 @@ export const EditInput = (props: IUIPlugin) => {
   return (
     <div>
       <UIPluginSelector
-        absoluteDottedId={`${idReference}.applicationInput`}
+        idReference={`${idReference}.applicationInput`}
         type={document?.applicationInput.type}
-        categories={['edit']}
-        referencedBy={`${idReference}.applicationInput`}
         onOpen={onOpen}
       />
     </div>

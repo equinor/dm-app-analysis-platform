@@ -1,0 +1,17 @@
+{
+  "type": "CORE:RecipeLink",
+  "_blueprintPath_": "/models/AnalysisList",
+  "uiRecipes": [
+    {
+      "name": "Overview",
+      "type": "CORE:UiRecipe",
+      "plugin": "analyses-overview",
+      "roles": ["inspector"]
+    }
+  ]
+}
+
+
+
+
+

@@ -1,0 +1,17 @@
+{
+  "type": "CORE:RecipeLink",
+  "_blueprintPath_": "/models/AssetList",
+  "uiRecipes": [
+    {
+      "name": "Overview",
+      "type": "CORE:UiRecipe",
+      "plugin": "asset-overview",
+      "roles": ["inspector"]
+    }
+  ]
+}
+
+
+
+
+
