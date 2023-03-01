@@ -42,8 +42,7 @@ class JobHandler(JobHandlerInterface):
             client_secret=config.AZURE_JOB_SP_SECRET,
             tenant_id=config.AZURE_JOB_SP_TENANT_ID,
         )
-        if "name" in self.job.entity.keys():
-            self.azure_valid_container_name = self.job.entity["name"].lower().replace(".", "-")
+        self.azure_valid_container_name = self.job.entity["name"].lower().replace(".", "-")
         self.aci_client = ContainerInstanceManagementClient(
             azure_credentials, subscription_id=config.AZURE_JOB_SUBSCRIPTION
         )
