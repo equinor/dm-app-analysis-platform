@@ -1,5 +1,4 @@
 export default [
   import('./plugins/analysis-platform/index'),
-  import('@development-framework/yaml-view'),
-  import('@development-framework/tabs'),
+  import('@development-framework/dm-core-plugins'),
 ]

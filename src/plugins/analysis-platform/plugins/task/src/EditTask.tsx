@@ -10,8 +10,7 @@ import {
   INPUT_FIELD_WIDTH,
   Loading,
   DestinationPicker,
-  TTaskFormData,
-  TRunner,
+  TGenericObject,
 } from '@development-framework/dm-core'
 import * as React from 'react'
 import { useEffect, useState } from 'react'
@@ -24,6 +23,10 @@ import {
 } from '@equinor/eds-core-react'
 import styled from 'styled-components'
 import _ from 'lodash'
+import {
+  TContainerJobHandler,
+  TJobHandler,
+} from '@development-framework/dm-core/src/types'
 const Column = styled.div``
 
 const GroupWrapper = styled.div`
@@ -40,12 +43,14 @@ const HeaderWrapper = styled.div`
 export const EditTask = (props: IUIPlugin) => {
   const { idReference, onOpen, onSubmit } = props
   const [dataSourceId, documentId] = idReference.split('/', 2)
-  const [document, loading, updateDocument] = useDocument<TTaskFormData>(
+  const [document, loading, updateDocument] = useDocument<TGenericObject>(
     idReference,
     999
   )
 
-  const [formData, setFormData] = useState<TTaskFormData | undefined>(undefined)
+  const [formData, setFormData] = useState<TGenericObject | undefined>(
+    undefined
+  )
   const [entityDestination, setEntityDestination] = useState<string>('')
   const runnerTypeHasChanged =
     formData?.runner?.type && formData?.runner?.type === document?.runner?.type
@@ -191,7 +196,9 @@ export const EditTask = (props: IUIPlugin) => {
                           categories: ['edit'],
                           entity: formData.runner,
                           absoluteDottedId: `${dataSourceId}/${documentId}.runner`,
-                          onSubmit: (data: TRunner) => {
+                          onSubmit: (
+                            data: TJobHandler | TContainerJobHandler
+                          ) => {
                             setFormData({ ...formData, runner: data })
                           },
                         })
@@ -201,10 +208,8 @@ export const EditTask = (props: IUIPlugin) => {
                     </Button>
                   ) : (
                     <UIPluginSelector
-                      absoluteDottedId={`${dataSourceId}/${documentId}.runner`}
+                      idReference={`${dataSourceId}/${documentId}.runner`}
                       type={formData.runner.type}
-                      breadcrumb={false}
-                      categories={['edit']}
                     />
                   )}
                 </div>

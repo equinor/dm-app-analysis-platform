@@ -3,5 +3,24 @@
   "type": "/models/AnalysisPlatform",
   "label": "Analysis Platform App",
   "name": "analysis-platform",
-  "dataSources": ["AnalysisPlatformDS"]
+  "dataSources": [
+    "AnalysisPlatformDS"
+  ],
+  "assets": {
+    "type": "/models/AssetList",
+    "assets": [
+      {
+        "_id": "4483c9b0-d505-46c9-a157-94c79f4d7a6b",
+        "type": "/models/Asset",
+        "name": "exampleAsset"
+      }
+    ]
+  },
+  "analyses": [
+    {
+      "_id": "4483c9b0-d505-46c9-a157-94c79f4d7a6a",
+      "type": "/models/Analysis",
+      "name": "exampleAnalysis"
+    }
+  ]
 }

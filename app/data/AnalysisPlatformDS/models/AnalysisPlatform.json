@@ -1,7 +1,9 @@
 {
   "name": "AnalysisPlatform",
   "type": "CORE:Blueprint",
-  "extends": ["CORE:Application"],
+  "extends": [
+    "CORE:Application"
+  ],
   "description": "",
   "attributes": [
     {
@@ -21,6 +23,16 @@
       "type": "CORE:BlueprintAttribute",
       "attributeType": "string",
       "optional": false
+    },
+    {
+      "name": "assets",
+      "type": "CORE:BlueprintAttribute",
+      "attributeType": "AssetList"
+    },
+    {
+      "name": "analyses",
+      "type": "CORE:BlueprintAttribute",
+      "attributeType": "AnalysisList"
     }
   ]
 }

@@ -1,7 +1,8 @@
-import { EPluginType } from '@development-framework/dm-core'
-
-import App from './App'
-import { InspectorView, OperatorView } from './modules/Analysis'
+import {
+  AnalysisOverview,
+  InspectorView,
+  OperatorView,
+} from './modules/Analysis'
 import { AssetView } from './modules/Asset/AssetView'
 import { EditTask } from './plugins/task/src/EditTask'
 import { ViewTask } from './plugins/task/src/ViewTask'
@@ -10,61 +11,55 @@ import { EditSimaApplicationInput } from './plugins/sima-application-input/src/E
 import { UpdateInputOnly } from './plugins/sima-application-input/src/UpdateInputOnly'
 import { ViewSimaApplicationInput } from './plugins/sima-application-input/src/ViewSimaApplicationInput'
 import { EditContainer } from './plugins/job-handlers/src/EditContainer'
+import { AssetOverview } from './modules/Asset'
 
 export const plugins: any = [
   {
-    pluginName: 'analysisPlatformApp',
-    pluginType: EPluginType.PAGE,
-    component: App,
+    pluginName: 'asset-overview',
+    component: AssetOverview,
+  },
+  {
+    pluginName: 'analyses-overview',
+    component: AnalysisOverview,
   },
   {
     pluginName: 'view-analysis-inspector',
-    pluginType: EPluginType.UI,
     component: InspectorView,
   },
   {
     pluginName: 'view-analysis-operator',
-    pluginType: EPluginType.UI,
     component: OperatorView,
   },
   {
     pluginName: 'view-asset',
-    pluginType: EPluginType.UI,
     component: AssetView,
   },
   {
     pluginName: 'edit-task',
-    pluginType: EPluginType.UI,
     component: EditTask,
   },
   {
     pluginName: 'view-task',
-    pluginType: EPluginType.UI,
     component: ViewTask,
   },
   {
     pluginName: 'edit-task-operator',
-    pluginType: EPluginType.UI,
     component: EditInput,
   },
   {
     pluginName: 'edit-sima-application-input',
-    pluginType: EPluginType.UI,
     component: EditSimaApplicationInput,
   },
   {
     pluginName: 'edit-sima-application-input-input',
-    pluginType: EPluginType.UI,
     component: UpdateInputOnly,
   },
   {
     pluginName: 'view-sima-application-input',
-    pluginType: EPluginType.UI,
     component: ViewSimaApplicationInput,
   },
   {
     pluginName: 'edit-container-job',
-    pluginType: EPluginType.UI,
     component: EditContainer,
   },
 ]

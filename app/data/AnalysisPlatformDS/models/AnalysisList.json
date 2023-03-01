@@ -1,0 +1,13 @@
+{
+  "name": "AnalysisList",
+  "type": "CORE:Blueprint",
+  "description": "",
+  "attributes": [
+    {
+      "name": "analyses",
+      "type": "CORE:BlueprintAttribute",
+      "attributeType": "Analysis",
+      "dimensions": "*"
+    }
+  ]
+}

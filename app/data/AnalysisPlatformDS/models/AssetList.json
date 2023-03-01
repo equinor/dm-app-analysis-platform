@@ -1,0 +1,13 @@
+{
+  "name": "AssetList",
+  "type": "CORE:Blueprint",
+  "description": "",
+  "attributes": [
+    {
+      "name": "assets",
+      "type": "CORE:BlueprintAttribute",
+      "attributeType": "Asset",
+      "dimensions": "*"
+    }
+  ]
+}

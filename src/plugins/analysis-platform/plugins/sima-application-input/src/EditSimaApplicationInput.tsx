@@ -8,7 +8,6 @@ import {
   PATH_INPUT_FIELD_WIDTH,
   TReference,
   truncatePathString,
-  TSTaskBody,
   UploadFileButton,
   useDocument,
 } from '@development-framework/dm-core'
@@ -33,6 +32,7 @@ import {
 import _ from 'lodash'
 import { TSIMAApplicationInput } from './Types'
 import { EBlueprints } from '../../../Enums'
+import { TSTaskBody } from '../../../Types'
 
 const ReadOnlyPathTextField = (props: { path: string; label: string }) => {
   return (
@@ -66,7 +66,9 @@ const ReadOnlyTextField = (props: { text: string; label: string }) => {
 const STaskBlueprint = EBlueprints.STASK
 
 export const EditSimaApplicationInput = (props: IUIPlugin) => {
-  const { idReference, onOpen, readOnly } = props
+  const { idReference, onOpen } = props
+  // TODO: Add "readOnly" to IUIPlugin?
+  const readOnly = false
   const [formData, setFormData] = useState<TSIMAApplicationInput | null>(null)
   const [dataSourceId, documentId] = idReference.split('/', 2)
   const [

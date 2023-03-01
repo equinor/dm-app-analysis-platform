@@ -3,8 +3,9 @@ import './App.css'
 import {
   ApplicationContext,
   useDocument,
-  UIPluginSelector,
+  UIRecipesSelector,
   UiPluginContext,
+  FSTreeProvider,
 } from '@development-framework/dm-core'
 import { Progress } from '@equinor/eds-core-react'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
@@ -61,11 +62,12 @@ function App() {
       <div>
         <GlobalStyle />
         <ApplicationContext.Provider value={application}>
-          <UIPluginSelector
-            absoluteDottedId={`${dataSourceId}/${application?._id}`}
-            type={application?.type}
-            categories={['Application']}
-          />
+          <FSTreeProvider visibleDataSources={application.dataSources}>
+            <UIRecipesSelector
+              idReference={`${dataSourceId}/${application?._id}`}
+              type={application?.type}
+            />
+          </FSTreeProvider>
         </ApplicationContext.Provider>
       </div>
     </ThemeProvider>

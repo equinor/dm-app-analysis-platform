@@ -3,7 +3,6 @@ import {
   TJob,
   TJobHandler,
   TContainerJobHandler,
-  TLocation,
   TValidEntity,
 } from '@development-framework/dm-core'
 
@@ -68,4 +67,24 @@ export type TAssetInfoCardProps = {
   asset: TAsset
   analyses: any
   dataSourceId: string
+}
+
+export type TLocation = {
+  lat: number
+  long: number
+  label: string
+  name: string
+  type: string
+  _id: string
+}
+
+export type TBlob = {
+  name: string
+  type: string
+}
+export type TSTaskBody = {
+  name: string
+  type: string
+  tag?: string
+  blob: TBlob
 }

@@ -8,7 +8,7 @@
       "plugin": "tabs",
       "category": "container",
       "config": {
-        "type": "/models/ui-plugins/tabs/Config",
+        "type": "/models/ui-plugins/tabs/TabsPluginConfig",
         "subCategories": ["edit"]
       }
     },
@@ -19,7 +19,7 @@
       "category": "container",
       "roles": ["dmss-admin", "domain-developer"],
       "config": {
-        "type": "/models/ui-plugins/tabs/Config",
+        "type": "/models/ui-plugins/tabs/TabsPluginConfig",
         "subCategories": ["view"]
       }
     },
