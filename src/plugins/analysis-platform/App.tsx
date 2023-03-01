@@ -3,11 +3,7 @@ import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 import { Layout } from 'antd'
 
 import Routes from './Routes'
-import {
-  ApplicationContext,
-  Header,
-  FSTreeProvider,
-} from '@development-framework/dm-core'
+import { ApplicationContext, Header } from '@development-framework/dm-core'
 import Content from './components/Layout/Content'
 import Menu from './components/Layout/Menu'
 
@@ -39,27 +35,25 @@ export default (): JSX.Element => {
   const settings = useContext(ApplicationContext)
 
   return (
-    <FSTreeProvider visibleDataSources={settings.dataSources}>
-      <Router>
-        <Switch>
-          {Routes.map((route) => {
-            return (
-              <Route path={`${route.path}`} exact key={route.path}>
-                <MainLayout
-                  content={route.content}
-                  settings={settings}
-                  allApps={[]}
-                />
-              </Route>
-            )
-          })}
-          <Route path="*">
-            <div style={{ textAlign: 'center', padding: '10%' }}>
-              Undefined route. Please go back.
-            </div>
-          </Route>
-        </Switch>
-      </Router>
-    </FSTreeProvider>
+    <Router>
+      <Switch>
+        {Routes.map((route) => {
+          return (
+            <Route path={`${route.path}`} exact key={route.path}>
+              <MainLayout
+                content={route.content}
+                settings={settings}
+                allApps={[]}
+              />
+            </Route>
+          )
+        })}
+        <Route path="*">
+          <div style={{ textAlign: 'center', padding: '10%' }}>
+            Undefined route. Please go back.
+          </div>
+        </Route>
+      </Switch>
+    </Router>
   )
 }

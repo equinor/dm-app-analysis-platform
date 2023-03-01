@@ -67,7 +67,7 @@ const STaskBlueprint = EBlueprints.STASK
 
 export const EditSimaApplicationInput = (props: IUIPlugin) => {
   const { idReference, onOpen } = props
-  // TODO: Add "readOnly" yo IUIPlugin?
+  // TODO: Add "readOnly" to IUIPlugin?
   const readOnly = false
   const [formData, setFormData] = useState<TSIMAApplicationInput | null>(null)
   const [dataSourceId, documentId] = idReference.split('/', 2)
